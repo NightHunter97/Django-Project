@@ -1,0 +1,9 @@
+{% load i18n %}
+<evaluationReport>
+{% for eval, res in evals.items %}
+    <report>{{ eval }}:</report>
+        {% for questions in res %}
+            <question>{{ questions.question }}: {{ questions.value|default_if_none:" - "  }}</question>
+        {% endfor %}
+{% endfor %}
+</evaluationReport>

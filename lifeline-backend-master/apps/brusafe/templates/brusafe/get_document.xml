@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
+            xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Header>
+   	<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" s:mustUnderstand="true">
+        {{ saml|safe }}
+     </wsse:Security>
+      <a:Action s:mustUnderstand="1">urn:ihe:iti:2007:RetrieveDocumentSet</a:Action>
+      <a:MessageID>urn:uuid:775d2a0a-ec34-4d26-b578-d02daca80c30</a:MessageID>
+      <a:ReplyTo>
+         <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+      </a:ReplyTo>
+      <a:To s:mustUnderstand="1">https://api.qa.brusafe.be:8003/services/repository-noxua</a:To>
+   </s:Header>
+   <s:Body>
+      <xdsb:RetrieveDocumentSetRequest xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                                       xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                                       xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                                       xmlns:xdsb="urn:ihe:iti:xds-b:2007"
+                                       xmlns:xop="http://www.w3.org/2004/08/xop/include">
+         <xdsb:DocumentRequest>
+            <xdsb:RepositoryUniqueId>{{ RepositoryUniqueId }}</xdsb:RepositoryUniqueId>
+            <xdsb:DocumentUniqueId>{{ DocumentUniqueId }}</xdsb:DocumentUniqueId>
+         </xdsb:DocumentRequest>
+      </xdsb:RetrieveDocumentSetRequest>
+   </s:Body>
+</s:Envelope>

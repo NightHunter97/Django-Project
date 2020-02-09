@@ -1,0 +1,29 @@
+{% load i18n %}
+<medicalReport label="{% trans 'Medical informations' %}">
+  <diagnostics label="{% trans 'Diagnostics' %}">
+    {% for diagnostic in report_info.diagnostics %}
+      <diagnostic>{{ diagnostic }} - {{ diagnostic.description }}</diagnostic>
+    {% endfor %}
+  </diagnostics>
+  <vitals label="{% trans 'Last Vital Parameters' %}">
+    {% for vital, value in report_info.vitals.items %}
+      <vital>{{ vital }} - {{ value }}</vital>
+    {% endfor %}
+  </vitals>
+  <wounds label="{% trans 'Active Wounds' %}">
+    {% for wound in report_info.wounds %}
+    <wound>{{ wound }} - {{ wound.created.date }} - {{ wound.localization }} - {{ wound.get_type_display }}
+        - {{ wound.evolution_set.last.width }}cm x {{ wound.evolution_set.last.height }}cm {{ wound.comment|default_if_none:"" }}</wound>
+    {% endfor %}
+  </wounds>
+  <therapies label="{% trans 'Medication Therapy' %}">
+    {% for medication in report_info.medications %}
+      <therapy>{{ medication.category }} - {{ medication.quantity }} {{ medication.category.unit }} {{ medication.comment }}</therapy>
+    {% endfor %}
+  </therapies>
+  <tasks label="{% trans 'Planned Tasks' %}">
+    {% for task in report_info.tasks %}
+      <task>{{ task.task|default_if_none:"" }}{{ task.prescription.category|default_if_none:"" }} - {{ task.comment }}</task>
+    {% endfor %}
+  </tasks>
+</medicalReport>

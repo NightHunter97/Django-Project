@@ -1,0 +1,84 @@
+li.active > a,
+li.active > a:hover,
+.selector-add.selector-add.btn-floating.btn-flat,
+.selector-remove.btn-floating.btn-flat,
+button.btn,
+a.btn-primary,
+div.btn {
+    background: #4f5fe8;
+}
+
+nav.topbar, nav.breadcrumbs {
+    background-image: linear-gradient(to right, #8B5CD7, #4f5fe8);
+}
+
+i.material-icons,
+i.material-icons.prefix.active,
+.side-nav li>a>[class^=mdi-],
+.side-nav li>a>i,
+.side-nav li>a>i.material-icons,
+.side-nav li>a li>a>[class*=mdi-],
+.results table tbody a, a {
+    font-weight: 500;
+    color: #4f5fe8;
+}
+
+.large.material-icons,
+.selector-add.selector-add.btn-floating.btn-flat > i.material-icons,
+.selector-remove.btn-floating.btn-flat > i.material-icons,
+.button-collapse > i.material-icons {
+    color: white;
+}
+
+.logo__icon.material-icons,
+i.material-icons.white-icon {
+    color: white;
+}
+
+i.material-icons.green-icon {
+    color: green;
+}
+
+.flex {
+    display: flex;
+}
+
+button.btn:hover,
+a.btn:hover,
+div.btn:hover {
+    background: #4f5fe8;
+    box-shadow: 0 10px 24px 0 rgba(0,0,0,.55);
+}
+
+nav ul a:hover {
+    background: none;
+}
+
+.btn-floating.btn-large.waves-effect.waves-light.red.z-depth-2 {
+    background: #4f5fe8 !important;
+}
+
+tr.odd {
+    background: #f0f2f5;
+}
+
+@-webkit-keyframes heartbeat {
+  from {width: 40px;margin: 0}
+  20% {width: 30px;margin-left: 5px}
+  30% {width: 40px;margin: 0}
+  40% {width: 30px;margin-left: 5px}
+  50% {width: 40px;margin: 0}
+}
+
+@keyframes heartbeat {
+  from {width: 40px;margin: 0}
+  20% {width: 30px;margin-left: 5px}
+  30% {width: 40px;margin: 0}
+  40% {width: 30px;margin-left: 5px}
+  50% {width: 40px;margin: 0}
+}
+
+.injected-svg {
+  -webkit-animation: heartbeat 2s infinite;
+  animation: heartbeat 2s infinite;
+}

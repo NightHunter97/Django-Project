@@ -1,0 +1,16 @@
+.collection {
+    margin-bottom: 0px;
+}
+
+.upload-tasks {
+    margin-top: 3px;
+}
+
+.add-tasks-button {
+    display: flex;
+    justify-content: center;
+}
+
+.cloud_icon {
+    margin-left: 5px;
+}

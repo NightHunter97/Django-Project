@@ -1,0 +1,255 @@
+{% load i18n %}
+--{{ boundary }}
+Content-type: application/soap+xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
+            xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Header xmlns:wsse="http://schemas.xmlsoap.org/ws/2003/06/secext">
+     <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" s:mustUnderstand="true">
+        {{ saml|safe }}
+     </wsse:Security>
+      <a:Action s:mustUnderstand="1">urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b</a:Action>
+      <a:MessageID>urn:uuid:6967d6b5-4ecf-45c9-a7ea-f1e42b455dd0</a:MessageID>
+      <a:ReplyTo>
+         <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+      </a:ReplyTo>
+      <a:To s:mustUnderstand="1">https://api.qa.brusafe.be:8003/services/repository</a:To>
+   </s:Header>
+   <s:Body>
+      <xdsb:ProvideAndRegisterDocumentSetRequest xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                                                 xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                                                 xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                                                 xmlns:xdsb="urn:ihe:iti:xds-b:2007"
+                                                 xmlns:xop="http://www.w3.org/2004/08/xop/include">
+         <lcm:SubmitObjectsRequest>
+            <rim:RegistryObjectList>
+               <rim:RegistryPackage id="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:RegistryPackage">
+                  <rim:Slot name="submissionTime">
+                    <rim:ValueList>
+                        <rim:Value>{{ created }}</rim:Value>
+                    </rim:ValueList>
+                  </rim:Slot>
+                  <rim:Name>
+                    <rim:LocalizedString value="XDS Submission Set"/>
+                  </rim:Name>
+                  <rim:Classification classificationScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500"
+                                      classifiedObject="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3"
+                                      id="urn:uuid:706cb030-971c-42d2-a3b6-ab3d1cc83773"
+                                      nodeRepresentation="823651000000106"
+                                      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification">
+                    <rim:Slot name="codingScheme">
+                        <rim:ValueList>
+                            <rim:Value>2.16.840.1.113883.6.96</rim:Value>
+                        </rim:ValueList>
+                    </rim:Slot>
+                    <rim:Name>
+                        <rim:LocalizedString value="Clinical note(record artifiact)"/>
+                    </rim:Name>
+                  </rim:Classification>
+                  <rim:Classification classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d"
+                                      classifiedObject="urn:uuid:27ed5672-d04c-4149-ae80-6e60943b4b81"
+                                      id="urn:uuid:8fbc044f-2a1d-4de5-be0a-24dbafa6bcd2"
+                                      nodeRepresentation="123456789"
+                                      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification">
+                    <rim:Slot name="authorPerson">
+                        <rim:ValueList>
+                            <rim:Value>famiDesk</rim:Value>
+                        </rim:ValueList>
+                    </rim:Slot>
+                    <rim:Name>
+                        <rim:LocalizedString value="XDSSubmissionSet.author"/>
+                    </rim:Name>
+                  </rim:Classification>
+
+                  <rim:Classification classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"
+                                      classifiedObject="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3"
+                                      id="urn:uuid:f92a5644-fdae-44eb-8d84-5592920dd41b"
+                                      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"/>
+                  <rim:ExternalIdentifier id="urn:uuid:d07c78d3-7ecf-4044-ae6b-9cd3de8c0ee5"
+                                          identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832"
+                                          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                          registryObject="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3"
+                                          value="1.3.6.1.4.1.21367.2016.1.1">
+                    <rim:Name>
+                        <rim:LocalizedString value="XDSSubmissionSet.sourceId"/>
+                    </rim:Name>
+                  </rim:ExternalIdentifier>
+                  <rim:ExternalIdentifier id="urn:uuid:2d963264-5e8e-427c-864b-c3e625382c2c"
+                                          identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"
+                                          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                          registryObject="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3"
+                                          value="1.3.6.1.4.1.12559.1545565121315.8511">
+                    <rim:Name>
+                        <rim:LocalizedString value="XDSSubmissionSet.uniqueId"/>
+                    </rim:Name>
+                  </rim:ExternalIdentifier>
+                  <rim:ExternalIdentifier id="fd146efe-a34a-4567-91f8-34bc602afd8f"
+                                          identificationScheme="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446"
+                                          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                          registryObject="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3"
+                                          value="{{ patient.national_register }}^^^&amp;1.3.6.1.4.1.21297.100.1.1&amp;ISO">
+                    <rim:Name>
+                        <rim:LocalizedString value="XDSSubmissionSet.patientId"/>
+                    </rim:Name>
+                  </rim:ExternalIdentifier>
+               </rim:RegistryPackage>
+               <rim:ExtrinsicObject id="urn:uuid:{{ doc_uuid }}"
+                                    mimeType="text/xml"
+                                    objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                                    status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+                  <rim:Slot name="languageCode">
+                    <rim:ValueList>
+                        <rim:Value>{{ languageCode }}</rim:Value>
+                    </rim:ValueList>
+                  </rim:Slot>
+                  <rim:Slot name="creationTime">
+                    <rim:ValueList>
+                        <rim:Value>{{ created }}</rim:Value>
+                    </rim:ValueList>
+                  </rim:Slot>
+                  <rim:Slot name="sourcePatientId">
+                    <rim:ValueList>
+                        <rim:Value>{{ patient.national_register }}^^^&amp;1.3.6.1.4.1.21297.100.1.1&amp;ISO</rim:Value>
+                    </rim:ValueList>
+                  </rim:Slot>
+                  <rim:Slot name="unit">
+                   <rim:ValueList>
+                       <rim:Value>{{ unit }}</rim:Value>
+                   </rim:ValueList>
+                  </rim:Slot>
+                  <rim:Name>
+                    <rim:LocalizedString value="{{ date_of_report }} - {{ report_type }} Report"/>
+                  </rim:Name>
+                  <rim:Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143b"
+                                      classifiedObject="urn:uuid:{{ doc_uuid }}"
+                                      id="urn:uuid:66df490d-70f8-40f8-94d6-03c0d49629a5"
+                                      nodeRepresentation="371534008"
+                                      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification">
+                    <rim:Slot name="codingScheme">
+                        <rim:ValueList>
+                            <rim:Value>2.16.840.1.113883.6.96</rim:Value>
+                        </rim:ValueList>
+                    </rim:Slot>
+                    <rim:Name>
+                        <rim:LocalizedString value="{{ report_type }}"/>
+                    </rim:Name>
+                  </rim:Classification>
+                  <rim:Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                                      classifiedObject="urn:uuid:{{ doc_uuid }}"
+                                      id="urn:uuid:bfc2700d-d4cb-4574-ac1b-3e2645f37488"
+                                      nodeRepresentation="N"
+                                      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification">
+                    <rim:Slot name="codingScheme">
+                        <rim:ValueList>
+                            <rim:Value>2.16.840.1.113883.5.25</rim:Value>
+                        </rim:ValueList>
+                    </rim:Slot>
+                    <rim:Name>
+                        <rim:LocalizedString value="Normal"/>
+                    </rim:Name>
+                  </rim:Classification>
+
+                  <rim:Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                                      classifiedObject="urn:uuid:{{ doc_uuid }}"
+                                      id="urn:uuid:ea4e9e8b-a38d-4677-919c-391297d4f406"
+                                      nodeRepresentation="DEMO-Summary"
+                                      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification">
+                    <rim:Slot name="codingScheme">
+                        <rim:ValueList>
+                            <rim:Value>1.3.6.1.4.1.21367.100.1</rim:Value>
+                        </rim:ValueList>
+                    </rim:Slot>
+                    <rim:Name>
+                        <rim:LocalizedString value="Summary"/>
+                    </rim:Name>
+                  </rim:Classification>
+                  <rim:ExternalIdentifier id="urn:uuid:87faa03e-2342-45b8-9107-a7ec2246f649"
+                                          identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                                          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                          registryObject="urn:uuid:{{ doc_uuid }}"
+                                          value="{{ doc_id }}">
+                    <rim:Name>
+                        <rim:LocalizedString value="XDSDocumentEntry.uniqueId"/>
+                    </rim:Name>
+                  </rim:ExternalIdentifier>
+                  <rim:ExternalIdentifier id="3b81bbdf-1d1b-4818-ad4e-4a97886bea58"
+                                          identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                                          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"
+                                          registryObject="urn:uuid:{{ doc_uuid }}"
+                                          value="{{ patient.national_register }}^^^&amp;1.3.6.1.4.1.21297.100.1.1&amp;ISO">
+                    <rim:Name>
+                        <rim:LocalizedString value="XDSDocumentEntry.patientId"/>
+                    </rim:Name>
+                  </rim:ExternalIdentifier>
+               </rim:ExtrinsicObject>
+               <rim:Association associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember"
+                                id="8ec2232a-2767-4e02-82a5-fba4d8f39454"
+                                sourceObject="urn:uuid:acd9766f-28c9-4f31-916e-8a9aa07223f3"
+                                targetObject="urn:uuid:{{ doc_uuid }}">
+                  <rim:Slot name="SubmissionSetStatus">
+                    <rim:ValueList>
+                        <rim:Value>Original</rim:Value>
+                    </rim:ValueList>
+                  </rim:Slot>
+               </rim:Association>
+                {{ replace }}
+            </rim:RegistryObjectList>
+         </lcm:SubmitObjectsRequest>
+         <xdsb:Document id="urn:uuid:{{ doc_uuid }}">
+            <xop:Include href="cid:1.urn:uuid:e3ed49c84eb941f9a5b31211c1ede41f@abrumet.famidesk.io"/>
+         </xdsb:Document>
+      </xdsb:ProvideAndRegisterDocumentSetRequest>
+   </s:Body>
+</s:Envelope>
+
+--{{ boundary }}
+Content-type: application/xml
+Content-ID: <1.urn:uuid:e3ed49c84eb941f9a5b31211c1ede41f@abrumet.famidesk.io>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="1.3.6.1.4.1.48336.11.1.10.5"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.3"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="???"/>
+  <title>Referral Summary</title>
+  <effectiveTime value="{{ created }}"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="{{ languageCode }}"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.12559.1545565121315.45544.{{ patient.national_register }}"/>
+      <patient>
+        <name label="{% trans 'Patient Name' %}">{{ patient.full_name|default_if_none:" - " }}</name>
+        <documentType label="{% trans 'Identity Document Type' %}">{{ patient.get_document_type_display|default_if_none:" - " }}</documentType>
+        <birth label="{% trans 'Birth Date' %}">{{ patient.birth_date|default_if_none:" - " }}</birth>
+        <gender  label="{% trans 'Gender' %}">{{ patient.get_gender_display|default_if_none:" - " }}</gender>
+        <nationality label="{% trans 'Nationality' %}">{{ patient.get_nationality_display|default_if_none:" - " }}</nationality>
+        <country label="{% trans 'Country' %}">{{ patient.get_country_display|default_if_none:" - " }}</country>
+        <address label="{% trans 'Address' %}">{{ patient.address|default_if_none:" - " }}</address>
+        <postcode  label="{% trans 'Postcode' %}">{{ patient.post_code|default_if_none:" - " }}</postcode>
+        <phone label="{% trans 'Phone number' %}">{{ patient.phone_number|default_if_none:" - " }}</phone>
+        <email label="{% trans 'E-mail address' %}">{{ patient.email|default_if_none:" - " }}</email>
+        <general label="{% trans 'General Practitioner' %}">{{ patient.general_practitioner|default_if_none:" - " }}</general>
+      </patient>
+    </patientRole>
+    <report_comment label="{% trans 'Comments' %}">{{ comment }}</report_comment>
+    {% if report_type == 'medical' %}
+      {% include 'brusafe/medical.xml' with report_info=report_info %}
+    {% endif %}
+      {% if report_type == 'social' %}
+      {% include 'brusafe/social.xml' with report_info=report_info %}
+    {% endif %}
+      {% if report_type == 'drugs' %}
+      {% include 'brusafe/drugs.xml' with report_info=report_info %}
+    {% endif %}
+      {% if report_type == 'evaluation' %}
+      {% include 'brusafe/evaluation.xml' with report_info=report_info %}
+    {% endif %}
+  </recordTarget>
+</ClinicalDocument>
+
+--{{ boundary }}--

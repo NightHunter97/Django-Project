@@ -1,0 +1,39 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls admin_static admin_modify material_form material_admin %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'diagnostics/css/parse_file.css' %}">
+<script src="{% static 'diagnostics/js/parse_file.js' %}"></script>
+{% endblock %}
+
+{% block object-tools %}
+<ul class="object-tools collection with-header">
+    <li class="collection-header"><h5>{% trans "Tools" %}</h5></li>
+    {% block object-tools-items %}
+    <li class="collection-item">
+        {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+        <a href="{% add_preserved_filters history_url %}" class="historylink"><i class="left material-icons">history</i> {% trans "History" %}</a>
+    </li>
+    {% endblock %}
+    <li class="collection-item center">
+        <button type="button" data-url="{% url 'diagnostics:upload_file' %}"
+                data-id="{{original.pk}}"
+                data-label="{{original.label}}"
+                data-token="{{token}}"
+                class="waves-effect waves-light btn btn-primary white-text parse-file tools-button">
+            <span class="upload">{% trans 'Parse data' %}</span>
+            <span class="loading hidden"><i class="fa fa-refresh fa-spin"></i>{% trans 'Uploading' %}</span>
+            <i class="material-icons white-icon">memory</i>
+        </button>
+    </li>
+    <li class="collection-item center">
+        <a type="button" class="waves-effect waves-light btn blue white-text tools-button"
+            href="{{file_url}}">
+            <span>{% trans 'Download' %}</span>
+            <i class="material-icons white-icon">cloud_download</i>
+        </a>
+    </li>
+</ul>
+{% endblock %}

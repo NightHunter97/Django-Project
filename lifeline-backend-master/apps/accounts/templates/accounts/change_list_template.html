@@ -1,0 +1,89 @@
+{% extends "admin/change_list.html" %}
+{% load i18n admin_urls admin_static admin_list material_admin %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script src="{% static 'accounts/js/common_activities.js' %}"></script>
+{% endblock %}
+
+{% block main_content %}
+<form method="POST" class="content">
+    {% csrf_token %}
+    <div class="left-panel{% if action_form or cl.date_hierarchy or cl.list_filter or cl.search_fields %}{% else %} wide{% endif %}">
+        <div class="card">
+            <div class="card-content">
+                {% block result_list %}
+                  {{ block.super }}
+                {% endblock %}
+
+                {% block pagination %}{{ block.super }}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    {% if action_form or cl.date_hierarchy or cl.list_filter or cl.search_fields %}
+    <div class="right-panel">
+
+        <div class="card filters-card">
+          <div class="card-content">
+            <span class="card-title">{% trans 'Common user activities' %}</span>
+            <div style="text-align: center">
+              <select class="select-patient" onchange="setActivityExportParams(event, 'period')">
+                <option class="user-item" value="month">{% trans 'Month' %}</option>
+                <option class="user-item" value="quarter">{% trans 'Quarter' %}</option>
+                <option class="user-item" value="year">{% trans 'Year' %}</option>
+                <option class="user-item" value="all">{% trans 'All the time' %}</option>
+              </select>
+              <select class="select-patient" onchange="setActivityExportParams(event, 'block')">
+                <option class="user-item" value="all-info">{% trans 'All info' %}</option>
+                <option class="user-item" value="created">{% trans 'Created Files' %}</option>
+                <option class="user-item" value="archived">{% trans 'Archived Files' %}</option>
+                <option class="user-item" value="active-users">{% trans 'Active Users' %}</option>
+              </select>
+              <a href="/{{ LANGUAGE_CODE }}{% url 'accounts:common_user_activity' %}?period=month&block=all-info"
+                  class="waves-effect waves-light btn btn-primary white-text users-activity">
+                  {% trans "Download activity" %}
+              </a>
+            </div>
+         </div>
+        </div>
+
+        {% if action_form and actions_on_top and cl.show_admin_actions %}
+        {% admin_actions %}
+        {% endif %}
+        {% if cl.date_hierarchy or cl.list_filter or cl.search_fields %}
+        <div class="card filters-card">
+            <div class="card-content">
+                <span class="card-title">{% trans 'Filter' %}</span>
+                {% block search %}{{ block.super }}{% endblock %}
+
+                {% block filters %}
+                  {{ block.super }}
+                {% endblock %}
+
+                {% block date_hierarchy %}{{ block.super }}{% endblock %}
+                <div class="clearfix"></div>
+            </div>
+            <div class="card-action">&nbsp;</div>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</form>
+
+{% if has_add_permission %}
+{% url cl.opts|admin_urlname:'add' as add_url %}
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large waves-effect waves-light red z-depth-2" href="{% add_preserved_filters add_url is_popup to_field %}">
+        <i class="large material-icons">add</i>
+    </a>
+</div>
+{% endif %}
+
+<form id="changelist-search" action="?" method="get">
+    <input type="hidden" id="searchbar_hidden"/>
+    {% for pair in cl.params.items %}
+    {% ifnotequal pair.0 'q' %}<input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}"/>{% endifnotequal %}
+    {% endfor %}
+</form>
+{% endblock %}

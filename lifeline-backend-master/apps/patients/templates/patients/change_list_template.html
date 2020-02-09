@@ -1,0 +1,66 @@
+{% extends "admin/change_list.html" %}
+{% load i18n admin_static i18n %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'patients/css/list.css' %}">
+<script src="{% static 'patients/js/parse_file.js' %}"></script>
+<script src="{% static 'patients/js/patient-search.js' %}"></script>
+{% endblock %}
+
+{% block search %}
+  {{ block.super }}
+  <div class="row" style="margin-top:-10px">
+    <div class="input-field col s12">
+        <input type="text" data-name="patient_id" id="searchIdBar">
+        <label for="searchIdBar" class="active">{% trans 'Search Patients by id' %}</label>
+        <a href="#" id="changelist-search-button" class="searchByIdIcon"><i class="material-icons">search</i></a>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:-10px">
+    <div class="input-field col s12">
+        <input class="vDateField start-activity" data-date-format="Y-m-d" data-form-control="date" size="10" type="text" placeholder="YYYY-MM-DD" id="searchDateBar">
+        <label for="searchDateBar" class="active">{% trans 'Search Patients by Birth Date' %}</label>
+        <a href="#" id="changelist-search-button" class="searchByDateIcon"><i class="material-icons">search</i></a>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block date_hierarchy %}
+
+<span class="card-title">{% trans 'Download template' %}</span>
+<span class="collection-item center">
+  <a type="button"
+     href="{% static 'patients/files/patients.xlsx' %}"
+     class="waves-effect waves-light btn blue white-text tools-button">
+    <span>{% trans 'Download' %}</span>
+    <i class="material-icons white-icon">cloud_download</i>
+  </a>
+</span>
+<hr>
+<span class="card-title">{% trans 'Upload patients' %}</span>
+<form enctype="multipart/form-data">
+  <span class="collection-item center">
+    <div class="input-field file-field col s12" id="id_file_container">
+      <div class="btn file-btn">
+        <span>{% trans 'File' %}</span>
+        <input type="file" name="file" class="input-upload">
+      </div>
+      <div class="file-path-wrapper">
+        <input  class="file-path"  id="id_file" placeholder="{% trans 'Uploaded file' %}" type="text">
+      </div>
+    </div>
+    <a type="button" class="waves-effect waves-light btn white-text tools-button green parse-file"
+       data-url="{% url 'patients:upload' 'upload-file' %}"
+       data-token="{{token}}"
+    >
+      <span>{% trans 'Upload' %}</span>
+      <i class="material-icons upload white-icon">cloud_upload</i>
+      <i class="fa fa-refresh fa-spin loading hidden"></i>
+    </a>
+  </span>
+</form>
+{% endblock %}

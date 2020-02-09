@@ -1,0 +1,8 @@
+{% load i18n %}
+<drugsReport label="{% trans 'Medication informations' %}">
+  <therapy label="{% trans 'Medication Therapy' %}">
+    {% for medication in report_info.medications %}
+      <drug>{{ medication.category }} - {{ medication.quantity }} {{ medication.category.unit }} {{ medication.comment }}</drug>
+    {% endfor %}
+  </therapy>
+</drugsReport>

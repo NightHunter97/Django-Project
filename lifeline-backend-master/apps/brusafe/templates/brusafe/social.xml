@@ -1,0 +1,29 @@
+{% load i18n %}
+<socialReport>
+  <healthInsurance label="{% trans 'Health insurance information' %}">
+    <insurance_policy label="{% trans 'Health Insurance Policy' %}">{{ patient.insurance_policy|default_if_none:" - "  }}</insurance_policy>
+    <policy_holder label="{% trans 'Policyholder Name' %}">{{ patient.policy_holder|default_if_none:" - "  }}</policy_holder>
+    <validity_end label="{% trans 'End of validity period' %}">{{ patient.validity_end|default_if_none:" - "  }}</validity_end>
+    <beneficiary_id label="{% trans 'Beneficiary ID' %}">{{ patient.beneficiary_id|default_if_none:" - "  }}</beneficiary_id>
+    <beneficiary_occupation label="{% trans 'Beneficiary occupation' %}">{{ patient.get_beneficiary_occupation_display|default_if_none:" - "  }}</beneficiary_occupation>
+    <heading_code label="{% trans 'Heading Code HC1/HC2' %}">{{ patient.get_heading_code_display|default_if_none:" - "  }}</heading_code>
+    <is_employed label="{% trans 'Employed/Unemployed' %}">{% if patient.is_employed %}{% trans 'Employed' %}{% else %}{% trans 'Unemployed' %}{% endif %}</is_employed>
+    <dependants label="{% trans 'Dependents' %}">{{ patient.get_dependants_display|default_if_none:" - "  }}</dependants>
+    <third_party label="{% trans 'Authorized Third Party' %}">{{ patient.is_third_party_auth|default_if_none:" - "  }}</third_party>
+  </healthInsurance>
+  <socialInformations label="{% trans 'Social informations' %}">
+    <disability_assessment_points label="{% trans 'Disability Assessment Points' %}">{{ patient.disability_assessment_points|default_if_none:" - "  }}</disability_assessment_points>
+    <regional_recognition label="{% trans 'Regional Disability Recognition' %}">{{ patient.regional_recognition|default_if_none:" - "  }}</regional_recognition>
+    <income_origin label="{% trans 'Income origin' %}">{{ patient.get_income_origin_display|default_if_none:" - "  }}</income_origin>
+    <income_amount label="{% trans 'Income amount' %}">{{ patient.income_amount|default_if_none:" - "  }}</income_amount>
+    <expenses label="{% trans 'Expenses' %}">{{ patient.expenses|default_if_none:" - "  }}</expenses>
+    <debts label="{% trans 'Debts' %}">{{ patient.debts|default_if_none:" - "  }}</debts>
+    <attorney label="{% trans 'Financial Power of Attorney' %}">{{ patient.attorney|default_if_none:" - "  }}</attorney>
+    <management label="{% trans 'Financial Management' %}">{{ patient.management|default_if_none:" - "  }}</management>
+    <admission label="{% trans 'Living Environment at Admission' %}">{{ patient.admission|default_if_none:" - "  }}</admission>
+    <occupation label="{% trans 'Current Occupation' %}">{{ patient.occupation|default_if_none:" - "  }}</occupation>
+    <career label="{% trans 'Professional Career' %}">{{ patient.career|default_if_none:" - "  }}</career>
+    <education label="{% trans 'Education' %}">{{ patient.education|default_if_none:" - "  }}</education>
+    <edu_pathway label="{% trans 'Education Pathway' %}">{{ patient.edu_pathway|default_if_none:" - "  }}</edu_pathway>
+  </socialInformations>
+</socialReport>

@@ -1,0 +1,71 @@
+{% extends 'reports/base_report.html' %}
+{% load i18n %}
+{% block report_specifications %}
+<div class="underline content-header report bold">{% trans 'Health insurance informations' as insurance %}{{ insurance|upper }}</div>
+{% if patient.insurance_policy %}
+    <div>{% trans 'Health Insurance Policy' %}: <span class="arial">{{ patient.insurance_policy }}</span></div>
+{% endif %}
+{% if patient.policy_holder %}
+    <div>{% trans 'Policyholder Name' %}: <span class="arial">{{ patient.policy_holder }}</span></div>
+{% endif %}
+{% if patient.validity_end %}
+    <div>{% trans 'End of validity period' %}: <span class="arial">{{ patient.validity_end }}</span></div>
+{% endif %}
+{% if patient.beneficiary_id %}
+    <div>{% trans 'Beneficiary ID' %}: <span class="arial">{{ patient.beneficiary_id }}</span></div>
+{% endif %}
+{% if patient.get_beneficiary_occupation_display %}
+    <div>{% trans 'Beneficiary occupation' %}: <span class="arial">{{ patient.get_beneficiary_occupation_display }}</span></div>
+{% endif %}
+{% if patient.get_heading_code_display %}
+    <div>{% trans 'Heading Code HC1/HC2' %}: <span class="arial">{{ patient.get_heading_code_display }}</span></div>
+{% endif %}
+<div>{% trans 'Employed/Unemployed' %}: {% if patient.is_employed %}{% trans 'Employed' %}{% else %}{% trans 'Unemployed' %}{% endif %}</div>
+{% if patient.get_dependants_display %}
+    <div>{% trans 'Dependents' %}: <span class="arial">{{ patient.get_dependants_display }}</span></div>
+{% endif %}
+{% if patient.is_third_party_auth %}
+    <div>{% trans 'Authorized Third Party' %}: <span class="arial">{{ patient.is_third_party_auth }}</span></div>
+{% endif %}
+
+<div class="underline content-header report bold">{% trans 'Social informations' as social %}{{ social|upper }}</div>
+{% if patient.disability_assessment_points %}
+    <div>{% trans 'Disability Assessment Points' %}: <span class="arial">{{ patient.disability_assessment_points }}</span></div>
+{% endif %}
+{% if patient.regional_recognition %}
+    <div>{% trans 'Regional Disability Recognition' %}: <span class="arial">{{ patient.regional_recognition }}</span></div>
+{% endif %}
+{% if patient.get_income_origin_display %}
+    <div>{% trans 'Income origin' %}: <span class="arial">{{ patient.get_income_origin_display }}</span></div>
+{% endif %}
+{% if patient.income_amount %}
+    <div>{% trans 'Income amount' %}: <span class="arial">{{ patient.income_amount }}</span></div>
+{% endif %}
+{% if patient.expenses %}
+    <div>{% trans 'Expenses' %}: <span class="arial">{{ patient.expenses }}</span></div>
+{% endif %}
+{% if patient.debts %}
+    <div>{% trans 'Debts' %}: <span class="arial">{{ patient.debts }}</span></div>
+{% endif %}
+{% if patient.attorney %}
+    <div>{% trans 'Financial Power of Attorney' %}: <span class="arial">{{ patient.attorney }}</span></div>
+{% endif %}
+{% if patient.management %}
+    <div>{% trans 'Financial Management' %}: <span class="arial">{{ patient.management }}</span></div>
+{% endif %}
+{% if patient.admission %}
+    <div>{% trans 'Living Environment at Admission' %}: <span class="arial">{{ patient.admission }}</span></div>
+{% endif %}
+{% if patient.occupation %}
+    <div>{% trans 'Current Occupation' %}: <span class="arial">{{ patient.occupation }}</span></div>
+{% endif %}
+{% if patient.career %}
+    <div>{% trans 'Professional Career' %}: <span class="arial">{{ patient.career }}</span></div>
+{% endif %}
+{% if patient.education %}
+    <div>{% trans 'Education' %}: <span class="arial">{{ patient.education }}</span></div>
+{% endif %}
+{% if patient.edu_pathway %}
+    <div>{% trans 'Education Pathway' %}: <span class="arial">{{ patient.edu_pathway }}</span></div>
+{% endif %}
+{% endblock %}

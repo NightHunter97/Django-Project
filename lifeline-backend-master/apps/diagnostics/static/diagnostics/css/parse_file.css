@@ -1,0 +1,12 @@
+.fa {
+    margin-right: 8px;
+}
+.hidden {
+    display: none;
+}
+
+.tools-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

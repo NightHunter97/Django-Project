@@ -1,0 +1,14 @@
+venv/
+*.pyc
+.idea/
+*.sqlite3
+__pycache__/
+.env
+media/
+staticfiles/
+*.swp
+/static
+celerybeat-schedule
+celerybeat.pid
+*.crt
+*.key

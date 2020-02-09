@@ -1,0 +1,19 @@
+{% extends 'reports/base_report.html' %}
+{% load i18n %}
+{% block report_specifications %}
+  <div class="underline content-header report bold">{% trans 'Medication informations' as report %}{{ report|upper }}</div>
+  {% if medications %}
+    <div>{% trans 'Medication Therapy' %}:</div>
+    <ul>
+      {% for medication in medications %}
+      <li class="arial">{{ medication.category }} {{ medication.quantity }} {{ medication.category.unit }} {{ medication.comment }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <span>
+      {% if not medications %}
+        {% trans 'No medication therapy was used' %}
+      {% endif %}
+    </span>
+  {% endif %}
+{% endblock %}

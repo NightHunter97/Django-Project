@@ -1,0 +1,3 @@
+web: daphne -b 0.0.0.0 -p $PORT lifeline.asgi:application
+worker: celery -A lifeline worker -l info
+beat: celery -A lifeline beat -l info

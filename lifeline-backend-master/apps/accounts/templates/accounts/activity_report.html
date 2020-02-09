@@ -1,0 +1,113 @@
+{% load i18n %}
+<html lang="en">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<head>
+  <style>
+    @font-face { font-family: Arial; src: url(fonts/Roboto-Regular.ttf);}
+    @page {
+        margin: 2cm;
+        @frame footer_frame {
+            -pdf-frame-content: footer_content;
+            left: 50pt; width: 512pt; top: 772pt; height: 30pt;
+        }
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    .content-header {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .concerns {
+        margin-top: 30px;
+    }
+    .concerns-item {
+        margin: 0;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    .footer {
+       text-align: right;
+       font-size: 12px;
+       color: gray;
+    }
+    .type-title {
+        font-size: 24px;
+        color: blue;
+    }
+    body {
+        font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+     <tr>
+        <th style="text-align:left"><img width="400" src="{{ logo }}" alt="logo"></th>
+        <th style="text-align:right">
+            <div  class="underline type-title">{{ type|upper }}</div>
+            <span>{{ created }}</span>
+        </th>
+     </tr>
+  </table>
+
+  {% if user.username != user.email %}
+      <div><span class="bold">{% trans 'User Name' %}:</span> {{ user.username }}</div>
+  {% endif %}
+  <div><span class="bold">{% trans 'User Email' %}:</span> {{ user.email }}</div>
+  {% if user.phone %}
+      <div><span class="bold">{% trans 'User Mobile' %}:</span> {{ user.phone }}</div>
+  {% endif %}
+  {% if user.line %}
+      <div><span class="bold">{% trans 'User Direct line' %}:</span> {{ user.line }}</div>
+  {% endif %}
+  {% if user.inami %}
+      <div><span class="bold">{% trans 'INAMI number (accredited number for healthcare professional)' %}:</span> {{ user.inami }}</div>
+  {% endif %}
+  {% if user.gender %}
+      <div><span class="bold">{% trans 'Gender' %}:</span> {{ user.get_gender_display }}</div>
+  {% endif %}
+  {% if user.language %}
+      <div><span class="bold">{% trans 'Language' %}:</span> {{ user.get_language_display }}</div>
+  {% endif %}
+  <br>
+
+  <p class="underline concerns bold">{% trans 'User Application activity' %}:</p>
+
+  {% if not activities %}
+    <p>{% trans 'No activity was found for this user.' %}</p>
+  {% endif %}
+
+  {% for activity in activities %}
+    <div style="margin-top:12px;"><strong>{{ activity.created }}</strong> -
+        {% if activity.patient %}{% trans 'Patient' %}: <i>{{ activity.patient }}</i> - {% endif %}
+        {% if activity.file_id %}{% trans 'File' %}: <i>{{ activity.file_id }}</i> - {% endif %}
+        {% trans 'Action' %}: <i>{{ activity.activity }}</i>
+        <div style="margin-top:0px;">{% if activity.data %}{% trans 'Sent data' %}: <i style="font-family: Arial;">{{ activity.data }}</i>{% endif %}</div>
+    </div>
+  {% endfor %}
+  <br>
+  <p class="underline concerns bold">{% trans 'Admin Interface Actions' %}:<p>
+
+  {% if not admin %}
+    <p>{% trans 'No activity in admin interface was found for this user.' %}</p>
+  {% endif %}
+
+  {% for action in admin %}
+    <div style="margin-top:10px;"><strong>{{ action.0 }}</strong> -
+        {% trans 'Application' %}: <i>{{ action.1 }}</i> -
+        {% if action.2 %}{% trans 'Object' %}: <i>{{ action.2 }}</i>{% endif %}
+        {% trans 'Action' %}: <i>{{ action.3 }}</i>
+    </div>
+  {% if action.4 %}<div>Sent data: <i>{{ action.4 }}</i></div>{% endif %}
+  {% endfor %}
+
+  <div id="footer_content" class="footer">
+    <br>
+    {% trans 'Activity report' %}: {{ user.username }} <pdf:pagenumber>/<pdf:pagecount>
+  </div>
+</body>
+</html>

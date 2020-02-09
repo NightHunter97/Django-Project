@@ -1,0 +1,18 @@
+{% extends 'reports/base_report.html' %}
+{% load i18n %}
+{% block report_specifications %}
+  <div class="underline content-header report bold">{% trans 'Evaluation informations' as report %}{{ report|upper }}</div>
+    {% for eval, res in evals.items %}
+        <div class="arial">{{ eval }}:</div>
+            <ul>
+                {% for questions in res %}
+                    {% if questions.value %}
+                        <li class="arial">{{ questions.question }}: {{ questions.value }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+    {% endfor %}
+    {% if not evals.items %}
+        <span>{% trans 'No evaluations were included' %}</span>
+    {% endif %}
+{% endblock %}

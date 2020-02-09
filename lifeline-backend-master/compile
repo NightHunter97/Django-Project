@@ -1,0 +1,1 @@
+EMAIL_ENV=submit://lifeline.product.care@gmail.com:asQJFNzZ@smtp.gmail.com SECRET_KEY=key ./manage.py compilemessages -l fr -l nl

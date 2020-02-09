@@ -1,0 +1,49 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls admin_static admin_modify material_form material_admin %}
+
+{% block extrahead %}
+{{ block.super }}
+<script src="{% static 'accounts/js/email-invitation.js' %}"></script>
+<script src="{% static 'accounts/js/select-patient.js' %}"></script>
+{% endblock %}
+
+{% block object-tools-items %}
+{% if perms.accounts.view_adminactivity and perms.accounts.view_activity %}
+    <li class="collection-item upload-user">
+        <p><strong>{% trans 'Select patient' %}</strong></p>
+        <input type="text" class="patient-input" placeholder="{% trans 'Filter patients by name' %}">
+        <select class="select-patient">
+            <option class="user-item" value="">---------</option>
+            {% for patient in patients %}
+                <option class="user-item" value="{{ patient.pk }}">{{ patient.full_name }}</option>
+            {% endfor %}
+        </select>
+        <p><strong>{% trans 'Select start date' %}</strong></p>
+        <input class="vDateField start-activity" data-date-format="Y-m-d" data-form-control="date" size="10" type="text" placeholder="YYYY-MM-DD">
+        <p><strong>{% trans 'Select end date' %}</strong></p>
+        <input class="vDateField end-activity" data-date-format="Y-m-d" data-form-control="date" size="10" type="text" placeholder="YYYY-MM-DD">
+        <form>
+            <small class="error" style="display:none;">{% trans 'End date should be later than start date.' %}</small>
+        </form>
+        <div class="upload-button-block" style="padding-bottom: 55px; text-align: center">
+            <p><strong>{% trans 'Download activity for selected user' %}</strong></p>
+            <a href="/{{ LANGUAGE_CODE }}{% url 'accounts:user_activity' %}?user={{ original.pk }}"
+                class="waves-effect waves-light btn btn-primary white-text user-activity">{% trans "Download activity" %}
+            </a>
+        </div>
+    </li>
+{% endif %}
+<li class="collection-item">
+    {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+    <a href="{% add_preserved_filters history_url %}" class="historylink"><i class="left material-icons">history</i> {% trans "History" %}</a>
+</li>
+<li class="collection-item" style="padding-bottom: 25px;padding-top: 25px; text-align: center">
+    <p><strong>{% trans 'Send invitation email to' %} {{ adminform.form.instance.email }}</strong></p>
+    <button class="waves-effect waves-light btn btn-primary white-text send-email"
+            data-url="{% url 'accounts:rest_password_reset' %}"
+            data-language="{{ LANGUAGE_CODE }}"
+            data-email="{{ adminform.form.instance.email }}">{% trans "Send email" %}
+    </button>
+</li>
+
+{% endblock %}

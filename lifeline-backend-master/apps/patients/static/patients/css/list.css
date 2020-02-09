@@ -1,0 +1,13 @@
+.tools-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.file-btn {
+    background: #4caf50;
+}
+
+.hidden {
+    display: none;
+}

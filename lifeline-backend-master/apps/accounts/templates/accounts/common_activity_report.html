@@ -1,0 +1,89 @@
+{% load i18n %}
+<html lang="en">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<head>
+  <style>
+    @font-face { font-family: Arial; src: url(fonts/Roboto-Regular.ttf);}
+    @page {
+        margin: 2cm;
+        @frame footer_frame {
+            -pdf-frame-content: footer_content;
+            left: 50pt; width: 512pt; top: 772pt; height: 30pt;
+        }
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    .content-header {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .concerns {
+        margin-top: 30px;
+    }
+    .concerns-item {
+        margin: 0;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    .footer {
+       text-align: right;
+       font-size: 12px;
+       color: gray;
+    }
+    .type-title {
+        font-size: 24px;
+        color: blue;
+    }
+    body {
+        font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+     <tr>
+        <th style="text-align:left"><img width="400" src="{{ logo }}" alt="logo"></th>
+        <th style="text-align:right">
+            <div  class="underline type-title">{{ type|upper }}</div>
+            <span>{{ created }}</span>
+        </th>
+     </tr>
+  </table>
+  {% if all %}
+    <h1 class="concerns">{% trans 'Report displays data for all time' %}</h1>
+  {% else %}
+    <h1 class="concerns">{% trans 'Report displays data' %} {% trans 'from' %} {{ prev }} {% trans 'to' %} {{ next }}</h1>
+  {% endif %}
+
+
+  {% if block == 'created' or block == 'all-info' %}
+    <p class="underline concerns bold">{% trans 'Files were created' %}: {{ active_files.count }}</p>
+    {% for file in active_files %}
+      <div>{{ forloop.counter }}) {% trans 'Patient' %}: {{file.patient}} {% trans 'File' %}: {{ file }}, {% trans 'admission' %}: {{ file.created.date }}</div>
+    {% endfor %}
+  {% endif %}
+
+  {% if block == 'archived' or block == 'all-info' %}
+    <p class="underline concerns bold">{% trans 'Files were archived' %}: {{ archived_files.count }}</p>
+    {% for file in archived_files %}
+      <div>{{ forloop.counter }}) {% trans 'Patient' %}: {{file.patient}} {% trans 'File' %}: {{ file }}, {% trans 'released' %}: {{ file.closed_since }}</div>
+    {% endfor %}
+  {% endif %}
+
+  {% if block == 'active-users' or block == 'all-info' %}
+    <p class="underline concerns bold">{% trans 'Active users' %}: {{ users.count }}</p>
+    {% for user in users %}
+      <div>{{ forloop.counter }}) {{ user }}</div>
+    {% endfor %}
+  {% endif %}
+
+  <div id="footer_content" class="footer">
+    <br>
+    {% trans 'Common Activity report, created by' %}: {{ user.username }} <pdf:pagenumber>/<pdf:pagecount>
+  </div>
+</body>
+</html>

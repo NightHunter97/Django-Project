@@ -1,0 +1,18 @@
+.collection {
+    margin-bottom: 0px;
+}
+
+.download-patient {
+    margin-top: 3px;
+}
+
+.material-icons,
+.fa-refresh {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: center;
+}

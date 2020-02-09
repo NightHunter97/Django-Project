@@ -1,0 +1,129 @@
+{% load i18n %}
+<html lang="en">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<head>
+  <style>
+    @font-face { font-family: Arial; src: url(fonts/Roboto-Regular.ttf);}
+    @page {
+        margin: 2cm;
+        @frame footer_frame {
+            -pdf-frame-content: footer_content;
+            left: 50pt; width: 512pt; top: 772pt; height: 30pt;
+        }
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    .content-header {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .concerns {
+        margin-top: 30px;
+    }
+    .concerns-item {
+        margin: 0;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    .footer {
+       text-align: right;
+       font-size: 12px;
+       color: gray;
+    }
+    .type-title {
+        font-size: 24px;
+        color: blue;
+    }
+    .arial {
+      font-family: Arial
+    }
+    body {
+        font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+     <tr>
+        <th style="text-align:left"><img width="400" src="{{ logo }}" alt="logo"></th>
+        <th style="text-align:right">
+            <div  class="underline type-title">{{ type|upper }}</div>
+            <span>{{ created }}</span>
+        </th>
+     </tr>
+  </table>
+
+  <div class="underline concerns bold">{% trans 'Concerns' %}:</div>
+  {% if patient.full_name %}
+    <div><span class="bold">{% trans 'Patient Name' %}:</span> <span class="arial">{{ patient.full_name}}</span></div>
+  {% endif %}
+  {% if file_created %}
+    <div><span class="bold">{% trans 'Hospitalized since' %}:</span> {{ file_created }}</div>
+  {% endif %}
+  <div><span class="bold">{% trans 'Actual unit' %}:</span> {{ unit }} </div>
+  {% if bed %}
+    <div><span class="bold">{% trans 'Bed' %}:</span> {{ bed }} </div>
+  {% endif %}
+  <div class="underline content-header info bold">{% trans 'Patient informations' as info %}{{ info|upper }}</div>
+  {% if patient.full_name %}
+    <div>{% trans 'Patient Name' %}: <span class="arial">{{ patient.full_name }}</span></div>
+  {% endif %}
+  {% if patient.get_document_type_display %}
+    <div>{% trans 'Identity Document Type' %}: <span class="arial">{{ patient.get_document_type_display }}</span></div>
+  {% endif %}
+  {% if patient.birth_date %}
+    <div>{% trans 'Birth Date' %}: <span class="arial">{{ patient.birth_date }}</span></div>
+  {% endif %}
+  {% if patient.get_gender_display %}
+    <div>{% trans 'Gender' %}: <span class="arial">{{ patient.get_gender_display }}</span></div>
+  {% endif %}
+  {% if patient.get_nationality_display %}
+    <div>{% trans 'Nationality' %}: <span class="arial">{{ patient.get_nationality_display }}</span></div>
+  {% endif %}
+  {% if patient.get_country_display %}
+    <div>{% trans 'Country' %}: <span class="arial">{{ patient.get_country_display }}</span></div>
+  {% endif %}
+  {% if patient.address %}
+    <div>{% trans 'Address' %}: <span class="arial">{{ patient.address }}</span></div>
+  {% endif %}
+  {% if patient.post_code %}
+    <div>{% trans 'Postcode' %}: <span class="arial">{{ patient.post_code }}</span></div>
+  {% endif %}
+  {% if patient.phone_number %}
+    <div>{% trans 'Phone number' %}: <span class="arial">{{ patient.phone_number }}</span></div>
+  {% endif %}
+  {% if patient.email %}
+    <div>{% trans 'E-mail address' %}: <span class="arial">{{ patient.email }}</span></div>
+  {% endif %}
+  {% if patient.general_practitioner %}
+    <div>{% trans 'General Practitioner' %}: <span class="arial">{{ patient.general_practitioner }}</span></div>
+  {% endif %}
+
+  {% block report_specifications %}
+  {% endblock %}
+
+  {% if comment_lines %}
+    <div class="underline content-header evolution bold">{% trans 'Current evolution' as evolution %}{{ evolution|upper }}</div>
+    {% for comment in comment_lines %}
+      <div class="arial">{{ comment }}</div>
+    {% endfor %}
+  {% endif %}
+
+  {% if user.phone %}
+    <br>
+    {% trans 'You can reach me at the phone number' %} {{ user.phone }}
+  {% endif %}
+  <br>
+  <div>{% trans 'Remaining at your disposal for any further information, please receive the assurance of ourhighest consideration.' %}</div>
+  <div style="text-align:right" class="arial">{{ username }}</div>
+
+  <div id="footer_content" class="footer arial">
+    <br>
+    {{ type }}: {{ patient.full_name }} <pdf:pagenumber>/<pdf:pagecount>
+  </div>
+</body>
+</html>

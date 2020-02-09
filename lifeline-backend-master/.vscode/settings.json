@@ -1,0 +1,7 @@
+{
+  "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleArgs": ["--max-line-length"],
+  "python.linting.pylintArgs": ["--disable=C0111,broad-except,bad-indentation,invalid-name,no-self-use", "--load-plugins=pylint_django"],
+  "python.linting.pylintEnabled": true,
+}

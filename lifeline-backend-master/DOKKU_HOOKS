@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+app_hooks_post_deploy() {
+  # available global vars: $APP
+  local DOKKU_WEB_CID=$(get_app_container_ids $APP web | awk '{ print $1 }') # the first available
+  local DOKKU_APP_LISTEN_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $DOKKU_WEB_CID)
+  local DOKKU_APP_LISTEN_PORT=5000
+
+  dokku_log_verbose "Restarting an app ambassador for Python backend"
+
+  local AMBASSADOR="dokku.backendapp.ambassador"
+  if [[ $(docker ps -a | grep " ${AMBASSADOR}$") ]]; then
+    docker stop $AMBASSADOR && docker rm $AMBASSADOR
+  else
+    dokku_log_verbose "No such container: $AMBASSADOR"
+  fi
+  docker run -d --name $AMBASSADOR -p 172.17.0.1:4444:$DOKKU_APP_LISTEN_PORT svendowideit/ambassador $DOKKU_APP_LISTEN_IP $DOKKU_APP_LISTEN_PORT
+}

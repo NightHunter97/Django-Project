@@ -1,0 +1,112 @@
+{% extends "brusafe/authentication.html" %}
+{% load i18n admin_urls admin_static admin_modify material_form material_admin %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'brusafe/css/authentication.css' %}">
+  <script type="text/javascript" src="{% static 'brusafe/js/api.js' %}" defer></script>
+{% endblock %}
+
+{% block button_set %}
+<div class="center">
+  <a class="waves-effect waves-light btn btn-primary white-text" href="{% url 'admin:brusafe_connector_changelist' %}">{%
+    trans 'Back' %}</a>
+  <a class="waves-effect waves-light btn btn-primary white-text"
+     href="{% url 'admin:brusafe_connector_changelist' %}?brusafe=logout">{% trans 'Logout' %}</a>
+</div>
+{% endblock %}
+
+{% block main_content %}
+<div class="content">
+  <div class="left-panel">
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{% trans 'Medical Relation Assertion' %}</span>
+        <label for="register-number-assertion">{% trans 'National Registry Number' %}</label>
+        <input type="text" class="national-registry-number" id="register-number-assertion">
+        <a class="waves-effect waves-light btn btn-primary white-text send"
+           data-url="{% url 'brusafe:medical_relation_assertion' %}"
+           data-token="{{token}}">
+          {% trans 'Get' %}
+        </a>
+        <div class="response"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{% trans 'Medical Relation State' %}</span>
+        <label for="register-number-state">{% trans 'National Registry Number' %}</label>
+        <input type="text" class="national-registry-number" id="register-number-state">
+        <a class="waves-effect waves-light btn btn-primary white-text send"
+           data-url="{% url 'brusafe:medical_relation_state' %}"
+           data-token="{{token}}">
+          {% trans 'Get' %}
+        </a>
+        <div class="response"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{% trans 'Patient Assertion' %}</span>
+        <a class="waves-effect waves-light btn btn-primary white-text send"
+           data-url="{% url 'brusafe:patient_assertion' %}"
+           data-token="{{token}}">
+          {% trans 'Get' %}
+        </a>
+        <div class="response"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{% trans 'Medical Relation Confirm' %}</span>
+        <label for="register-number-confirm">{% trans 'National Registry Number' %}</label>
+        <input type="text" class="national-registry-number" id="register-number-confirm">
+        <label for="register-code">{% trans 'Code' %}</label>
+        <input type="text" class="code" id="register-code">
+        <a class="waves-effect waves-light btn btn-primary white-text send"
+           data-url="{% url 'brusafe:medical_relation_confirm' %}"
+           data-token="{{token}}">
+          {% trans 'Put' %}
+        </a>
+        <div class="response"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{% trans 'Medical Relation Request' %}</span>
+        <label for="register-number-request">{% trans 'National Registry Number' %}</label>
+        <input type="text" class="national-registry-number" id="register-number-request">
+        <a class="waves-effect waves-light btn btn-primary white-text send"
+           data-url="{% url 'brusafe:medical_relation_request' %}"
+           data-token="{{token}}">
+          {% trans 'Put' %}
+        </a>
+        <div class="response"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="right-panel">
+    <div class="card">
+      <div class="card-content">
+        <strong class="status-block">
+          <i class="material-icons green-text">check_circle</i>
+          <span>{% trans 'Authentication successful' %}</span>
+        </strong>
+        <hr>
+        <div class="center">
+          <a class="waves-effect waves-light btn btn-primary white-text"
+             href="{% url 'admin:brusafe_connector_changelist' %}">{% trans 'Back' %}</a>
+          <a class="waves-effect waves-light btn btn-primary white-text"
+             href="{% url 'admin:brusafe_connector_changelist' %}?brusafe=logout">{% trans 'Logout' %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

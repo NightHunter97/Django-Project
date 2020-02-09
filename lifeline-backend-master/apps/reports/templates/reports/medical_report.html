@@ -1,0 +1,49 @@
+{% extends 'reports/base_report.html' %}
+{% load i18n %}
+{% block report_specifications %}
+  <div class="underline content-header report bold">{% trans 'Medical informations' as report %}{{ report|upper }}</div>
+    {% if diagnostics %}
+      <div>{% trans 'Diagnostics' %}: </div>
+      <ul>
+        {% for diagnostic in diagnostics %}
+          <li class="arial">{{ diagnostic }} - {{ diagnostic.description }} </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if vitals.items %}
+      <div>{% trans 'Last Vital Parameters' %}:</div>
+      <ul>
+        {% for vital, value in vitals.items %}
+          <li class="arial">{{ vital }} - {{ value }}; </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if wounds %}
+      <div>{% trans 'Active Wounds' %}:</div>
+      <ul>
+        {% for wound in wounds %}
+        <li class="arial">{{ wound }} - {{ wound.created.date }} - {{ wound.localization }} - {{ wound.get_type_display }}
+            - {{ wound.evolution_set.last.width }}cm x {{ wound.evolution_set.last.height }}cm {{ wound.comment|default_if_none:"" }} </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if medications %}
+      <div>{% trans 'Medication Therapy' %}:</div>
+      <ul>
+        {% for medication in medications %}
+          <li class="arial">{{ medication.category }} {{ medication.quantity }} {{ medication.category.unit }} {{ medication.comment }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if tasks %}
+      <div>{% trans 'Planned Tasks' %}:</div>
+      <ul>
+        {% for task in tasks %}
+          <li class="arial">{{ task.task|default_if_none:"" }}{{ task.prescription.category|default_if_none:"" }} {{ task.comment }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if not diagnostics and not vitals.items and not wounds and not medications and not tasks %}
+      <span>{% trans 'No medical data was included' %}</span>
+    {% endif %}
+{% endblock %}

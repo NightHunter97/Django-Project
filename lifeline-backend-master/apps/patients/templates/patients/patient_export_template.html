@@ -1,0 +1,324 @@
+{% load i18n %}
+<html lang="en">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<head>
+  <style>
+    @font-face { font-family: Arial; src: url(fonts/Roboto-Regular.ttf);}
+    @page {
+        margin: 2cm;
+        @frame footer_frame {
+            -pdf-frame-content: footer_content;
+            left: 50pt; width: 512pt; top: 772pt; height: 30pt;
+        }
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    .content-header {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .concerns {
+        margin-top: 30px;
+    }
+    .concerns-item {
+        margin: 0;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    .footer {
+       text-align: right;
+       font-size: 12px;
+       color: gray;
+    }
+    .type-title {
+        font-size: 24px;
+        color: blue;
+    }
+    .arial {
+      font-family: Arial
+    }
+    body {
+        font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+    <table>
+     <tr>
+        <th style="text-align:left"><img width="400" src="{{ logo }}" alt="logo"></th>
+        <th style="text-align:right">
+            <div  class="underline type-title">{{ type|upper }}</div>
+            <span>{{ export_date }}</span>
+        </th>
+     </tr>
+    </table>
+
+    <div class="underline content-header info bold">{% trans 'Patient Export' as info %}{{ info|upper }}</div>
+    <br>
+    <hr size=5px color=black noshade />
+
+    <div class="info bold">{% trans 'Patient Info' as info %}{{ info|upper }}</div>
+    <div><span class="bold">{% trans 'Created' %}:</span> {{ patient.created|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Last modified' %}:</span> {{ patient.modified|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Patient ID' %}:</span> {{ patient.patient_id|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Full name' %}:</span> <span class="arial">{{ patient.full_name|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Identity Card Number' %}:</span> <span class="arial">{{ patient.card_number|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Identity Card Type' %}:</span> {{ patient.get_card_type_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Identity Document Type' %}:</span> {{ patient.get_document_type_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Language' %}:</span> {{ patient.get_language_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Birth Date' %}:</span> {{ patient.birth_date|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Gender' %}:</span> {{ patient.get_gender_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Marital Status' %}:</span> {{ patient.get_marital_status_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Partners Name' %}:</span> <span class="arial">{{ patient.partner_name|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Nationality' %}:</span> {{ patient.get_nationality_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Country' %}:</span> {{ patient.get_country_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Address' %}:</span> <span class="arial">{{ patient.address|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Post Code' %}:</span> <span class="arial">{{ patient.post_code|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'National Register' %}:</span> <span class="arial">{{ patient.national_register|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Foreign Register' %}:</span> <span class="arial">{{ patient.foreign_register|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Phone Number' %}:</span> <span class="arial">{{ patient.phone_number|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'E-mail Address' %}:</span> <span class="arial">{{ patient.email|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Confidential(VIP)' %}:</span> {{ patient.is_vip|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Religion' %}:</span> {{ patient.get_religion_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'General Practitioner' %}:</span> <span class="arial">{{ patient.general_practitioner|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Note' %}:</span> <span class="arial">{{ patient.note|default:" - "  }}</span></div>
+    <br>
+    <hr size=2px color=gray noshade />
+    <div class="bold">{% trans 'Health Insurance Info' as info %}{{ info|upper }}</div>
+    <div><span class="bold">{% trans 'Health Insurance Policy' %}:</span> {{ patient.get_insurance_policy_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Policy Holder Name' %}:</span> <span class="arial">{{ patient.policy_holder|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Beneficiary ID' %}:</span> <span class="arial">{{ patient.beneficiary_id|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Beneficiary occupation' %}:</span> {{ patient.get_beneficiary_occupation_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Heading Code HC1/HC2' %}:</span> {{ patient.get_heading_code_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Employed/Unemployed' %}:</span> {{ patient.is_employed|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Dependants' %}:</span> {{ patient.get_dependants_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Authorised Third Party' %}:</span> {{ patient.is_third_party_auth|default:" - "  }}</div>
+    <br>
+    <hr size=2px color=gray noshade />
+    <div class="bold">{% trans 'Social Info' as info %}{{ info|upper }}</div>
+    <div><span class="bold">{% trans 'Federal Disability Recognition' %}:</span> <span class="arial">{{ patient.disability_recognition|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Regional Disability Recognition' %}:</span> <span class="arial">{{ patient.regional_recognition|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Disability Assessment points' %}:</span> <span class="arial">{{ patient.disability_assessment_points|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Income origin' %}:</span> {{ patient.get_income_origin_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Income amount' %}:</span> <span class="arial">{{ patient.income_amount|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Expenses' %}:</span> <span class="arial">{{ patient.expenses|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Debts' %}:</span> <span class="arial">{{ patient.debts|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Financial Power of Attorney' %}:</span> <span class="arial">{{ patient.attorney|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Financial Management' %}:</span> <span class="arial">{{ patient.management|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Living Environment ad Admission' %}:</span> {{ patient.get_admission_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Current Occupation' %}:</span> <span class="arial">{{ patient.occupation|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Professional Career' %}:</span> <span class="arial">{{ patient.career|default:" - "  }}</span></div>
+    <div><span class="bold">{% trans 'Education' %}:</span> {{ patient.get_education_display|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Education Pathway' %}:</span> {{ patient.get_edu_pathway_display|default:" - "  }}</div>
+
+    <br>
+    <hr size=5px color=black noshade />
+    <div class="bold">{% trans 'Emergency contact information' as info %}{{ info|upper }}</div>
+    {% if not emergency_contact.all %}
+        <div>{% trans 'No emergency contacts' %}</div>
+    {% endif %}
+    {% for contact in emergency_contact.all %}
+        <div><span class="bold">{% trans 'Record created' %}:</span> {{ contact.created|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ contact.modified|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Relation' %}:</span> {{ contact.relation|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Name' %}:</span> <span class="arial">{{ contact.name|default:" - "  }}</span></div>
+        <div><span class="bold">{% trans 'Phone' %}:</span> {{ contact.phone|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Is trusted' %}:</span> {{ contact.trusted|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'E-mail Address' %}:</span> <span class="arial">{{ contact.email|default:" - "  }}</span></div>
+        <div><span class="bold">{% trans 'Deleted Contact' %}:</span> {{ contact.deleted|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Reason for deletion' %}:</span> <span class="arial">{{ contact.reason|default:" - "  }}</span></div>
+        <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ contact.creator|default:" - "  }}</span></div>
+
+        <hr size=2px color=gray noshade />
+    {% endfor %}
+
+    {% for file in files.all %}
+        <br>
+        <hr size=5px color=black noshade />
+        <div class="bold">{% trans 'File information' as info %}{{ info|upper }}</div>
+        <div><span class="bold">{% trans 'Record created' %}:</span> {{ file.created|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ file.modified|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'File ID' %}:</span> {{ file.file_id|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Unit' %}:</span> <span class="arial">{{ file.unit|default:" - "  }}</span></div>
+        <div><span class="bold">{% trans 'Closed since' %}:</span> {{ file.closed_since|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Released from' %}:</span> {{ file.temporary_released_start|default:" - "  }}</div>
+        <div><span class="bold">{% trans 'Released until' %}:</span> {{ file.temporary_released_end|default:" - "  }}</div>
+    <div><span class="bold">{% trans 'Assigned Patients Bed' %}:</span> <span class="arial">{{ file.bed|default:" - "  }}</span></div>
+        <div><span class="bold">{% trans 'Status' %}:</span> {{ file.status|default:" - "  }}</div>
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Journal information' as info %}{{ info|upper }}</div>
+        {% for journal in file.journal_set.all %}
+            <div><span class="bold">{% trans 'Record created' %}:</span> {{ journal.created|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ journal.modified|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Note header' %}:</span> <span class="arial">{{ journal.name|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Content' %}:</span> <span class="arial">{{ journal.content|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ journal.user|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Note type' %}:</span> {{ journal.get_type_display|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Note tag' %}:</span> {{ journal.get_tag_display|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'User Action' %}:</span> {{ journal.get_action_display|default:" - "  }}</div>
+            <br>
+        {% endfor %}
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Diagnostic information' as info %}{{ info|upper }}</div>
+        {% for diagnostic in file.diagnostic_set.all %}
+            <div><span class="bold">{% trans 'Record created' %}:</span> {{ diagnostic.created|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ diagnostic.modified|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Diagnose' %}:</span> {{ diagnostic.diagnose|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Health Screening' %}:</span> {{ diagnostic.screening|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ diagnostic.creator|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Description' %}:</span> <span class="arial">{{ diagnostic.description|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Type' %}:</span> {{ diagnostic.get_type_display|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Is allergy' %}:</span> {{ diagnostic.is_allergy|default:" - "  }}</div>
+
+            <hr size=2px color=gray noshade />
+        {% endfor %}
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Prescription information' as info %}{{ info|upper }}</div>
+        {% for prescription in file.prescription_set.all %}
+            <div><span class="bold">{% trans 'Record created' %}:</span> {{ prescription.created|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ prescription.modified|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ prescription.creator|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Editor' %}:</span> <span class="arial">{{ prescription.editor|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Comment' %}:</span> <span class="arial">{{ prescription.comment|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Quantity' %}:</span> {{ prescription.quantity|default:" - "  }} {{ prescription.category.unit|default:""  }}</div>
+            <div><span class="bold">{% trans 'Maximum posology per day (Co/day)' %}:</span> {{ prescription.max_quantity|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Active' %}:</span> {{ prescription.is_active|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Category' %}:</span> {{ prescription.category|default:" - "  }}</div>
+
+            <hr size=2px color=gray noshade />
+            {% if prescription.schedule_set %}
+            <div class="bold">{% trans 'Prescription schedule' as info %}{{ info|upper }}</div>
+            {% for schedule in prescription.schedule_set.all %}
+                <div class="arial">{{ schedule.date }} {% if schedule.slot %}{{ schedule.get_time_slot }}{% else %}{{ schedule.time }}{% endif %}:
+                    {% if schedule.get_status_display %}{{ schedule.get_status_display }}{% else %}{% trans 'Open' %}{% endif %} - {{ schedule.creator }}</div>
+            {% endfor %}
+            <hr size=2px color=gray noshade />
+            {% endif %}
+        {% endfor %}
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Vitals information' as info %}{{ info|upper }}</div>
+
+        <table style="border: 1px solid lightgray;">
+            <tr>
+                {% for header in headers %}
+                    <th style="font-size: small; text-align: center; padding: 5px 2px 2px;">{{ header }}</th>
+                {% endfor %}
+            </tr>
+            {% for key, vital_list in file_to_vitals.items %}
+                {% if key == file.file_id %}
+                    {% for vital in vital_list %}
+                        <tr style="font-size: small; text-align: left;">
+                            {% for key, value in vital.items %}
+                                 <td style="font-size: small; text-align: center; padding: 5px 2px 2px;">{{ value|default:" - " }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </table>
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Wounds information' as info %}{{ info|upper }}</div>
+        {% for wound in file.wound_set.all %}
+            <div><span class="bold">{% trans 'Record created' %}:</span> {{ wound.created|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ wound.modified|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Wound name' %}:</span> <span class="arial">{{ wound.name|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Wound type' %}:</span> {{ wound.get_type_display|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Localization' %}:</span> {{ wound.localization|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Cured' %}:</span> {{ wound.is_cured|default:" - "  }}</div>
+            {% if wound.comment %}<div><span class="bold">{% trans 'Comment' %}:</span> <span class="arial">{{ wound.comment }}</span></div>{% endif %}
+            <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ wound.user|default:" - "  }}</span></div>
+
+            <hr size=2px color=gray noshade />
+
+            {% if wound.evolution_set %}
+            <div class="bold">{% trans 'Evolution' as info %}{{ info|upper }}</div>
+            {% for evolution in wound.evolution_set.all %}
+                <div><span class="bold">{% trans 'Width' %}:</span> {{ evolution.width|default:" - "  }}</div>
+                <div><span class="bold">{% trans 'Height' %}:</span> {{ evolution.height|default:" - "  }}</div>
+                <div><span class="bold">{% trans 'Record created' %}:</span> {{ evolution.created|default:" - "  }}</div>
+                <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ evolution.user|default:" - "  }}</span></div>
+
+            {% endfor %}
+            <hr size=2px color=gray noshade />
+            {% endif %}
+
+            {% if wound.schedule_set %}
+            <div class="bold">{% trans 'Treatment plan' as info %}{{ info|upper }}</div>
+            {% for schedule in wound.schedule_set.all %}
+                <div class="arial">{{ schedule.date }} {% if schedule.slot %}{{ schedule.get_time_slot }}{% else %}{{ schedule.time }}{% endif %}:
+                    {% if schedule.get_status_display %}{{ schedule.get_status_display }}{% else %}{% trans 'Open' %}{% endif %} - {{ schedule.creator }}</div>
+            {% endfor %}
+            <hr size=2px color=gray noshade />
+            {% endif %}
+
+        {% endfor %}
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Tasks information' as info %}{{ info|upper }}</div>
+        {% for schedule in file.schedules.all %}
+            {% if schedule.task %}
+                <div><span class="bold">{% trans 'Task name' %}:</span> {{ schedule.task.name|default:" - "  }}</div>
+                <div><span class="bold">{% trans 'Task Date' %}:</span> {{ schedule.date|default:" - "  }}</div>
+                <div><span class="bold">{% trans 'Task Time' %}:</span> {% if schedule.slot %}{{ schedule.get_time_slot }}{% else %}{{ schedule.time|default:" - "  }}{% endif %}</div>
+                <div><span class="bold">{% trans 'Team Members' %}:</span>
+                    <span class="arial">
+                         {% if not schedule.members.all  %}
+                            -
+                         {% endif %}
+                         {% for member in schedule.members.all %} {{ member }}{% if not forloop.last %}, {% endif %}{% endfor %}
+                    </span>
+                </div>
+                <div><span class="bold">{% trans 'Comment' %}:</span> <span class="arial">{{ schedule.comment|default:" - " }}</span></div>
+                <div><span class="bold">{% trans 'Task Status' %}:</span> {{ schedule.get_status_display|default:_('Open') }}</div>
+                <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ schedule.creator|default:" - " }}</span></div>
+                <hr size=2px color=gray noshade />
+            {% endif %}
+        {% endfor %}
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Evaluations information' as info %}{{ info|upper }}</div>
+        {% for evaluation in file.evaluation_set.all %}
+            <div><span class="bold">{% trans 'Record created' %}:</span> {{ evaluation.created|default:" - "  }}</div>
+            <div>
+                <span class="bold">{% trans 'Evaluation Name' %}:</span>
+                <span class="arial">
+                    {{ evaluation.survey_type|default:""  }} {% if not evaluation.survey_type %}{{ evaluation.name|default:" - "  }}{% endif %}
+                </span>
+            </div>
+            <div><span class="bold">{% trans 'Surveys results' %}:</span> <span class="arial">{{ evaluation.survey_results_display|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Editable' %}:</span> {{ evaluation.is_editable|default:" - "  }}</div>
+
+            <hr size=2px color=gray noshade />
+        {% endfor %}
+
+        <hr size=2px color=black noshade />
+        <div class="bold">{% trans 'Reports information' as info %}{{ info|upper }}</div>
+        {% for report in file.report_set.all %}
+            <div><span class="bold">{% trans 'Record created' %}:</span> {{ report.created|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Record last edited' %}:</span> {{ report.modified|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Title' %}:</span> <span class="arial">{{ report.title|default:" - "  }}</span></div>
+            <div><span class="bold">{% trans 'Report type' %}:</span> {{ report.get_type_display|default:" - "  }}</div>
+            <div><span class="bold">{% trans 'Creator' %}:</span> <span class="arial">{{ report.creator|default:" - "  }}</span></div>
+
+            <hr size=2px color=gray noshade />
+        {% endfor %}
+
+    {% endfor %}
+
+    <div id="footer_content" class="footer arial">
+    <br>
+    {% trans 'Patient export' %}: {{ patient.full_name }} <pdf:pagenumber>/<pdf:pagecount>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,4570 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-03 09:58+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/_messages/apps.py:7 apps/_messages/models.py:23
+msgid "Messages"
+msgstr "Beskeder"
+
+#: apps/_messages/models.py:11
+msgid "Sender"
+msgstr "Sender"
+
+#: apps/_messages/models.py:14
+msgid "Message From"
+msgstr "Meddelelse fra"
+
+#: apps/_messages/models.py:15
+msgid "Message To"
+msgstr "Besked til"
+
+#: apps/_messages/models.py:16
+msgid "Receivers"
+msgstr "Receivere"
+
+#: apps/_messages/models.py:17 apps/_messages/models.py:39
+msgid "Subject"
+msgstr "Emne"
+
+#: apps/_messages/models.py:22
+msgid "Message"
+msgstr "Besked"
+
+#: apps/_messages/models.py:29 apps/_messages/models.py:33
+msgid "Message File"
+msgstr "Meddelelsesfil"
+
+#: apps/_messages/models.py:30 apps/diagnostics/models.py:12
+#: apps/medications/templates/medications/change_list_template.html:21
+#: apps/patients/templates/patients/change_list_template.html:53
+#: apps/tasks/templates/tasks/change_form.html:51
+msgid "Uploaded file"
+msgstr "Geupload bestand"
+
+#: apps/_messages/models.py:34
+msgid "Messages Files"
+msgstr "Berichten Bestanden"
+
+#: apps/_messages/models.py:42 apps/evaluations/models.py:15
+#: apps/vitals/models.py:11 apps/wounds/models.py:20
+msgid "Patient File"
+msgstr "Patiëntendossier"
+
+#: apps/_messages/models.py:43 apps/diagnostics/models.py:64
+#: apps/diagnostics/models.py:65 apps/evaluations/models.py:19
+#: apps/journal/models.py:12 apps/medications/models.py:24
+#: apps/medications/models.py:26 apps/medications/models.py:52
+#: apps/patients/models.py:168 apps/patients/models.py:189
+#: apps/patients/templates/patients/patient_export_template.html:135
+#: apps/patients/templates/patients/patient_export_template.html:161
+#: apps/patients/templates/patients/patient_export_template.html:175
+#: apps/patients/templates/patients/patient_export_template.html:188
+#: apps/patients/templates/patients/patient_export_template.html:239
+#: apps/patients/templates/patients/patient_export_template.html:249
+#: apps/patients/templates/patients/patient_export_template.html:283
+#: apps/patients/templates/patients/patient_export_template.html:311
+#: apps/reports/models.py:15 apps/tasks/models.py:70 apps/wounds/models.py:22
+#: apps/wounds/models.py:40
+msgid "Creator"
+msgstr "Schepper"
+
+#: apps/_messages/models.py:47
+msgid "About Patients Message"
+msgstr "Over het bericht van de patiënt"
+
+#: apps/_messages/models.py:48
+msgid "About Patients Messages"
+msgstr "Over berichten van patiënten"
+
+#: apps/_messages/serializers.py:42 apps/_messages/serializers.py:49
+msgid "You"
+msgstr "U"
+
+#: apps/_messages/serializers.py:57
+msgid "No receivers were chosen"
+msgstr "Er zijn geen ontvangers gekozen"
+
+#: apps/accounts/admin.py:24
+msgid "Personal info"
+msgstr "Persoonlijke informatie"
+
+#: apps/accounts/admin.py:25 apps/accounts/admin.py:54
+msgid "Permissions"
+msgstr "Machtigingen"
+
+#: apps/accounts/admin.py:26
+msgid "Important dates"
+msgstr "Belangrijke data"
+
+#: apps/accounts/admin.py:27 apps/units/apps.py:7 apps/units/models.py:11
+msgid "Units"
+msgstr "Eenheden"
+
+#: apps/accounts/admin.py:55
+msgid "Roles"
+msgstr "Rollen"
+
+#: apps/accounts/admin.py:56 apps/accounts/forms.py:13
+#: apps/accounts/forms.py:19
+msgid "Role"
+msgstr "Rol"
+
+#: apps/accounts/apps.py:7
+msgid "Accounts"
+msgstr "Accounts"
+
+#: apps/accounts/choices.py:4 apps/patients/choices.py:32
+msgid "Male"
+msgstr "Mannetje"
+
+#: apps/accounts/choices.py:5 apps/patients/choices.py:30
+msgid "Female"
+msgstr "Vrouw"
+
+#: apps/accounts/forms.py:14 apps/medications/models.py:10
+#: apps/medications/models.py:32 apps/patients/models.py:121
+#: apps/patients/templates/patients/patient_export_template.html:147
+#: apps/units/models.py:10
+msgid "Unit"
+msgstr "Eenheid"
+
+#: apps/accounts/forms.py:24 apps/brusafe/models.py:7 apps/brusafe/models.py:21
+#: apps/wish/models.py:10
+msgid "User"
+msgstr "Gebruiker"
+
+#: apps/accounts/mixins.py:48
+msgid "Added with fields"
+msgstr ""
+
+#: apps/accounts/mixins.py:54
+msgid "Changed with fields"
+msgstr ""
+
+#: apps/accounts/mixins.py:55
+msgid " from '"
+msgstr ""
+
+#: apps/accounts/mixins.py:56
+msgid "' to '"
+msgstr ""
+
+#: apps/accounts/mixins.py:64
+#, fuzzy
+#| msgid "Added"
+msgid "Added: "
+msgstr "Toegevoegd"
+
+#: apps/accounts/mixins.py:70
+msgid "Changed"
+msgstr ""
+
+#: apps/accounts/mixins.py:79
+#, fuzzy
+#| msgid "Deleted"
+msgid "Deleted: "
+msgstr "Verwijderde"
+
+#: apps/accounts/models.py:14 apps/accounts/models.py:46
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: apps/accounts/models.py:15
+msgid "Mobile"
+msgstr "Mobiel"
+
+#: apps/accounts/models.py:16
+msgid "Direct line"
+msgstr "Rechtstreekse verbinding"
+
+#: apps/accounts/models.py:18
+msgid "INAMI number (accredited number for healthcare professional) "
+msgstr ""
+"INAMI-nummer (geaccrediteerd nummer voor beroepsbeoefenaar in de "
+"gezondheidszorg)"
+
+#: apps/accounts/models.py:20
+#, fuzzy
+#| msgid "User langauge"
+msgid "User language"
+msgstr "Gebruikerstaal"
+
+#: apps/accounts/models.py:21
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: apps/accounts/models.py:23
+#: apps/accounts/templates/accounts/activity_report.html:71
+#: apps/patients/models.py:26
+#: apps/patients/templates/patients/patient_export_template.html:75
+#: apps/reports/templates/reports/base_report.html:82
+msgid "Gender"
+msgstr "Geslacht"
+
+#: apps/accounts/models.py:39
+msgid "user"
+msgstr "gebruiker"
+
+#: apps/accounts/models.py:40
+msgid "users"
+msgstr "gebruikers"
+
+#: apps/accounts/models.py:47
+msgid "User email"
+msgstr ""
+
+#: apps/accounts/models.py:48
+#, fuzzy
+#| msgid "Patient File"
+msgid "Patient file id"
+msgstr "Patiëntendossier"
+
+#: apps/accounts/models.py:49
+#, fuzzy
+#| msgid "Patient Name"
+msgid "Patient name"
+msgstr "Patient naam"
+
+#: apps/accounts/models.py:50 apps/accounts/models.py:65
+#, fuzzy
+#| msgid "Patient"
+msgid "Patient id"
+msgstr "Geduldig"
+
+#: apps/accounts/models.py:52
+msgid "Data"
+msgstr ""
+
+#: apps/accounts/models.py:55
+#, fuzzy
+#| msgid "User Action"
+msgid "User activity"
+msgstr "Gebruikersactie"
+
+#: apps/accounts/models.py:56
+#, fuzzy
+#| msgid "Personal Activities"
+msgid "Users activities"
+msgstr "Persoonlijke activiteiten"
+
+#: apps/accounts/models.py:63
+#, fuzzy
+#| msgid "Country"
+msgid "LogEntry"
+msgstr "Land"
+
+#: apps/accounts/models.py:68
+msgid "Admin User activity"
+msgstr ""
+
+#: apps/accounts/models.py:69
+#, fuzzy
+#| msgid "Daytime activities"
+msgid "Admin Users activities"
+msgstr "Overdag activiteiten"
+
+#: apps/accounts/password_validation.py:13
+msgid "This password must have 8 - 30 symbols length"
+msgstr "Dit wachtwoord moet een lengte hebben van 8 - 30 tekens"
+
+#: apps/accounts/password_validation.py:19
+msgid "Must contain 1 lowercase, 1 uppercase letter, 1 symbol and a number."
+msgstr ""
+"Moet 1 kleine letters, 1 hoofdletter, 1 symbool en een cijfer bevatten."
+
+#: apps/accounts/password_validation.py:24
+msgid ""
+"Your password must contain characters 1 lowercase, 1 uppercase, 1 symbol and "
+"8-30 length."
+msgstr ""
+"Uw wachtwoord moet tekens 1 kleine letters, 1 hoofdletter, 1 symbool en 8-30 "
+"lengte bevatten."
+
+#: apps/accounts/serializers.py:51
+msgid "Token type is wrong."
+msgstr ""
+
+#: apps/accounts/serializers.py:68
+msgid "Error decoding signature."
+msgstr ""
+
+#: apps/accounts/templates/accounts/activity_report.html:58
+#, fuzzy
+#| msgid "Username"
+msgid "User Name"
+msgstr "Gebruikersnaam"
+
+#: apps/accounts/templates/accounts/activity_report.html:60
+msgid "User Email"
+msgstr ""
+
+#: apps/accounts/templates/accounts/activity_report.html:62
+#, fuzzy
+#| msgid "Mobile"
+msgid "User Mobile"
+msgstr "Mobiel"
+
+#: apps/accounts/templates/accounts/activity_report.html:65
+#, fuzzy
+#| msgid "Direct line"
+msgid "User Direct line"
+msgstr "Rechtstreekse verbinding"
+
+#: apps/accounts/templates/accounts/activity_report.html:68
+#, fuzzy
+#| msgid "INAMI number (accredited number for healthcare professional) "
+msgid "INAMI number (accredited number for healthcare professional)"
+msgstr ""
+"INAMI-nummer (geaccrediteerd nummer voor beroepsbeoefenaar in de "
+"gezondheidszorg)"
+
+#: apps/accounts/templates/accounts/activity_report.html:74
+#: apps/patients/models.py:24
+#: apps/patients/templates/patients/patient_export_template.html:73
+msgid "Language"
+msgstr "Taal"
+
+#: apps/accounts/templates/accounts/activity_report.html:78
+#, fuzzy
+#| msgid "User Action"
+msgid "User Application activity"
+msgstr "Gebruikersactie"
+
+#: apps/accounts/templates/accounts/activity_report.html:81
+msgid "No activity was found for this user."
+msgstr ""
+
+#: apps/accounts/templates/accounts/activity_report.html:86
+#: apps/accounts/templates/accounts/common_activity_report.html:66
+#: apps/accounts/templates/accounts/common_activity_report.html:73
+#: apps/brusafe/models.py:22 apps/patients/models.py:107
+#: apps/patients/models.py:118
+msgid "Patient"
+msgstr "Geduldig"
+
+#: apps/accounts/templates/accounts/activity_report.html:87
+#: apps/accounts/templates/accounts/common_activity_report.html:66
+#: apps/accounts/templates/accounts/common_activity_report.html:73
+#: apps/diagnostics/models.py:70 apps/journal/models.py:13
+#: apps/medications/models.py:34
+#: apps/medications/templates/medications/change_list_template.html:17
+#: apps/patients/models.py:166 apps/patients/models.py:181
+#: apps/patients/templates/patients/change_list_template.html:49
+#: apps/reports/models.py:12 apps/tasks/models.py:52
+#: apps/tasks/templates/tasks/change_form.html:47
+msgid "File"
+msgstr "Het dossier"
+
+#: apps/accounts/templates/accounts/activity_report.html:88
+#: apps/accounts/templates/accounts/activity_report.html:103
+#, fuzzy
+#| msgid "Actions"
+msgid "Action"
+msgstr "Acties"
+
+#: apps/accounts/templates/accounts/activity_report.html:89
+#, fuzzy
+#| msgid "Parse data"
+msgid "Sent data"
+msgstr "Ontleed de gegevens"
+
+#: apps/accounts/templates/accounts/activity_report.html:93
+msgid "Admin Interface Actions"
+msgstr ""
+
+#: apps/accounts/templates/accounts/activity_report.html:96
+msgid "No activity in admin interface was found for this user."
+msgstr ""
+
+#: apps/accounts/templates/accounts/activity_report.html:101
+#, fuzzy
+#| msgid "Agitation"
+msgid "Application"
+msgstr "Agitatie"
+
+#: apps/accounts/templates/accounts/activity_report.html:102
+#, fuzzy
+#| msgid "Subject"
+msgid "Object"
+msgstr "Emne"
+
+#: apps/accounts/templates/accounts/activity_report.html:110
+msgid "Activity report"
+msgstr ""
+
+#: apps/accounts/templates/accounts/change_list_template.html:29
+#, fuzzy
+#| msgid "Daytime activities"
+msgid "Common user activities"
+msgstr "Overdag activiteiten"
+
+#: apps/accounts/templates/accounts/change_list_template.html:32
+#, fuzzy
+#| msgid "Monthly"
+msgid "Month"
+msgstr "Maandelijks"
+
+#: apps/accounts/templates/accounts/change_list_template.html:33
+msgid "Quarter"
+msgstr ""
+
+#: apps/accounts/templates/accounts/change_list_template.html:34
+#, fuzzy
+#| msgid "Yearly"
+msgid "Year"
+msgstr "Jaar-"
+
+#: apps/accounts/templates/accounts/change_list_template.html:35
+msgid "All the time"
+msgstr ""
+
+#: apps/accounts/templates/accounts/change_list_template.html:38
+#, fuzzy
+#| msgid "Social info"
+msgid "All info"
+msgstr "Sociale informatie"
+
+#: apps/accounts/templates/accounts/change_list_template.html:39
+#, fuzzy
+#| msgid "Created"
+msgid "Created Files"
+msgstr "Gemaakt"
+
+#: apps/accounts/templates/accounts/change_list_template.html:40
+#, fuzzy
+#| msgid "Archive Comments"
+msgid "Archived Files"
+msgstr "Opmerkingen archiveren"
+
+#: apps/accounts/templates/accounts/change_list_template.html:41
+#, fuzzy
+#| msgid "Active Wounds"
+msgid "Active Users"
+msgstr "Actieve wonden"
+
+#: apps/accounts/templates/accounts/change_list_template.html:45
+#: apps/accounts/templates/accounts/user_change_form.html:31
+#, fuzzy
+#| msgid "Do almost all the activity"
+msgid "Download activity"
+msgstr "Doe bijna alle activiteiten"
+
+#: apps/accounts/templates/accounts/change_list_template.html:57
+msgid "Filter"
+msgstr ""
+
+#: apps/accounts/templates/accounts/common_activity_report.html:57
+msgid "Report displays data for all time"
+msgstr ""
+
+#: apps/accounts/templates/accounts/common_activity_report.html:59
+msgid "Report displays data"
+msgstr ""
+
+#: apps/accounts/templates/accounts/common_activity_report.html:59
+msgid "from"
+msgstr ""
+
+#: apps/accounts/templates/accounts/common_activity_report.html:59
+#, fuzzy
+#| msgid "Stop"
+msgid "to"
+msgstr "Hou op"
+
+#: apps/accounts/templates/accounts/common_activity_report.html:64
+#, fuzzy
+#| msgid "File has wrong content"
+msgid "Files were created"
+msgstr "Bestand heeft verkeerde inhoud"
+
+#: apps/accounts/templates/accounts/common_activity_report.html:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "admission"
+msgstr "Machtigingen"
+
+#: apps/accounts/templates/accounts/common_activity_report.html:71
+msgid "Files were archived"
+msgstr ""
+
+#: apps/accounts/templates/accounts/common_activity_report.html:73
+#, fuzzy
+#| msgid "Released"
+msgid "released"
+msgstr "Vrijgelaten"
+
+#: apps/accounts/templates/accounts/common_activity_report.html:78
+#, fuzzy
+#| msgid "Active Wounds"
+msgid "Active users"
+msgstr "Actieve wonden"
+
+#: apps/accounts/templates/accounts/common_activity_report.html:86
+msgid "Common Activity report, created by"
+msgstr ""
+
+#: apps/accounts/templates/accounts/password_reset_email.html:2
+#, python-format
+msgid ""
+"\n"
+"Hello %(user)s,\n"
+"You have already registered on %(site_name)s or asked about access recovery "
+"for your account.\n"
+msgstr ""
+"\n"
+"Hallo %(user)s,\n"
+"U bent al geregistreerd op %(site_name)s of gevraagd over toegangsherstel "
+"voor uw account.\n"
+
+#: apps/accounts/templates/accounts/password_reset_email.html:7
+msgid "Please go to the following page and choose a new password:"
+msgstr "Ga naar de volgende pagina en kies een nieuw wachtwoord:"
+
+#: apps/accounts/templates/accounts/password_reset_email.html:12
+msgid "Thanks for using our site!"
+msgstr "Bedankt voor het gebruik van onze site!"
+
+#: apps/accounts/templates/accounts/password_reset_email.html:14
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "Het team van de %(site_name)s"
+
+#: apps/accounts/templates/accounts/password_reset_subject.txt:2
+#, python-format
+msgid " Registration/Access recovery for %(site_name)s "
+msgstr " Registratie / toegang herstel voor %(site_name)s "
+
+#: apps/accounts/templates/accounts/user_change_form.html:13
+#, fuzzy
+#| msgid "Outpatient"
+msgid "Select patient"
+msgstr "Poliklinische patiënt"
+
+#: apps/accounts/templates/accounts/user_change_form.html:14
+msgid "Filter patients by name"
+msgstr ""
+
+#: apps/accounts/templates/accounts/user_change_form.html:21
+msgid "Select start date"
+msgstr ""
+
+#: apps/accounts/templates/accounts/user_change_form.html:23
+msgid "Select end date"
+msgstr ""
+
+#: apps/accounts/templates/accounts/user_change_form.html:26
+#, fuzzy
+#| msgid "Should be later than the chosen date"
+msgid "End date should be later than start date."
+msgstr "Moet later zijn dan de gekozen datum"
+
+#: apps/accounts/templates/accounts/user_change_form.html:29
+msgid "Download activity for selected user"
+msgstr ""
+
+#: apps/accounts/templates/accounts/user_change_form.html:38
+#: apps/diagnostics/templates/diagnostics/change_form_template.html:17
+msgid "History"
+msgstr "Geschiedenis"
+
+#: apps/accounts/templates/accounts/user_change_form.html:41
+msgid "Send invitation email to"
+msgstr ""
+
+#: apps/accounts/templates/accounts/user_change_form.html:45
+#, fuzzy
+#| msgid "Sender"
+msgid "Send email"
+msgstr "Sender"
+
+#: apps/accounts/views_jwt.py:28
+#, fuzzy
+#| msgid "Document was expired"
+msgid "Signature has expired."
+msgstr "Document was verlopen"
+
+#: apps/brusafe/apps.py:7
+msgid "Brusafe"
+msgstr "Brusafe"
+
+#: apps/brusafe/models.py:8
+msgid "Is authenticated"
+msgstr "Is geverifieerd"
+
+#: apps/brusafe/models.py:12
+msgid "Connector"
+msgstr "Connector"
+
+#: apps/brusafe/models.py:13
+msgid "Connectors"
+msgstr "Connectors"
+
+#: apps/brusafe/models.py:25 apps/patients/models.py:182
+#: apps/patients/templates/patients/patient_export_template.html:128
+msgid "Relation"
+msgstr "Relatie"
+
+#: apps/brusafe/models.py:26
+msgid "Relations"
+msgstr "Relatie"
+
+#: apps/brusafe/templates/brusafe/api.html:15
+#: apps/brusafe/templates/brusafe/api.html:106
+#: apps/brusafe/templates/brusafe/authentication.html:21
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: apps/brusafe/templates/brusafe/api.html:25
+msgid "Medical Relation Assertion"
+msgstr "Medische relatie bewering"
+
+#: apps/brusafe/templates/brusafe/api.html:26
+#: apps/brusafe/templates/brusafe/api.html:40
+#: apps/brusafe/templates/brusafe/api.html:66
+#: apps/brusafe/templates/brusafe/api.html:82
+msgid "National Registry Number"
+msgstr "Nationaal registratienummer"
+
+#: apps/brusafe/templates/brusafe/api.html:31
+#: apps/brusafe/templates/brusafe/api.html:45
+#: apps/brusafe/templates/brusafe/api.html:57
+msgid "Get"
+msgstr "Krijgen"
+
+#: apps/brusafe/templates/brusafe/api.html:39
+msgid "Medical Relation State"
+msgstr "Medische relatie staat"
+
+#: apps/brusafe/templates/brusafe/api.html:53
+msgid "Patient Assertion"
+msgstr "Bewering van patiënten"
+
+#: apps/brusafe/templates/brusafe/api.html:65
+msgid "Medical Relation Confirm"
+msgstr "Medische relatie bevestigen"
+
+#: apps/brusafe/templates/brusafe/api.html:68 apps/medications/models.py:8
+msgid "Code"
+msgstr "Code"
+
+#: apps/brusafe/templates/brusafe/api.html:73
+#: apps/brusafe/templates/brusafe/api.html:87
+msgid "Put"
+msgstr "Leggen"
+
+#: apps/brusafe/templates/brusafe/api.html:81
+msgid "Medical Relation Request"
+msgstr "Verzoek om medische relatie"
+
+#: apps/brusafe/templates/brusafe/api.html:99
+#: apps/brusafe/templates/brusafe/authentication.html:15
+msgid "Authentication successful"
+msgstr "Authenticatie succesvol"
+
+#: apps/brusafe/templates/brusafe/api.html:104
+msgid "Back"
+msgstr "Terug"
+
+#: apps/brusafe/templates/brusafe/authentication.html:11
+msgid "Connect to Brusafe+"
+msgstr "Maak verbinding met Brusafe+"
+
+#: apps/brusafe/templates/brusafe/authentication.html:20
+msgid "Api"
+msgstr "Api"
+
+#: apps/brusafe/templates/brusafe/authentication.html:28
+msgid "Disconnected"
+msgstr "Verbinding verbroken"
+
+#: apps/brusafe/templates/brusafe/authentication.html:32
+msgid "Connect"
+msgstr "Aansluiten"
+
+#: apps/brusafe/templates/brusafe/authentication.html:37
+msgid "The latest error"
+msgstr "De nieuwste fout"
+
+#: apps/brusafe/views.py:77
+msgid "IntegrityError"
+msgstr ""
+
+#: apps/diagnostics/apps.py:7 apps/diagnostics/models.py:79
+#: apps/diagnostics/views.py:63
+#: apps/reports/templates/reports/medical_report.html:6
+msgid "Diagnostics"
+msgstr "Diagnostics"
+
+#: apps/diagnostics/choices.py:5 apps/diagnostics/models.py:37
+#: apps/diagnostics/models.py:59
+#: apps/patients/templates/patients/patient_export_template.html:173
+msgid "Diagnose"
+msgstr "Diagnostiseren"
+
+#: apps/diagnostics/choices.py:6 apps/diagnostics/models.py:49
+#: apps/diagnostics/models.py:62
+#: apps/patients/templates/patients/patient_export_template.html:174
+msgid "Health Screening"
+msgstr "Gezondheidsonderzoek"
+
+#: apps/diagnostics/choices.py:7
+msgid "Medical Anamnesis and Allergies"
+msgstr "Medische anamnese en allergieën"
+
+#: apps/diagnostics/models.py:15
+msgid "File type"
+msgstr "Bestandstype"
+
+#: apps/diagnostics/models.py:16
+msgid "File was parsed successfully"
+msgstr "Bestand is met succes ontleed"
+
+#: apps/diagnostics/models.py:17
+msgid "Errors from last parsing"
+msgstr "Fouten van de laatste ontleding"
+
+#: apps/diagnostics/models.py:20
+msgid "Diagnostic File"
+msgstr "Diagnostisch bestand"
+
+#: apps/diagnostics/models.py:21
+msgid "Diagnostic Files"
+msgstr "Diagnostische bestanden"
+
+#: apps/diagnostics/models.py:33
+msgid "Concept ID"
+msgstr "Concept-ID"
+
+#: apps/diagnostics/models.py:34 apps/patients/models.py:183
+#: apps/patients/templates/patients/patient_export_template.html:129
+msgid "Name"
+msgstr "Naam"
+
+#: apps/diagnostics/models.py:38
+msgid "Diagnoses"
+msgstr "Diagnoses"
+
+#: apps/diagnostics/models.py:46
+msgid "Particular monitoring type"
+msgstr "Bijzonder type controle"
+
+#: apps/diagnostics/models.py:50
+msgid "Health Screenings"
+msgstr "Gezondheid Screenings"
+
+#: apps/diagnostics/models.py:66
+#: apps/patients/templates/patients/patient_export_template.html:176
+msgid "Description"
+msgstr "Omschrijving"
+
+#: apps/diagnostics/models.py:67 apps/evaluations/models.py:24
+#: apps/patients/templates/patients/patient_export_template.html:177
+#: apps/vitals/models.py:9
+msgid "Type"
+msgstr "Type"
+
+#: apps/diagnostics/models.py:68
+#: apps/patients/templates/patients/patient_export_template.html:178
+msgid "Is allergy"
+msgstr "Is allergie"
+
+#: apps/diagnostics/models.py:78
+msgid "Diagnostic"
+msgstr "Diagnostisch"
+
+#: apps/diagnostics/reader.py:8 apps/tasks/reader.py:11 apps/utils/reader.py:6
+msgid "Wrong format"
+msgstr "Verkeerd formaat"
+
+#: apps/diagnostics/reader.py:9 apps/tasks/reader.py:12 apps/utils/reader.py:7
+msgid "No data was parsed from file"
+msgstr "Er zijn geen gegevens uit het bestand geparseerd"
+
+#: apps/diagnostics/reader.py:29 apps/diagnostics/reader.py:53
+#: apps/patients/reader.py:94 apps/tasks/reader.py:35
+msgid "File has wrong content"
+msgstr "Bestand heeft verkeerde inhoud"
+
+#: apps/diagnostics/serializers.py:39 apps/utils/mixins.py:93
+msgid "File not found"
+msgstr "Bestand niet gevonden"
+
+#: apps/diagnostics/templates/diagnostics/change_form_template.html:13
+msgid "Tools"
+msgstr "Hulpmiddelen"
+
+#: apps/diagnostics/templates/diagnostics/change_form_template.html:26
+msgid "Parse data"
+msgstr "Ontleed de gegevens"
+
+#: apps/diagnostics/templates/diagnostics/change_form_template.html:27
+msgid "Uploading"
+msgstr "Uploaden"
+
+#: apps/diagnostics/templates/diagnostics/change_form_template.html:34
+#: apps/patients/templates/patients/change_form_template.html:44
+#: apps/patients/templates/patients/change_list_template.html:39
+msgid "Download"
+msgstr "Download"
+
+#: apps/diagnostics/validators.py:10
+msgid "Only .xlsx and .xls are accepted"
+msgstr "Alleen .xlsx en .xls worden geaccepteerd"
+
+#: apps/diagnostics/views.py:37
+msgid "Parser was started"
+msgstr "Parser is gestart"
+
+#: apps/evaluations/admin.py:58 apps/evaluations/models.py:14
+#: apps/patients/templates/patients/patient_export_template.html:293
+#, fuzzy
+#| msgid "Evaluation"
+msgid "Evaluation Name"
+msgstr "Evaluatie"
+
+#: apps/evaluations/apps.py:7 apps/evaluations/models.py:53
+msgid "Evaluations"
+msgstr "Evaluaties"
+
+#: apps/evaluations/choices.py:5
+msgid "Text"
+msgstr ""
+
+#: apps/evaluations/choices.py:6
+msgid "Choice Field"
+msgstr ""
+
+#: apps/evaluations/choices.py:7
+#, fuzzy
+#| msgid "Task Date"
+msgid "Date"
+msgstr "Taakdatum"
+
+#: apps/evaluations/forms.py:20 apps/evaluations/models.py:74
+msgid "Survey"
+msgstr ""
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:19
+msgid "Care appearance"
+msgstr "Zorg uiterlijk"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:20
+msgid "Personal Activities"
+msgstr "Persoonlijke activiteiten"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:21
+msgid "Housekeeping"
+msgstr "Huishouden"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:22
+msgid "Stress unforeseen circumstances"
+msgstr "Stress onvoorziene omstandigheden"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:23
+msgid "Travel communication"
+msgstr "Reiscommunicatie"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:24
+msgid "Diet"
+msgstr "Dieet"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:25
+msgid "Social network"
+msgstr "Sociaal netwerk"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:26
+msgid "Biological rythms"
+msgstr "Biologische ritmes"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:27
+msgid "Illness treatment"
+msgstr "Ziekte behandeling"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:28
+msgid "Administrative financial management"
+msgstr "Administratief financieel management"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:29
+msgid "Self esteem independence"
+msgstr "Zelfachting onafhankelijkheid"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:30
+msgid "Social activities"
+msgstr "Sociale activiteiten"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:31
+msgid "Studying work"
+msgstr "Werk studeren"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:32
+msgid "Family"
+msgstr "Familie"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:33
+msgid "Sexual life"
+msgstr "Seksueel leven"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:34
+msgid "Personal health"
+msgstr "Persoonlijke gezondheid"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:35
+msgid "Antisocial violent behaviour"
+msgstr "Antisociaal gewelddadig gedrag"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:36
+msgid "Empathy"
+msgstr "Empathie"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:37
+msgid "Secondary effects of treatment"
+msgstr "Secundaire effecten van behandeling"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:41
+msgid "Do not do"
+msgstr "Doe niet"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:42
+msgid "Do partially"
+msgstr "Doe het gedeeltelijk"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:43
+msgid "Do a significant part"
+msgstr "Doe een belangrijk deel"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:44
+msgid "Do almost all the activity"
+msgstr "Doe bijna alle activiteiten"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:45
+msgid "Do perfectly"
+msgstr "Perfect doen"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:49
+msgid "Accomodation"
+msgstr "Accomodation"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:50
+msgid "Alimentation"
+msgstr "Voeding"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:51
+msgid "Living environment"
+msgstr "Leefomgeving"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:52
+msgid "Self-care"
+msgstr "Zelfzorg"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:53
+msgid "Daytime activities"
+msgstr "Overdag activiteiten"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:54
+msgid "Physical health"
+msgstr "Fysieke gezondheid"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:55
+msgid "Psychotic symptoms"
+msgstr "Psychotische symptomen"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:56
+msgid "Condition_and treatment"
+msgstr "Voorwaarde en behandeling"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:57
+msgid "Psychological distress"
+msgstr "Psychische nood"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:58
+msgid "Safety to self"
+msgstr "Veiligheid voor jezelf"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:59
+msgid "Safety to others"
+msgstr "Veiligheid voor anderen"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:60
+msgid "Alcohol"
+msgstr "Alcohol"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:61
+msgid "Drugs"
+msgstr "Verdovende middelen"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:62
+msgid "Company"
+msgstr "Bedrijf"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:63
+msgid "Intimate relationships"
+msgstr "Intieme relaties"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:64
+msgid "Sexual expression"
+msgstr "Seksuele expressie"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:65
+msgid "Childcare"
+msgstr "kinderopvang"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:66
+msgid "Basic education"
+msgstr "Basisopleiding"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:67
+msgid "Telephone"
+msgstr "Telefoon"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:68
+msgid "Transport"
+msgstr "Vervoer"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:69
+msgid "Money"
+msgstr "Geld"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:70
+msgid "Benefits"
+msgstr "Voordelen"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:71
+msgid "Treatment"
+msgstr "Behandeling"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:72
+msgid "Sexual offences"
+msgstr "Seksuele misdrijven"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:73
+msgid "Arson"
+msgstr "Brandstichting"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:77
+msgid "No need for this area"
+msgstr "Dit gebied is niet nodig"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:78
+msgid "Met need for this area"
+msgstr "Behoefte aan dit gebied"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:79
+msgid "Unmet need for this area"
+msgstr "Onvervulde behoefte aan dit gebied"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:80
+msgid "Not applicable"
+msgstr "Niet toepasbaar"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:81
+#: apps/patients/choices.py:62 apps/patients/choices.py:76
+#: apps/patients/choices.py:149 apps/patients/choices.py:156
+#: apps/patients/choices.py:165
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:85
+msgid "Bathing"
+msgstr "Het baden"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:86
+msgid "Dressing"
+msgstr "Dressing"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:87
+msgid "Transferring"
+msgstr "Het overzetten"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:88
+msgid "Toiletting"
+msgstr "Toileting"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:89
+msgid "Continence"
+msgstr "Zelfbeheersing"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:90
+msgid "Feeding"
+msgstr "Voeden"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:91
+msgid "Orientation in time"
+msgstr "Oriëntatie in de tijd"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:92
+msgid "Orientation in place"
+msgstr "Oriëntatie op zijn plaats"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:97
+msgid "Bathes self completely without any help"
+msgstr "Baadt zichzelf helemaal zonder enige hulp"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:98
+msgid "Needs partial help with bathing above or below waist"
+msgstr "Heeft gedeeltelijke hulp nodig bij het baden boven of onder de taille"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:99
+msgid "Needs partial help with bathing above and also below waist"
+msgstr ""
+"Heeft gedeeltelijke hulp nodig bij het baden boven en ook onder de taille"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:100
+msgid "Needs total bathing both above and below waist"
+msgstr "Behoefte totale baden zowel boven als onder de taille"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:103
+msgid "Dresses and undresses self completely without any help"
+msgstr "Kleedt zich en ontkleedt zichzelf helemaal zonder enige hulp"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:105
+msgid ""
+"Needs partial help with dressing self above or below waist (may have help "
+"tying shoes)"
+msgstr ""
+"Heeft gedeeltelijke hulp nodig bij het aankleden van zichzelf boven of onder "
+"de taille (kan helpen bij het binden van schoenen)"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:106
+msgid "Needs partial help with dressing self above and also below waist"
+msgstr ""
+"Heeft gedeeltelijke hulp nodig om zichzelf boven en ook onder de taille te "
+"kleden"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:107
+msgid "Needs to be completely dressed both above and below waist"
+msgstr "Moet volledig gekleed zijn zowel boven als onder de taille"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:110
+msgid ""
+"Moves alone in and out of bed without any help or mechanical transferring "
+"aides"
+msgstr ""
+"Beweegt alleen in en uit bed zonder hulp of mechanisch over te dragen "
+"assistenten"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:112
+msgid ""
+"Moves alone in and out of bed with mechanical transferring aides (crutches, "
+"wheelchair...)"
+msgstr ""
+"Beweegt alleen in en uit bed met mechanische hulpmiddelen (krukken, "
+"rolstoel ...)"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:113
+msgid ""
+"Needs help with moving from bed to chair or from chair to bed, and/or for "
+"other transferring"
+msgstr ""
+"Heeft hulp nodig bij het verplaatsen van bed naar stoel of van stoel naar "
+"bed en / of voor andere overbrenging"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:114
+msgid ""
+"Is bedridden or in a wheelchair and is highly dependant on someone's help"
+msgstr ""
+"Is bedlegerig of in een rolstoel en is sterk afhankelijk van iemands hulp"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:117
+msgid ""
+"Goes to toilet, gets on and off, arranges clothes and cleans genital area "
+"without help"
+msgstr ""
+"Gaat naar toilet, gaat aan en uit, regelt kleding en maakt genitale ruimte "
+"schoon zonder hulp"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:118
+msgid ""
+"Needs help with one these : transferring to the toilet, arrange clothes or "
+"clean genital area"
+msgstr ""
+"Heeft hier hulp bij nodig: overbrengen naar het toilet, kleding regelen of "
+"het genitale gebied schoonmaken"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:120
+msgid ""
+"Needs help with two of these : transferring to the toilet, arrange clothes "
+"or clean genital area"
+msgstr ""
+"Hulp nodig bij twee van deze: overbrengen naar het toilet, kleding regelen "
+"of schoon genitale gebied"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:121
+msgid ""
+"Needs help with all these : transferring to the toilet, arrange clothes or "
+"clean genital area"
+msgstr ""
+"Heeft hulp nodig bij dit alles: overbrengen naar het toilet, kleding regelen "
+"of het genitale gebied schoonmaken"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:124
+msgid "Exercise complete self control over urination and defecation"
+msgstr "Train volledige zelfcontrole over plassen en ontlasting"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:125
+msgid ""
+"Is accidentally incontinent of bladder or bowel (urinary catheter or "
+"colostomy included)"
+msgstr ""
+"Is per ongeluk incontinent van blaas of darm (urinekatheter of colostoma "
+"inbegrepen)"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:126
+msgid "Is incontinent of bladder (including urination exercises) or bowel"
+msgstr "Is incontinent van de blaas (inclusief urineloefeningen) of de darm"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:127
+msgid "Is totally incontinent of bladder and bowel"
+msgstr "Is volledig incontinent van blaas en darm"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:130
+msgid "Is able to eat and drink without any help"
+msgstr "Kan zonder hulp eten en drinken"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:131
+msgid "Needs partial help with preparation for eating or drinking"
+msgstr "Heeft gedeeltelijke hulp nodig bij de voorbereiding op eten of drinken"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:132
+msgid "Needs partial help while eating or drinking"
+msgstr "Heeft gedeeltelijke hulp nodig tijdens het eten of drinken"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:133
+msgid "Needs total help with eating or drinking"
+msgstr "Heeft totale hulp nodig met eten of drinken"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:136
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:142
+msgid "No problem"
+msgstr "Geen probleem"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:137
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:143
+msgid "From time to time, rarely problems"
+msgstr "Van tijd tot tijd, zelden problemen"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:138
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:144
+msgid "Problems almost every day"
+msgstr "Problemen bijna elke dag"
+
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:139
+#: apps/evaluations/migrations/0006_eval_preserve_old_res.py:145
+msgid "Totally disoriented or impossible to evaluate"
+msgstr "Volledig gedesoriënteerd of onmogelijk te evalueren"
+
+#: apps/evaluations/models.py:16
+#: apps/patients/templates/patients/patient_export_template.html:298
+msgid "Surveys results"
+msgstr ""
+
+#: apps/evaluations/models.py:17
+msgid "Survey static results"
+msgstr ""
+
+#: apps/evaluations/models.py:21 apps/medications/models.py:25
+#: apps/medications/models.py:49
+#: apps/patients/templates/patients/patient_export_template.html:189
+msgid "Editor"
+msgstr "Editor"
+
+#: apps/evaluations/models.py:52
+msgid "Evaluation"
+msgstr "Evaluatie"
+
+#: apps/evaluations/models.py:67
+msgid "Survey Name"
+msgstr ""
+
+#: apps/evaluations/models.py:68
+msgid "Enabled"
+msgstr ""
+
+#: apps/evaluations/models.py:70 apps/tasks/models.py:18
+msgid "Groups"
+msgstr ""
+
+#: apps/evaluations/models.py:75
+msgid "Surveys"
+msgstr ""
+
+#: apps/evaluations/models.py:91
+msgid "Required"
+msgstr ""
+
+#: apps/evaluations/models.py:92 apps/medications/models.py:7
+#: apps/medications/models.py:31
+#: apps/patients/templates/patients/patient_export_template.html:194
+#: apps/tasks/forms.py:11 apps/tasks/models.py:13 apps/tasks/models.py:22
+#: apps/tasks/models.py:34
+msgid "Category"
+msgstr "Categorie"
+
+#: apps/evaluations/models.py:93 apps/evaluations/models.py:98
+#, fuzzy
+#| msgid "Description"
+msgid "Question"
+msgstr "Omschrijving"
+
+#: apps/evaluations/models.py:94
+msgid "Question Type"
+msgstr ""
+
+#: apps/evaluations/models.py:99
+#, fuzzy
+#| msgid "Relations"
+msgid "Questions"
+msgstr "Relatie"
+
+#: apps/evaluations/models.py:114 apps/evaluations/models.py:117
+#, fuzzy
+#| msgid "Katz Answers"
+msgid "Answer"
+msgstr "Katz Antwoorden"
+
+#: apps/evaluations/models.py:118
+#, fuzzy
+#| msgid "Katz Answers"
+msgid "Answers"
+msgstr "Katz Antwoorden"
+
+#: apps/journal/apps.py:7 apps/journal/models.py:19 apps/journal/models.py:20
+msgid "Journal"
+msgstr "Dagboek"
+
+#: apps/journal/choices.py:5 apps/medications/models.py:27
+#: apps/medications/models.py:50 apps/patients/models.py:167
+#: apps/patients/templates/patients/patient_export_template.html:190
+#: apps/patients/templates/patients/patient_export_template.html:238
+#: apps/patients/templates/patients/patient_export_template.html:281
+#: apps/tasks/models.py:59 apps/vitals/models.py:13
+msgid "Comment"
+msgstr "Commentaar"
+
+#: apps/journal/choices.py:6
+msgid "Event"
+msgstr "Evenement"
+
+#: apps/journal/choices.py:10
+msgid "Medical info"
+msgstr "Medische info"
+
+#: apps/journal/choices.py:11
+msgid "Nursing info"
+msgstr "Verplegingsinformatie"
+
+#: apps/journal/choices.py:12
+msgid "Caregiver info"
+msgstr "Verzorger info"
+
+#: apps/journal/choices.py:13
+msgid "Psychotherapy"
+msgstr "Psychotherapie"
+
+#: apps/journal/choices.py:14
+msgid "Physiotherapy"
+msgstr "Fysiotherapie"
+
+#: apps/journal/choices.py:15
+msgid "Social info"
+msgstr "Sociale informatie"
+
+#: apps/journal/choices.py:16
+msgid "Staff meeting"
+msgstr "Personeel vergadering"
+
+#: apps/journal/choices.py:17
+msgid "Nightshift"
+msgstr "Nachtdienst"
+
+#: apps/journal/choices.py:18
+msgid "Fall"
+msgstr "Vallen"
+
+#: apps/journal/choices.py:19
+msgid "Confusion"
+msgstr "Verwarring"
+
+#: apps/journal/choices.py:20
+msgid "Disorientation"
+msgstr "Desoriëntatie"
+
+#: apps/journal/choices.py:21
+msgid "Runaway"
+msgstr "Weglopen"
+
+#: apps/journal/choices.py:22
+msgid "Behavior disorder"
+msgstr "Gedragsstoornis"
+
+#: apps/journal/choices.py:23
+msgid "Agressiveness"
+msgstr "Agressiviteit"
+
+#: apps/journal/choices.py:24
+msgid "Agitation"
+msgstr "Agitatie"
+
+#: apps/journal/choices.py:25
+msgid "Drug use"
+msgstr "Drug gebruik"
+
+#: apps/journal/choices.py:29
+#: apps/patients/templates/patients/patient_export_template.html:66
+msgid "Created"
+msgstr "Gemaakt"
+
+#: apps/journal/choices.py:30
+msgid "Added"
+msgstr "Toegevoegd"
+
+#: apps/journal/choices.py:31
+msgid "Edited"
+msgstr "Bewerkt"
+
+#: apps/journal/choices.py:32
+msgid "Deleted"
+msgstr "Verwijderde"
+
+#: apps/journal/choices.py:33
+msgid "Status changed"
+msgstr "Status gewijzigd"
+
+#: apps/journal/choices.py:34
+#: apps/patients/templates/patients/patient_export_template.html:237
+msgid "Cured"
+msgstr "Genezen"
+
+#: apps/journal/models.py:9
+#: apps/patients/templates/patients/patient_export_template.html:159
+msgid "Note header"
+msgstr "Notitie koptekst"
+
+#: apps/journal/models.py:10
+msgid "Category slug"
+msgstr "Categorie slak"
+
+#: apps/journal/models.py:11
+#: apps/patients/templates/patients/patient_export_template.html:160
+msgid "Content"
+msgstr "Inhoud"
+
+#: apps/journal/models.py:14
+#: apps/patients/templates/patients/patient_export_template.html:162
+msgid "Note type"
+msgstr "Notitie type"
+
+#: apps/journal/models.py:15
+#: apps/patients/templates/patients/patient_export_template.html:163
+msgid "Note tag"
+msgstr "Notitielabel"
+
+#: apps/journal/models.py:16
+#: apps/patients/templates/patients/patient_export_template.html:164
+msgid "User Action"
+msgstr "Gebruikersactie"
+
+#: apps/medications/apps.py:7 apps/medications/views.py:32
+msgid "Medications"
+msgstr "Medicijnen"
+
+#: apps/medications/models.py:9
+msgid "VMP Code"
+msgstr "VMP Code"
+
+#: apps/medications/models.py:13
+msgid "Medication Category"
+msgstr "Medicatiecategorie"
+
+#: apps/medications/models.py:14
+msgid "Medication Categories"
+msgstr "Medicatiecategorieën"
+
+#: apps/medications/models.py:23 apps/tasks/choices.py:31
+msgid "Medication"
+msgstr "Geneesmiddel"
+
+#: apps/medications/models.py:28
+#: apps/patients/templates/patients/patient_export_template.html:191
+msgid "Quantity"
+msgstr "Aantal stuks"
+
+#: apps/medications/models.py:29
+#: apps/patients/templates/patients/patient_export_template.html:192
+msgid "Maximum posology per day (Co/day)"
+msgstr "Maximale dosering per dag (Co / dag)"
+
+#: apps/medications/models.py:30
+#: apps/patients/templates/patients/patient_export_template.html:193
+msgid "Active"
+msgstr "Actief"
+
+#: apps/medications/models.py:38 apps/medications/models.py:48
+#: apps/tasks/models.py:68
+msgid "Prescription"
+msgstr "Voorschrift"
+
+#: apps/medications/models.py:39
+msgid "Prescriptions"
+msgstr "Voorschriften"
+
+#: apps/medications/models.py:51
+msgid "Actions"
+msgstr "Acties"
+
+#: apps/medications/models.py:55
+msgid "Prescription Log"
+msgstr "Receptboek"
+
+#: apps/medications/models.py:56
+msgid "Prescription Logs"
+msgstr "Recept logs"
+
+#: apps/medications/reader.py:25
+msgid "Empty file"
+msgstr "Leeg bestand"
+
+#: apps/medications/reader.py:30
+msgid "Wrong content"
+msgstr "Verkeerde inhoud"
+
+#: apps/medications/services.py:39
+msgid "Moved to History"
+msgstr "Verplaatst naar geschiedenis"
+
+#: apps/medications/services.py:41
+msgid "Comment was changed"
+msgstr "Reactie is gewijzigd"
+
+#: apps/medications/templates/medications/change_list_template.html:12
+msgid "Upload medications"
+msgstr "Upload medicijnen"
+
+#: apps/medications/templates/medications/change_list_template.html:28
+#: apps/patients/templates/patients/change_list_template.html:60
+#: apps/tasks/templates/tasks/change_form.html:58
+msgid "Upload"
+msgstr "Uploaden"
+
+#: apps/medications/views.py:46
+msgid "\"date\" and \"time\"/\"times\" are required fields"
+msgstr "\"date\" en \"time \"/\"times\" zijn verplichte velden"
+
+#: apps/patients/apps.py:7 apps/patients/models.py:108
+msgid "Patients"
+msgstr "Patiënten"
+
+#: apps/patients/choices.py:4
+msgid "Wife / Husband"
+msgstr "Echtgenote / Echtgenoot"
+
+#: apps/patients/choices.py:5 apps/patients/choices.py:109
+msgid "Partner"
+msgstr "Partner"
+
+#: apps/patients/choices.py:6 apps/patients/choices.py:51
+#: apps/patients/choices.py:111
+msgid "Child"
+msgstr "Kind"
+
+#: apps/patients/choices.py:7 apps/patients/choices.py:54
+#: apps/patients/choices.py:110
+msgid "Parent"
+msgstr "Ouder"
+
+#: apps/patients/choices.py:8
+msgid "Grandparent"
+msgstr "Grootvader"
+
+#: apps/patients/choices.py:9
+msgid "Brother / Sister"
+msgstr "Broer / Zuster"
+
+#: apps/patients/choices.py:10
+msgid "Other family member"
+msgstr "Ander familielid"
+
+#: apps/patients/choices.py:11
+msgid "Friend"
+msgstr "Vriend"
+
+#: apps/patients/choices.py:12
+msgid "Roommate"
+msgstr "Kamergenoot"
+
+#: apps/patients/choices.py:13
+msgid "General practitioner"
+msgstr "Huisarts"
+
+#: apps/patients/choices.py:14
+msgid "Specialist doctor"
+msgstr "Gespecialiseerde dokter"
+
+#: apps/patients/choices.py:15
+msgid "Lawyer"
+msgstr "Advocaat"
+
+#: apps/patients/choices.py:16
+msgid "Attorney for financial power"
+msgstr "Procureur voor financiële macht"
+
+#: apps/patients/choices.py:17
+msgid "Probation officer"
+msgstr "Reclasseringsambtenaar"
+
+#: apps/patients/choices.py:18
+msgid "Youth Judge"
+msgstr "Jeugdrechter"
+
+#: apps/patients/choices.py:19
+msgid "Educator"
+msgstr "Opvoeder"
+
+#: apps/patients/choices.py:20
+msgid "Other relation"
+msgstr "Andere relatie"
+
+#: apps/patients/choices.py:24
+msgid "Patients with tasks of the day"
+msgstr "Patiënten met taken van de dag"
+
+#: apps/patients/choices.py:25
+msgid "Patients with tasks assigned to me"
+msgstr "Patiënten met taken die aan mij zijn toegewezen"
+
+#: apps/patients/choices.py:26
+msgid "Patients with due tasks"
+msgstr "Patiënten met gepaste taken"
+
+#: apps/patients/choices.py:31
+msgid "Indeterminate"
+msgstr "Onbepaald"
+
+#: apps/patients/choices.py:36
+msgid "English"
+msgstr "Engels"
+
+#: apps/patients/choices.py:37
+msgid "French"
+msgstr ""
+
+#: apps/patients/choices.py:38
+msgid "German"
+msgstr "Duitse"
+
+#: apps/patients/choices.py:39
+msgid "Spanish"
+msgstr "Spaans"
+
+#: apps/patients/choices.py:40
+msgid "Italian"
+msgstr "Italiaans"
+
+#: apps/patients/choices.py:41
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: apps/patients/choices.py:45
+msgid "Belgian identity card"
+msgstr "Belgische identiteitskaart"
+
+#: apps/patients/choices.py:46
+msgid "Belgian card of foreign resident"
+msgstr "Belgische kaart van buitenlandse ingezetene"
+
+#: apps/patients/choices.py:47
+msgid "Foreign identity card"
+msgstr "Buitenlandse identiteitskaart"
+
+#: apps/patients/choices.py:52
+msgid "Spouse"
+msgstr "Echtgenoot"
+
+#: apps/patients/choices.py:53
+msgid "Brother/sister"
+msgstr "Broer/zuster"
+
+#: apps/patients/choices.py:58
+msgid "Married"
+msgstr "Getrouwd"
+
+#: apps/patients/choices.py:59
+msgid "Single"
+msgstr "Single"
+
+#: apps/patients/choices.py:60
+msgid "Divorced"
+msgstr "Gescheiden"
+
+#: apps/patients/choices.py:61
+msgid "Co-habitant"
+msgstr "Co-inwoner"
+
+#: apps/patients/choices.py:63
+msgid "Separated"
+msgstr "Gescheiden"
+
+#: apps/patients/choices.py:64
+msgid "Widowed"
+msgstr "Цeduwnaar"
+
+#: apps/patients/choices.py:68
+msgid "Emergency"
+msgstr "Contact met noodgevallen"
+
+#: apps/patients/choices.py:69
+msgid "Inpatient"
+msgstr "Inpatient"
+
+#: apps/patients/choices.py:70
+msgid "Outpatient"
+msgstr "Poliklinische patiënt"
+
+#: apps/patients/choices.py:71
+msgid "Preadmit"
+msgstr ""
+
+#: apps/patients/choices.py:72
+msgid "Recurring patient"
+msgstr ""
+
+#: apps/patients/choices.py:73
+msgid "Obstetrics"
+msgstr ""
+
+#: apps/patients/choices.py:74
+msgid "Commercial Account"
+msgstr ""
+
+#: apps/patients/choices.py:75
+msgid "Not Applicable"
+msgstr "Niet toepasbaar"
+
+#: apps/patients/choices.py:80
+msgid "Adventist"
+msgstr "Adventist"
+
+#: apps/patients/choices.py:81
+msgid "Assembly of God"
+msgstr "Vergadering van God"
+
+#: apps/patients/choices.py:82
+msgid "Baptist"
+msgstr "Вoper"
+
+#: apps/patients/choices.py:83
+msgid "Buddhist"
+msgstr "Boeddhist"
+
+#: apps/patients/choices.py:84
+msgid "Catholic"
+msgstr "Katholiek"
+
+#: apps/patients/choices.py:85
+msgid "Jehovan's Witness"
+msgstr "Jehova's getuige"
+
+#: apps/patients/choices.py:86
+msgid "Jewish"
+msgstr "Jewish"
+
+#: apps/patients/choices.py:87
+msgid "Lutheran"
+msgstr "Luthers"
+
+#: apps/patients/choices.py:88
+msgid "Mormon"
+msgstr "Mormoon"
+
+#: apps/patients/choices.py:89 apps/patients/choices.py:155
+msgid "None"
+msgstr "Geen"
+
+#: apps/patients/choices.py:90
+msgid "Orthodox"
+msgstr "Orthodox"
+
+#: apps/patients/choices.py:91 apps/patients/choices.py:126
+msgid "Other"
+msgstr "anders"
+
+#: apps/patients/choices.py:92
+msgid "Protestant"
+msgstr "Protestant"
+
+#: apps/patients/choices.py:93
+msgid "Quaker"
+msgstr "Quaker"
+
+#: apps/patients/choices.py:94
+msgid "Islam"
+msgstr "Islam"
+
+#: apps/patients/choices.py:98
+msgid "Yes"
+msgstr "Ja"
+
+#: apps/patients/choices.py:99
+msgid "No"
+msgstr "Nee"
+
+#: apps/patients/choices.py:103
+msgid "No dependants"
+msgstr "Geen personen ten laste"
+
+#: apps/patients/choices.py:104
+msgid "With dependants"
+msgstr "Met afhankelijken"
+
+#: apps/patients/choices.py:108
+msgid "Policyholder"
+msgstr "Verzekeringnemer"
+
+#: apps/patients/choices.py:112
+msgid "Other beneficiary"
+msgstr "Andere begunstigde"
+
+#: apps/patients/choices.py:116
+msgid "Work income"
+msgstr "Werk inkomen"
+
+#: apps/patients/choices.py:117
+msgid "Annuitant allowance"
+msgstr "Lijfrentetoeslag"
+
+#: apps/patients/choices.py:118
+msgid "Unemployment allowance"
+msgstr "Werkloosheidstoelage"
+
+#: apps/patients/choices.py:119
+msgid "Health insurance allowance"
+msgstr "Ziekteverzekering"
+
+#: apps/patients/choices.py:120
+msgid "Health insurance with Federal allowance"
+msgstr "Ziektekostenverzekering met federale uitkering"
+
+#: apps/patients/choices.py:121
+msgid "Federal allowance"
+msgstr "Federale uitkering"
+
+#: apps/patients/choices.py:122
+msgid "Social services allowance"
+msgstr "Sociale voorzieningenstoelage"
+
+#: apps/patients/choices.py:123
+msgid "Family allowance"
+msgstr "Kinderbijslag"
+
+#: apps/patients/choices.py:124
+msgid "Retiring allowance"
+msgstr "Uittredingsvergoeding"
+
+#: apps/patients/choices.py:125
+msgid "No income"
+msgstr "Geen inkomen"
+
+#: apps/patients/choices.py:130
+msgid "Isolated"
+msgstr "Geïsoleerd"
+
+#: apps/patients/choices.py:131
+msgid "With own family"
+msgstr "Met eigen gezin"
+
+#: apps/patients/choices.py:132
+msgid "With parents"
+msgstr "With parents"
+
+#: apps/patients/choices.py:133
+msgid "Roomsharing"
+msgstr "Roomsharing"
+
+#: apps/patients/choices.py:134
+msgid "With other family or substitude"
+msgstr "Met andere familie of vervanger"
+
+#: apps/patients/choices.py:135
+msgid "Retirement home"
+msgstr "Bejaardentehuis"
+
+#: apps/patients/choices.py:136
+msgid "Disabled care facility"
+msgstr "Gehandicapte zorginstelling"
+
+#: apps/patients/choices.py:137
+msgid "Homeless shelter"
+msgstr "Daklozenopvang"
+
+#: apps/patients/choices.py:138
+msgid "Community housing"
+msgstr "Gemeenschapshuisvesting"
+
+#: apps/patients/choices.py:139
+msgid "Justice facility"
+msgstr "Justitie faciliteit"
+
+#: apps/patients/choices.py:140
+msgid "Other community housing"
+msgstr "Andere gemeenschapshuisvesting"
+
+#: apps/patients/choices.py:141
+msgid "Psychiatric hospital"
+msgstr "Psychiatrisch ziekenhuis"
+
+#: apps/patients/choices.py:142
+msgid "Psychiatric nursing home"
+msgstr "Psychiatrisch verzorgingstehuis"
+
+#: apps/patients/choices.py:143
+msgid "Shelter housing"
+msgstr "Onderdak huisvesting"
+
+#: apps/patients/choices.py:144
+msgid "Family placement"
+msgstr "Gezinsplaatsing"
+
+#: apps/patients/choices.py:145
+msgid "Alternative psychiatric housing"
+msgstr "Alternatieve psychiatrische huisvesting"
+
+#: apps/patients/choices.py:146
+msgid "General hospital"
+msgstr "Algemeen ziekenhuis"
+
+#: apps/patients/choices.py:147
+msgid "Other therapeutic housing"
+msgstr "Andere therapeutische behuizing"
+
+#: apps/patients/choices.py:148
+msgid "Unspecified"
+msgstr "Niet gespecificeerd"
+
+#: apps/patients/choices.py:153
+msgid "Normal"
+msgstr "Normaal"
+
+#: apps/patients/choices.py:154
+msgid "Special"
+msgstr "Speciaal"
+
+#: apps/patients/choices.py:160
+msgid "Primary"
+msgstr "Primair"
+
+#: apps/patients/choices.py:161
+msgid "Lower high school"
+msgstr "Lagere middelbare school"
+
+#: apps/patients/choices.py:162
+msgid "High school"
+msgstr "Middelbare school"
+
+#: apps/patients/choices.py:163
+msgid "University"
+msgstr "Universiteit"
+
+#: apps/patients/choices.py:164
+msgid "Other special education"
+msgstr "Ander speciaal onderwijs"
+
+#: apps/patients/choices.py:169
+msgid "BELGIUM"
+msgstr "BELGIË"
+
+#: apps/patients/choices.py:170
+msgid "BANGLADESH"
+msgstr "BANGLADESH"
+
+#: apps/patients/choices.py:171
+msgid "BARBADOS"
+msgstr "BARBADOS"
+
+#: apps/patients/choices.py:172
+msgid "BERMUDA"
+msgstr "BERMUDA"
+
+#: apps/patients/choices.py:173
+msgid "BULGARIA"
+msgstr "BULGARIJE"
+
+#: apps/patients/choices.py:174
+msgid "BELIZE"
+msgstr "BELIZE"
+
+#: apps/patients/choices.py:175
+msgid "BHUTAN"
+msgstr "BHUTAN"
+
+#: apps/patients/choices.py:176
+msgid "BOSNIA AND HERZEGOVINA"
+msgstr "BOSNIË-HERZEGOVINA"
+
+#: apps/patients/choices.py:177
+msgid "BELARUS"
+msgstr "WIT-RUSLAND"
+
+#: apps/patients/choices.py:178
+msgid "BOLIVIA"
+msgstr "BOLIVIA"
+
+#: apps/patients/choices.py:179
+msgid "BRAZIL"
+msgstr "BRAZILIË"
+
+#: apps/patients/choices.py:180
+msgid "BAHREIN"
+msgstr "BAHREIN"
+
+#: apps/patients/choices.py:181
+msgid "BRUNEI"
+msgstr "BRUNEI"
+
+#: apps/patients/choices.py:182
+msgid "BAHAMAS"
+msgstr "BAHAMAS"
+
+#: apps/patients/choices.py:183
+msgid "BURKINA FASO"
+msgstr "BURKINA FASO"
+
+#: apps/patients/choices.py:184
+msgid "MYANMAR"
+msgstr "MYANMAR"
+
+#: apps/patients/choices.py:185
+msgid "BRITISH VIRGIN ISLANDS"
+msgstr "BRITSE MAAGDENEILANDEN"
+
+#: apps/patients/choices.py:186
+msgid "CUBA"
+msgstr "CUBA"
+
+#: apps/patients/choices.py:187
+msgid "CENTRAL AFRICAN REPUBLIC"
+msgstr "CENTRAAL AFRIKAANSE REPUBLIEK"
+
+#: apps/patients/choices.py:188
+msgid "CAMEROON"
+msgstr "KAMEROEN"
+
+#: apps/patients/choices.py:189
+msgid "CONGO (REP. DEMOC. )"
+msgstr "CONGO (REP. DEMOC. )"
+
+#: apps/patients/choices.py:190
+msgid "CANADA"
+msgstr "CANADA"
+
+#: apps/patients/choices.py:191
+msgid "CONGO"
+msgstr "CONGO"
+
+#: apps/patients/choices.py:192
+msgid "SWITZERLAND"
+msgstr "ZWITSERLAND"
+
+#: apps/patients/choices.py:193
+msgid "IVORY COAST"
+msgstr "IVOORKUST"
+
+#: apps/patients/choices.py:194
+msgid "SRI LANKA"
+msgstr "SRI LANKA"
+
+#: apps/patients/choices.py:195
+msgid "COLOMBIA"
+msgstr "COLOMBIA"
+
+#: apps/patients/choices.py:196
+msgid "COOK ISLANDS"
+msgstr "KOKEN EILANDEN"
+
+#: apps/patients/choices.py:197
+msgid "COMOROS"
+msgstr "COMOROS"
+
+#: apps/patients/choices.py:198
+msgid "CAP-VERT"
+msgstr "CAP-VERT"
+
+#: apps/patients/choices.py:199
+msgid "COSTA RICA"
+msgstr "COSTA RICA"
+
+#: apps/patients/choices.py:200
+msgid "CYPRUS"
+msgstr "CYPRUS"
+
+#: apps/patients/choices.py:201
+msgid "CAYMAN ISLANDS"
+msgstr "KAAIMAN EILANDEN"
+
+#: apps/patients/choices.py:202
+msgid "CZECH REPUBLIC"
+msgstr "TSJECHISCHE REPUBLIEK"
+
+#: apps/patients/choices.py:203
+msgid "GERMANY"
+msgstr "DUITSLAND"
+
+#: apps/patients/choices.py:204
+msgid "DJIBOUTI"
+msgstr "DJIBOUTI"
+
+#: apps/patients/choices.py:205
+msgid "DENMARK"
+msgstr "DENEMARKEN"
+
+#: apps/patients/choices.py:206
+msgid "DOMINICA"
+msgstr "DOMINICA"
+
+#: apps/patients/choices.py:207
+msgid "BENIN"
+msgstr "BENIN"
+
+#: apps/patients/choices.py:208
+msgid "ALGERIA"
+msgstr "ALGERIJE"
+
+#: apps/patients/choices.py:209
+msgid "SPAIN"
+msgstr "SPANJE"
+
+#: apps/patients/choices.py:210
+msgid "KENYA"
+msgstr "KENIA"
+
+#: apps/patients/choices.py:211
+msgid "UNITED ARAB EMIRATES"
+msgstr "VERENIGDE ARABISCHE EMIRATEN"
+
+#: apps/patients/choices.py:212
+msgid "TANZANIA"
+msgstr "TANZANIA"
+
+#: apps/patients/choices.py:213
+msgid "ECUADOR"
+msgstr "ECUADOR"
+
+#: apps/patients/choices.py:214
+msgid "ERITREA"
+msgstr "ERITREA"
+
+#: apps/patients/choices.py:215
+msgid "ESTONIA"
+msgstr "ESTLAND"
+
+#: apps/patients/choices.py:216
+msgid "EGYPT"
+msgstr "EGYPTE"
+
+#: apps/patients/choices.py:217
+msgid "ETHIOPIA"
+msgstr "ETHIOPIË"
+
+#: apps/patients/choices.py:218
+msgid "FRANCE"
+msgstr "FRANKRIJK"
+
+#: apps/patients/choices.py:219
+msgid "FINLAND"
+msgstr "FINLAND"
+
+#: apps/patients/choices.py:220
+msgid "FIJI"
+msgstr "FIJI"
+
+#: apps/patients/choices.py:221
+msgid "LIECHTENSTEIN"
+msgstr "LIECHTENSTEIN"
+
+#: apps/patients/choices.py:222
+msgid "FALKLAND ISLANDS"
+msgstr "FALKLAND ISLANDS"
+
+#: apps/patients/choices.py:223
+msgid "FAROE ISLANDS"
+msgstr "FAROE-EILANDEN"
+
+#: apps/patients/choices.py:224
+msgid "MICRONESIA"
+msgstr "MICRONESIË"
+
+#: apps/patients/choices.py:225
+msgid "GABON"
+msgstr "GABON"
+
+#: apps/patients/choices.py:226
+msgid "UNITED KINGDOM"
+msgstr "VERENIGD KONINKRIJK"
+
+#: apps/patients/choices.py:227
+msgid "GIBRALTAR"
+msgstr "GIBRALTAR"
+
+#: apps/patients/choices.py:228
+msgid "GUATEMALA"
+msgstr "GUATEMALA"
+
+#: apps/patients/choices.py:229
+msgid "GUADELOUPE"
+msgstr "GUADELOUPE"
+
+#: apps/patients/choices.py:230
+msgid "GEORGIA"
+msgstr "GEORGIË"
+
+#: apps/patients/choices.py:231
+msgid "GHANA"
+msgstr "GHANA"
+
+#: apps/patients/choices.py:232
+msgid "GUINEA-BISSAU"
+msgstr "Guinee-Bissau"
+
+#: apps/patients/choices.py:233
+msgid "EQUATORIAL GUINEA"
+msgstr "EQUATORIAAL-GUINEA"
+
+#: apps/patients/choices.py:234
+msgid "GREECE"
+msgstr "GRIEKENLAND"
+
+#: apps/patients/choices.py:235
+msgid "GRENADA"
+msgstr "GRENADA"
+
+#: apps/patients/choices.py:236
+msgid "GREENLAND"
+msgstr "GROENLAND"
+
+#: apps/patients/choices.py:237
+msgid "GUAM"
+msgstr "GUAM"
+
+#: apps/patients/choices.py:238
+msgid "GUINEA"
+msgstr "GUINEA"
+
+#: apps/patients/choices.py:239
+msgid "FRENCH GUIANA"
+msgstr "FRANS GUIANA"
+
+#: apps/patients/choices.py:240
+msgid "GUYANA"
+msgstr "GUYANA"
+
+#: apps/patients/choices.py:241
+msgid "HUNGARY"
+msgstr "HONGARIJE"
+
+#: apps/patients/choices.py:242
+msgid "HONG KONG"
+msgstr "HONG KONG"
+
+#: apps/patients/choices.py:243
+msgid "JORDAN"
+msgstr "JORDANIË"
+
+#: apps/patients/choices.py:244
+msgid "HEARD ISLAND AND MCDONALD ISLANDS"
+msgstr "GEHOORD EILAND EN MCDONALD EILANDEN"
+
+#: apps/patients/choices.py:245
+msgid "HONDURAS"
+msgstr "HONDURAS"
+
+#: apps/patients/choices.py:246
+msgid "CROATIA"
+msgstr "KROATIË"
+
+#: apps/patients/choices.py:247
+msgid "ITALY"
+msgstr "ITALIË"
+
+#: apps/patients/choices.py:248
+msgid "ISRAEL"
+msgstr "ISRAËL"
+
+#: apps/patients/choices.py:249
+msgid "INDIA"
+msgstr "INDIA"
+
+#: apps/patients/choices.py:250
+msgid "IRAN"
+msgstr "IK RENDE"
+
+#: apps/patients/choices.py:251
+msgid "IRELAND"
+msgstr "IERLAND"
+
+#: apps/patients/choices.py:252
+msgid "IRAQ"
+msgstr "IRAK"
+
+#: apps/patients/choices.py:253
+msgid "ICELAND"
+msgstr "IJSLAND"
+
+#: apps/patients/choices.py:254
+msgid "JAPAN"
+msgstr "JAPAN"
+
+#: apps/patients/choices.py:255
+msgid "JAMAICA"
+msgstr "JAMAICA"
+
+#: apps/patients/choices.py:256
+msgid "CAMBODIA"
+msgstr "CAMBODJA"
+
+#: apps/patients/choices.py:257
+msgid "KAZAKHSTAN"
+msgstr "KAZACHSTAN"
+
+#: apps/patients/choices.py:258
+msgid "KYRGYZSTAN"
+msgstr "KYRGYZSTAN"
+
+#: apps/patients/choices.py:259
+msgid "KIRIBATI"
+msgstr "KIRIBATI"
+
+#: apps/patients/choices.py:260
+msgid "SAINT KITTS AND NEVIS"
+msgstr "KIRIBATI..."
+
+#: apps/patients/choices.py:261
+msgid "NORTH KOREA"
+msgstr "NOORD KOREA"
+
+#: apps/patients/choices.py:262
+msgid "SOUTH KOREA"
+msgstr "ZUID-KOREA"
+
+#: apps/patients/choices.py:263
+msgid "KUWAIT"
+msgstr "KOEWEIT"
+
+#: apps/patients/choices.py:264
+msgid "LUXEMBOURG"
+msgstr "LUXEMBURG"
+
+#: apps/patients/choices.py:265
+msgid "LAOS"
+msgstr "LAOS"
+
+#: apps/patients/choices.py:266
+msgid "UGANDA"
+msgstr "OEGANDA"
+
+#: apps/patients/choices.py:267
+msgid "LIBERIA"
+msgstr "LIBERIA"
+
+#: apps/patients/choices.py:268
+msgid "LESOTHO"
+msgstr "LESOTHO"
+
+#: apps/patients/choices.py:269
+msgid "LITHUANIA"
+msgstr "LITOUWEN"
+
+#: apps/patients/choices.py:270
+msgid "LATVIA"
+msgstr "LETLAND"
+
+#: apps/patients/choices.py:271
+msgid "LIBYA"
+msgstr "LIBIË"
+
+#: apps/patients/choices.py:272
+msgid "MALTA"
+msgstr "MALTA"
+
+#: apps/patients/choices.py:273
+msgid "MOROCCO"
+msgstr "MAROKKO"
+
+#: apps/patients/choices.py:274
+msgid "MACAU"
+msgstr "MACAU"
+
+#: apps/patients/choices.py:275
+msgid "MALAYSIA"
+msgstr "MALEISIË"
+
+#: apps/patients/choices.py:276
+msgid "MONACO"
+msgstr "MONACO"
+
+#: apps/patients/choices.py:277
+msgid "MOLDAVIA"
+msgstr "MOLDAVIË"
+
+#: apps/patients/choices.py:278
+msgid "MADAGASCAR"
+msgstr "MADAGASCAR"
+
+#: apps/patients/choices.py:279
+msgid "MALDIVES"
+msgstr "MALDIVEN"
+
+#: apps/patients/choices.py:280
+msgid "MONTENEGRO"
+msgstr "MONTENEGRO"
+
+#: apps/patients/choices.py:281
+msgid "MEXICO"
+msgstr "MEXICO"
+
+#: apps/patients/choices.py:282
+msgid "MARSHALL ISLANDS"
+msgstr "MARSHALL EILANDEN"
+
+#: apps/patients/choices.py:283
+msgid "MACEDONIA"
+msgstr "MACEDONIË"
+
+#: apps/patients/choices.py:284
+msgid "MALI"
+msgstr "MALI"
+
+#: apps/patients/choices.py:285
+msgid "NORTHERN MARIANA ISLANDS"
+msgstr "NOORDELIJKE MARIANA EILANDEN"
+
+#: apps/patients/choices.py:286
+msgid "MOZAMBIQUE"
+msgstr "MOZAMBIQUE"
+
+#: apps/patients/choices.py:287
+msgid "MONGOLIA"
+msgstr "MONGOLIË"
+
+#: apps/patients/choices.py:288
+msgid "MARTINIQUE"
+msgstr "MARTINIQUE"
+
+#: apps/patients/choices.py:289
+msgid "MONTSERRAT"
+msgstr "MONTSERRAT"
+
+#: apps/patients/choices.py:290
+msgid "MAURITIUS"
+msgstr "MAURITIUS"
+
+#: apps/patients/choices.py:291
+msgid "MALAWI"
+msgstr "MALAWI"
+
+#: apps/patients/choices.py:292
+msgid "MAYOTTE"
+msgstr "MAYOTTE"
+
+#: apps/patients/choices.py:293
+msgid "NAURU"
+msgstr "NAURU"
+
+#: apps/patients/choices.py:294
+msgid "NEW CALEDONIA"
+msgstr "NIEUW-CALEDONIË"
+
+#: apps/patients/choices.py:295
+msgid "NEPAL"
+msgstr "NEPAL"
+
+#: apps/patients/choices.py:296
+msgid "NORFOLK ISLAND"
+msgstr "NORFOLK ISLAND"
+
+#: apps/patients/choices.py:297
+msgid "NICARAGUA"
+msgstr "NICARAGUA"
+
+#: apps/patients/choices.py:298
+msgid "NIUE"
+msgstr "NIUE"
+
+#: apps/patients/choices.py:299
+msgid "NETHERLANDS"
+msgstr "NEDERLAND"
+
+#: apps/patients/choices.py:300
+msgid "NORWAY"
+msgstr "NOORWEGEN"
+
+#: apps/patients/choices.py:301
+msgid "NEW ZEALAND"
+msgstr "NIEUW ZEELAND"
+
+#: apps/patients/choices.py:302
+msgid "OMAN"
+msgstr "OMAN"
+
+#: apps/patients/choices.py:303
+msgid "PORTUGAL"
+msgstr "PORTUGAL"
+
+#: apps/patients/choices.py:304
+msgid "PANAMA"
+msgstr "PANAMA"
+
+#: apps/patients/choices.py:305
+msgid "PAKISTAN"
+msgstr "PAKISTAN"
+
+#: apps/patients/choices.py:306
+msgid "PITCAIRN ISLANDS"
+msgstr "PITCAIRN EILANDEN"
+
+#: apps/patients/choices.py:307
+msgid "PERU"
+msgstr "PERU"
+
+#: apps/patients/choices.py:308
+msgid "POLAND"
+msgstr "POLEN"
+
+#: apps/patients/choices.py:309
+msgid "PALAU"
+msgstr "PALAU"
+
+#: apps/patients/choices.py:310
+msgid "PAPUA NEW GUINEA"
+msgstr "PAPOEA-NIEUW-GUINEA"
+
+#: apps/patients/choices.py:311
+msgid "PORTO RICO"
+msgstr "PORTO RICO"
+
+#: apps/patients/choices.py:312
+msgid "PALESTINE"
+msgstr "PALESTINA"
+
+#: apps/patients/choices.py:313
+msgid "PARAGUAY"
+msgstr "PARAGUAY"
+
+#: apps/patients/choices.py:314
+msgid "FRENCH POLYNESIA"
+msgstr "FRANS-POLYNESIË"
+
+#: apps/patients/choices.py:315
+msgid "QATAR"
+msgstr "QATAR"
+
+#: apps/patients/choices.py:316
+msgid "ARGENTINA"
+msgstr "ARGENTINIË"
+
+#: apps/patients/choices.py:317
+msgid "BOTSWANA"
+msgstr "BOTSWANA"
+
+#: apps/patients/choices.py:318
+msgid "CHINA"
+msgstr "CHINA"
+
+#: apps/patients/choices.py:319
+msgid "CHILE"
+msgstr "CHILI"
+
+#: apps/patients/choices.py:320
+msgid "REUNION"
+msgstr "BIJEENKOMST"
+
+#: apps/patients/choices.py:321
+msgid "HAITI"
+msgstr "HAÏTI"
+
+#: apps/patients/choices.py:322
+msgid "INDONESIA"
+msgstr "INDONESIË"
+
+#: apps/patients/choices.py:323
+msgid "MAURITANIA"
+msgstr "MAURITANIA"
+
+#: apps/patients/choices.py:324
+msgid "LEBANON"
+msgstr "LIBANON"
+
+#: apps/patients/choices.py:325
+msgid "NIGER"
+msgstr "NIGER"
+
+#: apps/patients/choices.py:326
+msgid "ROMANIA"
+msgstr "ROEMENIË"
+
+#: apps/patients/choices.py:327
+msgid "PHILIPPINES"
+msgstr "FILIPPIJNEN"
+
+#: apps/patients/choices.py:328
+msgid "SERBIA"
+msgstr "SERVIË"
+
+#: apps/patients/choices.py:329
+msgid "SAN MARINO"
+msgstr "SAN MARINO"
+
+#: apps/patients/choices.py:330
+msgid "BURUNDI"
+msgstr "BURUNDI"
+
+#: apps/patients/choices.py:331
+msgid "RUSSIA"
+msgstr "RUSLAND"
+
+#: apps/patients/choices.py:332
+msgid "RWANDA"
+msgstr "RWANDA"
+
+#: apps/patients/choices.py:333
+msgid "SWEDEN"
+msgstr "ZWEDEN"
+
+#: apps/patients/choices.py:334
+msgid "WESTERN SAHARA"
+msgstr "WESTELIJKE SAHARA"
+
+#: apps/patients/choices.py:335
+msgid "SWAZILAND"
+msgstr "SWAZILAND"
+
+#: apps/patients/choices.py:336
+msgid "SINGAPORE"
+msgstr "SINGAPORE"
+
+#: apps/patients/choices.py:337
+msgid "SAINT HELENA"
+msgstr "SAINT HELENA"
+
+#: apps/patients/choices.py:338
+msgid "SVALBARD AND JAN MAYEN"
+msgstr "SVALBARD EN JAN MAYEN"
+
+#: apps/patients/choices.py:339
+msgid "SLOVAKIA"
+msgstr "SLOWAKIJE"
+
+#: apps/patients/choices.py:340
+msgid "SOLOMON ISLANDS"
+msgstr "SOLOMON EILANDEN"
+
+#: apps/patients/choices.py:341
+msgid "SLOVENIE"
+msgstr "SLOVENIE"
+
+#: apps/patients/choices.py:342
+msgid "SALVADOR"
+msgstr "SALVADOR"
+
+#: apps/patients/choices.py:343
+msgid "SURINAME"
+msgstr "SURINAME"
+
+#: apps/patients/choices.py:344
+msgid "SENEGAL"
+msgstr "SENEGAL"
+
+#: apps/patients/choices.py:345
+msgid "SUDAN"
+msgstr "SOEDAN"
+
+#: apps/patients/choices.py:346
+msgid "SOMALIE"
+msgstr "SOMALIE"
+
+#: apps/patients/choices.py:347
+msgid "SAINT PIERRE AND MIQUELON"
+msgstr "SAINT PIERRE EN MIQUELON"
+
+#: apps/patients/choices.py:348
+msgid "SOUTH SUDAN"
+msgstr "ZUID SOEDAN"
+
+#: apps/patients/choices.py:349
+msgid "SAO TOME AND PRINCIPE"
+msgstr "SAO TOME EN PRINCIPE"
+
+#: apps/patients/choices.py:350
+msgid "NAMIBIA"
+msgstr "NAMIBIË"
+
+#: apps/patients/choices.py:351
+msgid "SEYCHELLES"
+msgstr "SEYCHELLEN"
+
+#: apps/patients/choices.py:352
+msgid "SYRIA"
+msgstr "SYRIË"
+
+#: apps/patients/choices.py:353
+msgid "THAILAND"
+msgstr "THAILAND"
+
+#: apps/patients/choices.py:354
+msgid "TURKS AND CAICOS ISLANDS"
+msgstr "TURKS EN CAICOS EILANDEN"
+
+#: apps/patients/choices.py:355
+msgid "CHAD"
+msgstr "TSJAAD"
+
+#: apps/patients/choices.py:356
+msgid "TOGO"
+msgstr "GAAN"
+
+#: apps/patients/choices.py:357
+msgid "TAJIKISTAN"
+msgstr "TADZJIKISTAN"
+
+#: apps/patients/choices.py:358
+msgid "TOKELAU"
+msgstr "TOKELAU"
+
+#: apps/patients/choices.py:359
+msgid "TURKMENISTAN"
+msgstr "TURKMENISTAN"
+
+#: apps/patients/choices.py:360
+msgid "WEST TIMOR"
+msgstr "WEST TIMOR"
+
+#: apps/patients/choices.py:361
+msgid "TUNISIA"
+msgstr "Tunesië"
+
+#: apps/patients/choices.py:362
+msgid "TONGA"
+msgstr "TONGA"
+
+#: apps/patients/choices.py:363
+msgid "TURKEY"
+msgstr "TURKIJE"
+
+#: apps/patients/choices.py:364
+msgid "TRINIDAD AND TOBAGO"
+msgstr "TRINIDAD EN TOBAGO"
+
+#: apps/patients/choices.py:365
+msgid "TUVALU"
+msgstr "TUVALU"
+
+#: apps/patients/choices.py:366
+msgid "TAIWAN"
+msgstr "TAIWAN"
+
+#: apps/patients/choices.py:367
+msgid "URUGUAY"
+msgstr "URUGUAY"
+
+#: apps/patients/choices.py:368
+msgid "UKRAINE"
+msgstr "OEKRAÏNE"
+
+#: apps/patients/choices.py:369
+msgid "UNITED STATES OF AMERICA"
+msgstr "VERENIGDE STATEN VAN AMERIKA"
+
+#: apps/patients/choices.py:370
+msgid "UZBEKISTAN"
+msgstr "OEZBEKISTAN"
+
+#: apps/patients/choices.py:371
+msgid "VATICAN"
+msgstr "VATICAAN"
+
+#: apps/patients/choices.py:372
+msgid "VANUATU"
+msgstr "VANUATU"
+
+#: apps/patients/choices.py:373
+msgid "SAINT VINCENT AND THE GRENADINES"
+msgstr "SAINT VINCENT EN DE GRENADINES"
+
+#: apps/patients/choices.py:374
+msgid "UNITED STATES VIRGIN ISLANDS"
+msgstr "MAAGDENLANDSE VERENIGDE STATEN VAN DE VERENIGDE STATEN"
+
+#: apps/patients/choices.py:375
+msgid "VIETNAM"
+msgstr "VIETNAM"
+
+#: apps/patients/choices.py:376
+msgid "VENEZUELA"
+msgstr "VENEZUELA"
+
+#: apps/patients/choices.py:377
+msgid "GAMBIA"
+msgstr "GAMBIA"
+
+#: apps/patients/choices.py:378
+msgid "SIERRA LEONE"
+msgstr "SIERRA LEONE"
+
+#: apps/patients/choices.py:379
+msgid "NIGERIA"
+msgstr "NIGERIA"
+
+#: apps/patients/choices.py:380
+msgid "DOMINICAN REPUBLIC"
+msgstr "DOMINICAANSE REPUBLIEK"
+
+#: apps/patients/choices.py:381
+msgid "SAINT LUCIA"
+msgstr "SAINT LUCIA"
+
+#: apps/patients/choices.py:382
+msgid "WALLIS AND FUTUNA"
+msgstr "WALLIS EN FUTUNA"
+
+#: apps/patients/choices.py:383
+msgid "SAMOA"
+msgstr "SAMOA"
+
+#: apps/patients/choices.py:384
+msgid "YEMEN"
+msgstr "JEMEN"
+
+#: apps/patients/choices.py:385
+msgid "ZAMBIA"
+msgstr "ZAMBIA"
+
+#: apps/patients/choices.py:386
+msgid "SOUTH AFRICA"
+msgstr "ZUID-AFRIKA"
+
+#: apps/patients/choices.py:387
+msgid "ZIMBABWE"
+msgstr "ZIMBABWE"
+
+#: apps/patients/choices.py:474
+msgid "Ordinary policyholder (75%)"
+msgstr "Gewone verzekeringnemer (75%)"
+
+#: apps/patients/choices.py:475
+msgid "WDRO"
+msgstr "WDRO"
+
+#: apps/patients/choices.py:476
+msgid "Self-employed (high risk)"
+msgstr "Zelfstandig (hoog risico)"
+
+#: apps/patients/choices.py:477
+msgid "Self-employed (low risk)"
+msgstr "Zelfstandig (laag risico)"
+
+#: apps/patients/choices.py:478
+msgid "SPPIS: OA part + patient part"
+msgstr "SPPIS: OA-onderdeel + patiëntgedeelte"
+
+#: apps/patients/choices.py:479
+msgid "Payable by health insurance policy"
+msgstr "Te betalen door zorgverzekeringspolis"
+
+#: apps/patients/filter_backend.py:102 apps/patients/serializers.py:258
+msgid "Released"
+msgstr "Vrijgelaten"
+
+#: apps/patients/filter_backend.py:104 apps/patients/serializers.py:260
+msgid "Temporary released"
+msgstr "Tijdelijk vrijgegeven"
+
+#: apps/patients/filter_backend.py:105 apps/patients/serializers.py:261
+msgid "Present"
+msgstr "Aanwezig"
+
+#: apps/patients/models.py:15
+#: apps/patients/templates/patients/patient_export_template.html:68
+msgid "Patient ID"
+msgstr "Patient ID"
+
+#: apps/patients/models.py:16
+#: apps/patients/templates/patients/patient_export_template.html:69
+msgid "Full name"
+msgstr "Voor-en achternaam"
+
+#: apps/patients/models.py:17
+#: apps/patients/templates/patients/patient_export_template.html:70
+msgid "Identity Card Number"
+msgstr "Identiteitskaartnummer"
+
+#: apps/patients/models.py:19
+#: apps/patients/templates/patients/patient_export_template.html:71
+msgid "Identity Card Type"
+msgstr "Identiteitskaarttype"
+
+#: apps/patients/models.py:22
+#: apps/patients/templates/patients/patient_export_template.html:72
+#: apps/reports/templates/reports/base_report.html:76
+msgid "Identity Document Type"
+msgstr "Identiteit Documenttype"
+
+#: apps/patients/models.py:25
+#: apps/patients/templates/patients/patient_export_template.html:74
+#: apps/reports/templates/reports/base_report.html:79
+msgid "Birth Date"
+msgstr "Geboortedatum"
+
+#: apps/patients/models.py:28
+#: apps/patients/templates/patients/patient_export_template.html:76
+msgid "Marital Status"
+msgstr "Burgerlijke staat"
+
+#: apps/patients/models.py:30
+msgid "Partner's Name"
+msgstr "Partners naam"
+
+#: apps/patients/models.py:31
+#: apps/patients/templates/patients/patient_export_template.html:78
+#: apps/reports/templates/reports/base_report.html:85
+msgid "Nationality"
+msgstr "Nationaliteit"
+
+#: apps/patients/models.py:32
+#: apps/patients/templates/patients/patient_export_template.html:79
+#: apps/reports/templates/reports/base_report.html:88
+msgid "Country"
+msgstr "Land"
+
+#: apps/patients/models.py:33
+#: apps/patients/templates/patients/patient_export_template.html:80
+#: apps/reports/templates/reports/base_report.html:91
+msgid "Address"
+msgstr "Adres"
+
+#: apps/patients/models.py:34
+#: apps/patients/templates/patients/patient_export_template.html:81
+msgid "Post Code"
+msgstr "Postcode"
+
+#: apps/patients/models.py:35
+#: apps/patients/templates/patients/patient_export_template.html:82
+msgid "National Register"
+msgstr "Nationaal register"
+
+#: apps/patients/models.py:36
+#: apps/patients/templates/patients/patient_export_template.html:83
+msgid "Foreign Register"
+msgstr "Buitenlands Register"
+
+#: apps/patients/models.py:37
+#: apps/patients/templates/patients/patient_export_template.html:84
+msgid "Phone Number"
+msgstr "Telefoonnummer"
+
+#: apps/patients/models.py:38 apps/patients/models.py:186
+#: apps/patients/templates/patients/patient_export_template.html:85
+#: apps/patients/templates/patients/patient_export_template.html:132
+msgid "E-mail Address"
+msgstr "E-mailadres"
+
+#: apps/patients/models.py:39
+#: apps/patients/templates/patients/patient_export_template.html:86
+msgid "Confidential(VIP)"
+msgstr "Confidential(VIP)"
+
+#: apps/patients/models.py:40
+#: apps/patients/templates/patients/patient_export_template.html:87
+msgid "Religion"
+msgstr "Religie"
+
+#: apps/patients/models.py:41
+#: apps/patients/templates/patients/patient_export_template.html:88
+#: apps/reports/templates/reports/base_report.html:103
+msgid "General Practitioner"
+msgstr "Huisarts"
+
+#: apps/patients/models.py:42
+msgid "Date of Death"
+msgstr "Sterfdatum"
+
+#: apps/patients/models.py:43
+#: apps/patients/templates/patients/patient_export_template.html:89
+msgid "Note"
+msgstr "Sterfdatum"
+
+#: apps/patients/models.py:46
+#: apps/patients/templates/patients/patient_export_template.html:93
+#: apps/reports/templates/reports/social_report.html:6
+msgid "Health Insurance Policy"
+msgstr "Ziektekostenverzekering"
+
+#: apps/patients/models.py:48
+#: apps/patients/templates/patients/patient_export_template.html:94
+msgid "Policy Holder Name"
+msgstr "Naam polishouder"
+
+#: apps/patients/models.py:50
+msgid "End of Validity Period"
+msgstr "Einde geldigheidsperiode"
+
+#: apps/patients/models.py:52
+#: apps/patients/templates/patients/patient_export_template.html:95
+#: apps/reports/templates/reports/social_report.html:15
+msgid "Beneficiary ID"
+msgstr "Begunstigde ID"
+
+#: apps/patients/models.py:54
+#: apps/patients/templates/patients/patient_export_template.html:96
+#: apps/reports/templates/reports/social_report.html:18
+msgid "Beneficiary occupation"
+msgstr "Begunstigde bezetting"
+
+#: apps/patients/models.py:57
+#: apps/patients/templates/patients/patient_export_template.html:97
+#: apps/reports/templates/reports/social_report.html:21
+msgid "Heading Code HC1/HC2"
+msgstr "Koerscode HC1 / HC2"
+
+#: apps/patients/models.py:59
+#: apps/patients/templates/patients/patient_export_template.html:98
+#: apps/reports/templates/reports/social_report.html:23
+msgid "Employed/Unemployed"
+msgstr "Werkzaam/Werklozen"
+
+#: apps/patients/models.py:60
+#: apps/patients/templates/patients/patient_export_template.html:99
+msgid "Dependants"
+msgstr "Dependents"
+
+#: apps/patients/models.py:61
+#: apps/patients/templates/patients/patient_export_template.html:100
+msgid "Authorised Third Party"
+msgstr "Geautoriseerde derde partij"
+
+#: apps/patients/models.py:63
+#: apps/patients/templates/patients/patient_export_template.html:104
+msgid "Federal Disability Recognition"
+msgstr "Federale erkenning van beperkingen"
+
+#: apps/patients/models.py:64
+#: apps/patients/templates/patients/patient_export_template.html:105
+#: apps/reports/templates/reports/social_report.html:36
+msgid "Regional Disability Recognition"
+msgstr "Regionale erkenning van handicaps"
+
+#: apps/patients/models.py:66
+#: apps/patients/templates/patients/patient_export_template.html:106
+msgid "Disability Assessment points"
+msgstr "Disability Assessment punten"
+
+#: apps/patients/models.py:69
+#: apps/patients/templates/patients/patient_export_template.html:107
+#: apps/reports/templates/reports/social_report.html:39
+msgid "Income origin"
+msgstr "Inkomen oorsprong"
+
+#: apps/patients/models.py:71
+#: apps/patients/templates/patients/patient_export_template.html:108
+#: apps/reports/templates/reports/social_report.html:42
+msgid "Income amount"
+msgstr "Inkomensbedrag"
+
+#: apps/patients/models.py:72
+#: apps/patients/templates/patients/patient_export_template.html:109
+#: apps/reports/templates/reports/social_report.html:45
+msgid "Expenses"
+msgstr "Uitgaven"
+
+#: apps/patients/models.py:74
+#: apps/patients/templates/patients/patient_export_template.html:110
+#: apps/reports/templates/reports/social_report.html:48
+msgid "Debts"
+msgstr "Schulden"
+
+#: apps/patients/models.py:75
+#: apps/patients/templates/patients/patient_export_template.html:111
+#: apps/reports/templates/reports/social_report.html:51
+msgid "Financial Power of Attorney"
+msgstr "Financiële volmacht"
+
+#: apps/patients/models.py:76
+#: apps/patients/templates/patients/patient_export_template.html:112
+#: apps/reports/templates/reports/social_report.html:54
+msgid "Financial Management"
+msgstr "Financieel management"
+
+#: apps/patients/models.py:78
+#: apps/patients/templates/patients/patient_export_template.html:113
+msgid "Living Environment ad Admission"
+msgstr "Living Environment ad Admission"
+
+#: apps/patients/models.py:80
+#: apps/patients/templates/patients/patient_export_template.html:114
+#: apps/reports/templates/reports/social_report.html:60
+msgid "Current Occupation"
+msgstr "Huidig beroep"
+
+#: apps/patients/models.py:81
+#: apps/patients/templates/patients/patient_export_template.html:115
+#: apps/reports/templates/reports/social_report.html:63
+msgid "Professional Career"
+msgstr "Professionele carriere"
+
+#: apps/patients/models.py:82
+#: apps/patients/templates/patients/patient_export_template.html:116
+#: apps/reports/templates/reports/social_report.html:66
+msgid "Education"
+msgstr "Opleiding"
+
+#: apps/patients/models.py:84
+#: apps/patients/templates/patients/patient_export_template.html:117
+#: apps/reports/templates/reports/social_report.html:69
+msgid "Education Pathway"
+msgstr "Educatieve route"
+
+#: apps/patients/models.py:86
+msgid "Consent to proceed patient data"
+msgstr ""
+
+#: apps/patients/models.py:120
+#: apps/patients/templates/patients/patient_export_template.html:146
+msgid "File ID"
+msgstr "Bestands-ID"
+
+#: apps/patients/models.py:122
+#: apps/patients/templates/patients/patient_export_template.html:148
+msgid "Closed since"
+msgstr "Sinds gesloten"
+
+#: apps/patients/models.py:123
+#: apps/patients/templates/patients/patient_export_template.html:149
+msgid "Released from"
+msgstr "Vrijgelaten uit"
+
+#: apps/patients/models.py:124
+#: apps/patients/templates/patients/patient_export_template.html:150
+msgid "Released until"
+msgstr "Vrijgegeven tot"
+
+#: apps/patients/models.py:125
+msgid "Assigned Patient's Bed"
+msgstr ""
+
+#: apps/patients/models.py:126
+#: apps/patients/templates/patients/patient_export_template.html:152
+msgid "Status"
+msgstr "Status"
+
+#: apps/patients/models.py:127
+msgid "Temporary patients location"
+msgstr ""
+
+#: apps/patients/models.py:128
+msgid "Due tasks"
+msgstr ""
+
+#: apps/patients/models.py:129
+#, fuzzy
+#| msgid "Planned Tasks"
+msgid "Open tasks"
+msgstr "Geplande taken"
+
+#: apps/patients/models.py:171
+msgid "Archive Comment"
+msgstr "Archief Reactie"
+
+#: apps/patients/models.py:172
+msgid "Archive Comments"
+msgstr "Opmerkingen archiveren"
+
+#: apps/patients/models.py:184
+#: apps/patients/templates/patients/patient_export_template.html:130
+msgid "Phone"
+msgstr "Telefoon"
+
+#: apps/patients/models.py:185
+#: apps/patients/templates/patients/patient_export_template.html:131
+msgid "Is trusted"
+msgstr "Is vertrouwd"
+
+#: apps/patients/models.py:187
+#: apps/patients/templates/patients/patient_export_template.html:133
+#, fuzzy
+#| msgid "Deleted"
+msgid "Deleted Contact"
+msgstr "Verwijderde"
+
+#: apps/patients/models.py:188
+#: apps/patients/templates/patients/patient_export_template.html:134
+msgid "Reason for deletion"
+msgstr ""
+
+#: apps/patients/models.py:192
+msgid "Emergency Contact"
+msgstr "Contact met noodgevallen"
+
+#: apps/patients/models.py:193
+msgid "Emergency Contacts"
+msgstr "Contactpersonen voor noodgevallen"
+
+#: apps/patients/serializers.py:95
+msgid "Email already exists"
+msgstr "E-mail bestaat al"
+
+#: apps/patients/serializers.py:103
+msgid "This field must be unique."
+msgstr ""
+
+#: apps/patients/serializers.py:171
+msgid "Wrong date format for created"
+msgstr ""
+
+#: apps/patients/serializers.py:177
+msgid "Patient from hl7 must have national_register"
+msgstr ""
+
+#: apps/patients/serializers.py:196
+msgid "Wrong date format for birth_date"
+msgstr ""
+
+#: apps/patients/serializers.py:203 apps/patients/serializers.py:444
+#: apps/patients/serializers.py:451
+msgid "Wrong date format for validity_end"
+msgstr ""
+
+#: apps/patients/serializers.py:437
+msgid "Closed time cant be in future"
+msgstr ""
+
+#: apps/patients/serializers.py:470
+msgid "Released to is required"
+msgstr "Vrijgegeven is vereist"
+
+#: apps/patients/serializers.py:475
+msgid "Released from is required"
+msgstr "Vrijgegeven van is vereist"
+
+#: apps/patients/templates/patients/change_form_template.html:14
+#, fuzzy
+#| msgid "Report"
+msgid "Export"
+msgstr "Verslag doen van"
+
+#: apps/patients/templates/patients/change_form_template.html:19
+msgid "Refresh"
+msgstr ""
+
+#: apps/patients/templates/patients/change_form_template.html:25
+#, fuzzy
+#| msgid "General practitioner"
+msgid "Generating"
+msgstr "Huisarts"
+
+#: apps/patients/templates/patients/change_form_template.html:37
+msgid "Regenerate"
+msgstr ""
+
+#: apps/patients/templates/patients/change_form_template.html:51
+msgid "Generated by"
+msgstr ""
+
+#: apps/patients/templates/patients/change_form_template.html:60
+#, fuzzy
+#| msgid "Temperature"
+msgid "Generate"
+msgstr "Temperatuur"
+
+#: apps/patients/templates/patients/change_list_template.html:17
+msgid "Search Patients by id"
+msgstr ""
+
+#: apps/patients/templates/patients/change_list_template.html:25
+msgid "Search Patients by Birth Date"
+msgstr ""
+
+#: apps/patients/templates/patients/change_list_template.html:34
+msgid "Download template"
+msgstr "Sjabloon downloaden"
+
+#: apps/patients/templates/patients/change_list_template.html:44
+msgid "Upload patients"
+msgstr "Upload patiënten"
+
+#: apps/patients/templates/patients/patient_export_template.html:61
+#, fuzzy
+#| msgid "Patient ID"
+msgid "Patient Export"
+msgstr "Patient ID"
+
+#: apps/patients/templates/patients/patient_export_template.html:65
+#, fuzzy
+#| msgid "Patient ID"
+msgid "Patient Info"
+msgstr "Patient ID"
+
+#: apps/patients/templates/patients/patient_export_template.html:67
+msgid "Last modified"
+msgstr ""
+
+#: apps/patients/templates/patients/patient_export_template.html:77
+#, fuzzy
+#| msgid "Partner's Name"
+msgid "Partners Name"
+msgstr "Partners naam"
+
+#: apps/patients/templates/patients/patient_export_template.html:92
+#, fuzzy
+#| msgid "Health Insurance Policy"
+msgid "Health Insurance Info"
+msgstr "Ziektekostenverzekering"
+
+#: apps/patients/templates/patients/patient_export_template.html:103
+#, fuzzy
+#| msgid "Social info"
+msgid "Social Info"
+msgstr "Sociale informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:121
+#, fuzzy
+#| msgid "Emergency Contact"
+msgid "Emergency contact information"
+msgstr "Contact met noodgevallen"
+
+#: apps/patients/templates/patients/patient_export_template.html:123
+#, fuzzy
+#| msgid "Emergency Contacts"
+msgid "No emergency contacts"
+msgstr "Contactpersonen voor noodgevallen"
+
+#: apps/patients/templates/patients/patient_export_template.html:126
+#: apps/patients/templates/patients/patient_export_template.html:144
+#: apps/patients/templates/patients/patient_export_template.html:157
+#: apps/patients/templates/patients/patient_export_template.html:171
+#: apps/patients/templates/patients/patient_export_template.html:186
+#: apps/patients/templates/patients/patient_export_template.html:232
+#: apps/patients/templates/patients/patient_export_template.html:248
+#: apps/patients/templates/patients/patient_export_template.html:291
+#: apps/patients/templates/patients/patient_export_template.html:307
+msgid "Record created"
+msgstr ""
+
+#: apps/patients/templates/patients/patient_export_template.html:127
+#: apps/patients/templates/patients/patient_export_template.html:145
+#: apps/patients/templates/patients/patient_export_template.html:158
+#: apps/patients/templates/patients/patient_export_template.html:172
+#: apps/patients/templates/patients/patient_export_template.html:187
+#: apps/patients/templates/patients/patient_export_template.html:233
+#: apps/patients/templates/patients/patient_export_template.html:308
+msgid "Record last edited"
+msgstr ""
+
+#: apps/patients/templates/patients/patient_export_template.html:143
+#, fuzzy
+#| msgid "Social informations"
+msgid "File information"
+msgstr "Sociale informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:151
+msgid "Assigned Patients Bed"
+msgstr ""
+
+#: apps/patients/templates/patients/patient_export_template.html:155
+#, fuzzy
+#| msgid "Social informations"
+msgid "Journal information"
+msgstr "Sociale informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:169
+#, fuzzy
+#| msgid "Patient informations"
+msgid "Diagnostic information"
+msgstr "Patiënteninformatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:184
+#, fuzzy
+#| msgid "Medication informations"
+msgid "Prescription information"
+msgstr "Medicatie informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:198
+#, fuzzy
+#| msgid "Prescriptions"
+msgid "Prescription schedule"
+msgstr "Voorschriften"
+
+#: apps/patients/templates/patients/patient_export_template.html:201
+#: apps/patients/templates/patients/patient_export_template.html:259
+#: apps/patients/templates/patients/patient_export_template.html:282
+msgid "Open"
+msgstr ""
+
+#: apps/patients/templates/patients/patient_export_template.html:208
+#, fuzzy
+#| msgid "Social informations"
+msgid "Vitals information"
+msgstr "Sociale informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:230
+#, fuzzy
+#| msgid "Social informations"
+msgid "Wounds information"
+msgstr "Sociale informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:234
+#: apps/wounds/models.py:14
+msgid "Wound name"
+msgstr "Wond naam"
+
+#: apps/patients/templates/patients/patient_export_template.html:235
+#: apps/wounds/models.py:15
+msgid "Wound type"
+msgstr "Wondtype"
+
+#: apps/patients/templates/patients/patient_export_template.html:236
+#: apps/wounds/models.py:17
+msgid "Localization"
+msgstr "Localization"
+
+#: apps/patients/templates/patients/patient_export_template.html:244
+#: apps/wounds/models.py:43
+msgid "Evolution"
+msgstr "Evolutie"
+
+#: apps/patients/templates/patients/patient_export_template.html:246
+#: apps/wounds/models.py:35
+msgid "Width"
+msgstr "Breedte"
+
+#: apps/patients/templates/patients/patient_export_template.html:247
+#: apps/vitals/choices.py:8 apps/wounds/models.py:36
+msgid "Height"
+msgstr "Hoogte"
+
+#: apps/patients/templates/patients/patient_export_template.html:256
+#, fuzzy
+#| msgid "Wounds/Treatment plan"
+msgid "Treatment plan"
+msgstr "Wonden/Behandelplan"
+
+#: apps/patients/templates/patients/patient_export_template.html:267
+#, fuzzy
+#| msgid "Social informations"
+msgid "Tasks information"
+msgstr "Sociale informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:270
+#, fuzzy
+#| msgid "Task Date"
+msgid "Task name"
+msgstr "Taakdatum"
+
+#: apps/patients/templates/patients/patient_export_template.html:271
+#: apps/tasks/models.py:54
+msgid "Task Date"
+msgstr "Taakdatum"
+
+#: apps/patients/templates/patients/patient_export_template.html:272
+#: apps/tasks/models.py:55
+msgid "Task Time"
+msgstr "Taak tijd"
+
+#: apps/patients/templates/patients/patient_export_template.html:273
+#: apps/tasks/models.py:57
+msgid "Team Members"
+msgstr "Teamleden"
+
+#: apps/patients/templates/patients/patient_export_template.html:282
+#: apps/tasks/models.py:60
+msgid "Task Status"
+msgstr "Taakstatus"
+
+#: apps/patients/templates/patients/patient_export_template.html:289
+#, fuzzy
+#| msgid "Evaluation informations"
+msgid "Evaluations information"
+msgstr "Evaluatie-informatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:299
+#, fuzzy
+#| msgid "Edited"
+msgid "Editable"
+msgstr "Bewerkt"
+
+#: apps/patients/templates/patients/patient_export_template.html:305
+#, fuzzy
+#| msgid "Patient informations"
+msgid "Reports information"
+msgstr "Patiënteninformatie"
+
+#: apps/patients/templates/patients/patient_export_template.html:309
+#: apps/reports/models.py:11
+msgid "Title"
+msgstr "Titel"
+
+#: apps/patients/templates/patients/patient_export_template.html:310
+#, fuzzy
+#| msgid "Report"
+msgid "Report type"
+msgstr "Verslag doen van"
+
+#: apps/patients/templates/patients/patient_export_template.html:320
+#, fuzzy
+#| msgid "Patient Assertion"
+msgid "Patient export"
+msgstr "Bewering van patiënten"
+
+#: apps/patients/views.py:248
+msgid "Specify deletion reason."
+msgstr ""
+
+#: apps/reports/apps.py:7 apps/reports/models.py:19
+msgid "Reports"
+msgstr "Rapporten"
+
+#: apps/reports/choices.py:4
+msgid "Medical Report"
+msgstr "Medisch rapport"
+
+#: apps/reports/choices.py:5
+msgid "Social Report"
+msgstr "Sociaal rapport"
+
+#: apps/reports/choices.py:6
+msgid "List of drugs"
+msgstr "Lijst met medicijnen"
+
+#: apps/reports/choices.py:7
+msgid "Evaluation Report"
+msgstr "Evaluatieverslag"
+
+#: apps/reports/forms.py:17
+msgid "Logo size should be less than 100kB"
+msgstr "Het logo moet kleiner zijn dan 100 kB"
+
+#: apps/reports/models.py:13 apps/reports/models.py:18
+msgid "Report"
+msgstr "Verslag doen van"
+
+#: apps/reports/models.py:35
+msgid "Logo"
+msgstr "Logo"
+
+#: apps/reports/models.py:38
+msgid "Report Logo"
+msgstr "Rapport Logo"
+
+#: apps/reports/models.py:39
+msgid "Report Logos"
+msgstr "Meld logo's"
+
+#: apps/reports/serializers.py:50
+msgid "Document was expired"
+msgstr "Document was verlopen"
+
+#: apps/reports/templates/reports/base_report.html:60
+msgid "Concerns"
+msgstr "Bedenkingen"
+
+#: apps/reports/templates/reports/base_report.html:62
+#: apps/reports/templates/reports/base_report.html:73
+msgid "Patient Name"
+msgstr "Patient naam"
+
+#: apps/reports/templates/reports/base_report.html:65
+msgid "Hospitalized since"
+msgstr "Sindsdien opgenomen in het ziekenhuis"
+
+#: apps/reports/templates/reports/base_report.html:67
+msgid "Actual unit"
+msgstr "Werkelijke eenheid"
+
+#: apps/reports/templates/reports/base_report.html:69
+msgid "Bed"
+msgstr ""
+
+#: apps/reports/templates/reports/base_report.html:71
+msgid "Patient informations"
+msgstr "Patiënteninformatie"
+
+#: apps/reports/templates/reports/base_report.html:94
+msgid "Postcode"
+msgstr "Postcode"
+
+#: apps/reports/templates/reports/base_report.html:97
+msgid "Phone number"
+msgstr "Telefoonnummer"
+
+#: apps/reports/templates/reports/base_report.html:100
+msgid "E-mail address"
+msgstr "E-mailadres"
+
+#: apps/reports/templates/reports/base_report.html:110
+msgid "Current evolution"
+msgstr "Huidige evolutie"
+
+#: apps/reports/templates/reports/base_report.html:118
+msgid "You can reach me at the phone number"
+msgstr "U kunt mij bereiken op het telefoonnummer"
+
+#: apps/reports/templates/reports/base_report.html:121
+msgid ""
+"Remaining at your disposal for any further information, please receive the "
+"assurance of ourhighest consideration."
+msgstr ""
+"Als u ter beschikking blijft voor verdere informatie, ontvangt u de "
+"verzekering van onze hoogste overweging."
+
+#: apps/reports/templates/reports/drugs_report.html:4
+msgid "Medication informations"
+msgstr "Medicatie informatie"
+
+#: apps/reports/templates/reports/drugs_report.html:6
+#: apps/reports/templates/reports/medical_report.html:31
+msgid "Medication Therapy"
+msgstr "Medicatietherapie"
+
+#: apps/reports/templates/reports/drugs_report.html:15
+msgid "No medication therapy was used"
+msgstr "Er werd geen medicamenteuze therapie gebruikt"
+
+#: apps/reports/templates/reports/evaluation_report.html:4
+msgid "Evaluation informations"
+msgstr "Evaluatie-informatie"
+
+#: apps/reports/templates/reports/evaluation_report.html:16
+msgid "No evaluations were included"
+msgstr ""
+
+#: apps/reports/templates/reports/medical_report.html:4
+msgid "Medical informations"
+msgstr "Medische informatie"
+
+#: apps/reports/templates/reports/medical_report.html:14
+msgid "Last Vital Parameters"
+msgstr "Laatste vitale parameters"
+
+#: apps/reports/templates/reports/medical_report.html:22
+msgid "Active Wounds"
+msgstr "Actieve wonden"
+
+#: apps/reports/templates/reports/medical_report.html:39
+msgid "Planned Tasks"
+msgstr "Geplande taken"
+
+#: apps/reports/templates/reports/medical_report.html:47
+#, fuzzy
+#| msgid "No medication therapy was used"
+msgid "No medical data was included"
+msgstr "Er werd geen medicamenteuze therapie gebruikt"
+
+#: apps/reports/templates/reports/social_report.html:4
+msgid "Health insurance informations"
+msgstr "Informatie over zorgverzekeringen"
+
+#: apps/reports/templates/reports/social_report.html:9
+msgid "Policyholder Name"
+msgstr "Naam verzekeringhouder"
+
+#: apps/reports/templates/reports/social_report.html:12
+msgid "End of validity period"
+msgstr "Einde geldigheidsperiode"
+
+#: apps/reports/templates/reports/social_report.html:23
+msgid "Employed"
+msgstr "In dienst"
+
+#: apps/reports/templates/reports/social_report.html:23
+msgid "Unemployed"
+msgstr "Werkloos"
+
+#: apps/reports/templates/reports/social_report.html:25
+msgid "Dependents"
+msgstr "Dependents"
+
+#: apps/reports/templates/reports/social_report.html:28
+msgid "Authorized Third Party"
+msgstr "Geautoriseerde derde partij"
+
+#: apps/reports/templates/reports/social_report.html:31
+msgid "Social informations"
+msgstr "Sociale informatie"
+
+#: apps/reports/templates/reports/social_report.html:33
+msgid "Disability Assessment Points"
+msgstr "Disability Assessment punten"
+
+#: apps/reports/templates/reports/social_report.html:57
+msgid "Living Environment at Admission"
+msgstr "Living Environment ad Admission"
+
+#: apps/tasks/apps.py:7 apps/tasks/models.py:39
+msgid "Tasks"
+msgstr "Taken"
+
+#: apps/tasks/choices.py:5
+msgid "Done"
+msgstr "Gedaan"
+
+#: apps/tasks/choices.py:6
+msgid "Displaced"
+msgstr "Displaced"
+
+#: apps/tasks/choices.py:7
+msgid "Undone"
+msgstr "Ongedaan gemaakt"
+
+#: apps/tasks/choices.py:8
+msgid "Stop"
+msgstr "Hou op"
+
+#: apps/tasks/choices.py:9
+msgid "Suspend"
+msgstr "Opschorten"
+
+#: apps/tasks/choices.py:13
+msgid "Daily"
+msgstr "Dagelijks"
+
+#: apps/tasks/choices.py:14
+msgid "Weekly"
+msgstr "Wekelijks"
+
+#: apps/tasks/choices.py:15
+msgid "Monthly"
+msgstr "Maandelijks"
+
+#: apps/tasks/choices.py:16
+msgid "Yearly"
+msgstr "Jaar-"
+
+#: apps/tasks/choices.py:21
+msgid "Assessment and Protection"
+msgstr ""
+
+#: apps/tasks/choices.py:22
+#, fuzzy
+#| msgid "Psychiatric nursing home"
+msgid "Basic nursing care"
+msgstr "Psychiatrisch verzorgingstehuis"
+
+#: apps/tasks/choices.py:23
+#, fuzzy
+#| msgid "Treatment"
+msgid "Physio Treatment"
+msgstr "Behandeling"
+
+#: apps/tasks/choices.py:24
+#, fuzzy
+#| msgid "Psychological distress"
+msgid "Psycho care"
+msgstr "Psychische nood"
+
+#: apps/tasks/choices.py:25
+msgid "Relational treatment and care"
+msgstr ""
+
+#: apps/tasks/choices.py:26
+msgid "SA monitoring"
+msgstr ""
+
+#: apps/tasks/choices.py:27
+msgid "Sample"
+msgstr ""
+
+#: apps/tasks/choices.py:28
+msgid "Technical act"
+msgstr ""
+
+#: apps/tasks/choices.py:29
+msgid "Therapeutic activity"
+msgstr ""
+
+#: apps/tasks/choices.py:30
+#, fuzzy
+#| msgid "Other special education"
+msgid "Therapeutic education"
+msgstr "Ander speciaal onderwijs"
+
+#: apps/tasks/models.py:15
+#, fuzzy
+#| msgid "Agitation"
+msgid "Static Icon"
+msgstr "Agitatie"
+
+#: apps/tasks/models.py:16
+msgid "Dynamic Icon"
+msgstr ""
+
+#: apps/tasks/models.py:23
+msgid "Categories"
+msgstr "Categorieën"
+
+#: apps/tasks/models.py:32 apps/tasks/models.py:38 apps/tasks/models.py:49
+msgid "Task"
+msgstr "Taak"
+
+#: apps/tasks/models.py:62
+msgid "Task periodic"
+msgstr "Taak periodiek"
+
+#: apps/tasks/models.py:63
+msgid "Is time slot"
+msgstr "Is tijdslot"
+
+#: apps/tasks/models.py:65 apps/wounds/models.py:25 apps/wounds/models.py:39
+msgid "Wound"
+msgstr "Wond"
+
+#: apps/tasks/models.py:90
+msgid "Schedule"
+msgstr "Planning"
+
+#: apps/tasks/models.py:91
+msgid "Schedules"
+msgstr "Roosters"
+
+#: apps/tasks/models.py:114
+msgid "RepeatedTask"
+msgstr ""
+
+#: apps/tasks/models.py:115
+#, fuzzy
+#| msgid "Planned Tasks"
+msgid "RepeatedTasks"
+msgstr "Geplande taken"
+
+#: apps/tasks/reader.py:13
+msgid "English task name is required field"
+msgstr ""
+
+#: apps/tasks/serializers.py:116
+msgid "Task id is not present in table \"task\""
+msgstr "Taak-ID is niet aanwezig in tabel \"task\""
+
+#: apps/tasks/templates/tasks/change_form.html:33
+#, fuzzy
+#| msgid "Upload patients"
+msgid "Upload tasks"
+msgstr "Upload patiënten"
+
+#: apps/tasks/templates/tasks/change_form.html:39
+#, fuzzy
+#| msgid "Temperature"
+msgid "Template"
+msgstr "Temperatuur"
+
+#: apps/tasks/views.py:36 apps/tasks/views.py:159
+msgid "Planning"
+msgstr "Planning"
+
+#: apps/tasks/views.py:53
+msgid "File was not found"
+msgstr "Bestand is niet gevonden"
+
+#: apps/tasks/views.py:93
+msgid "Repeats can't be more than 300."
+msgstr ""
+
+#: apps/tasks/views.py:105
+msgid "Should be later than the chosen date"
+msgstr "Moet later zijn dan de gekozen datum"
+
+#: apps/tasks/views.py:123
+msgid "Wounds/Treatment plan"
+msgstr "Wonden/Behandelplan"
+
+#: apps/tasks/views.py:172
+msgid "Not found"
+msgstr "Niet gevonden"
+
+#: apps/tasks/views.py:175
+msgid "Start and End dates are required"
+msgstr "Start- en einddatums zijn verplicht"
+
+#: apps/units/models.py:6
+msgid "Unit name"
+msgstr "Unit naam"
+
+#: apps/units/views.py:55
+msgid "Ask admin to create a unit"
+msgstr ""
+
+#: apps/utils/mixins.py:37
+msgid "Comment is required"
+msgstr "Commentaar is verplicht"
+
+#: apps/utils/reader.py:16
+#, fuzzy
+#| msgid "File was not found"
+msgid "File was not uploaded to server"
+msgstr "Bestand is niet gevonden"
+
+#: apps/vitals/apps.py:7
+msgid "Vitals"
+msgstr "Edele delen"
+
+#: apps/vitals/choices.py:6
+msgid "Blood pressure"
+msgstr "Bloeddruk"
+
+#: apps/vitals/choices.py:7
+msgid "Pulse"
+msgstr "Pols"
+
+#: apps/vitals/choices.py:9
+msgid "Temperature"
+msgstr "Temperatuur"
+
+#: apps/vitals/choices.py:10
+msgid "Blood sugar"
+msgstr "Bloed suiker"
+
+#: apps/vitals/choices.py:11
+msgid "Weight"
+msgstr "Gewicht"
+
+#: apps/vitals/choices.py:12
+msgid "O2 saturation"
+msgstr "O2 verzadiging"
+
+#: apps/vitals/choices.py:13
+msgid "Breathing rate"
+msgstr "Ademhalingsfrequentie"
+
+#: apps/vitals/choices.py:28
+msgid "mmHG"
+msgstr "mmHG"
+
+#: apps/vitals/choices.py:29
+msgid "bpm"
+msgstr "bpm"
+
+#: apps/vitals/choices.py:30
+msgid "cm"
+msgstr "cm"
+
+#: apps/vitals/choices.py:31
+msgid "c°"
+msgstr "c°"
+
+#: apps/vitals/choices.py:32
+msgid "mg/dL"
+msgstr "mg/dL"
+
+#: apps/vitals/choices.py:33
+msgid "kg"
+msgstr "kg"
+
+#: apps/vitals/choices.py:34
+msgid "%"
+msgstr "%"
+
+#: apps/vitals/choices.py:35
+msgid "cycle/min"
+msgstr "cycle/min"
+
+#: apps/vitals/models.py:10
+msgid "Doctor"
+msgstr "Dokter"
+
+#: apps/vitals/models.py:12
+msgid "Value"
+msgstr "Waarde"
+
+#: apps/vitals/models.py:16
+msgid "Vitals Parameter"
+msgstr "Vitals-parameter"
+
+#: apps/vitals/models.py:17
+msgid "Vitals Parameters"
+msgstr "Vitals-parameters"
+
+#: apps/vitals/views.py:24
+msgid "Vital parameters"
+msgstr "Vitale parameters"
+
+#: apps/wish/apps.py:7
+msgid "Wish"
+msgstr ""
+
+#: apps/wish/models.py:15
+msgid "Operating system uuid"
+msgstr ""
+
+#: apps/wish/models.py:18
+msgid "HL7 Operating System"
+msgstr ""
+
+#: apps/wish/models.py:19
+msgid "HL7 Operating Systems"
+msgstr ""
+
+#: apps/wish/views.py:22
+#, fuzzy
+#| msgid "No data was parsed from file"
+msgid "No data was parsed."
+msgstr "Er zijn geen gegevens uit het bestand geparseerd"
+
+#: apps/wounds/apps.py:7 apps/wounds/models.py:26 apps/wounds/views.py:25
+msgid "Wounds"
+msgstr "Wonden"
+
+#: apps/wounds/choices.py:4
+msgid "Open wound"
+msgstr "Open wond"
+
+#: apps/wounds/choices.py:5
+msgid "Sutured wound"
+msgstr "Geshechte wond"
+
+#: apps/wounds/choices.py:6
+msgid "Decubitus ulcer/pressure sore"
+msgstr "Decubitus zweer/drukpijn"
+
+#: apps/wounds/choices.py:7
+msgid "Traumatic wound"
+msgstr "Traumatische wond"
+
+#: apps/wounds/choices.py:8
+msgid "Skin graft wound"
+msgstr "Huidtransplantaatwond"
+
+#: apps/wounds/choices.py:9
+msgid "Post-operative wound"
+msgstr "Postoperatieve wond"
+
+#: apps/wounds/choices.py:10
+msgid "Post-drainage wound"
+msgstr "Wond na drainage"
+
+#: apps/wounds/choices.py:11
+msgid "Burn"
+msgstr "Brandwond"
+
+#: apps/wounds/choices.py:12
+msgid "Abscess"
+msgstr "Abces"
+
+#: apps/wounds/choices.py:13
+msgid "Ulcer"
+msgstr "Zweer"
+
+#: apps/wounds/choices.py:14
+msgid "Periphlebitis"
+msgstr "Periphlebitis"
+
+#: apps/wounds/choices.py:15
+msgid "Skin lesion"
+msgstr "Huidletsel"
+
+#: apps/wounds/choices.py:16
+msgid "Arteriovenous fistula"
+msgstr "Arterioveneuze fistel"
+
+#: apps/wounds/choices.py:17
+msgid "Sprain"
+msgstr "Verstuiking"
+
+#: apps/wounds/choices.py:18
+msgid "Contusion"
+msgstr "Kneuzing"
+
+#: apps/wounds/choices.py:19
+msgid "Haematoma"
+msgstr "Hematoom"
+
+#: apps/wounds/choices.py:23
+msgid "Head"
+msgstr "Hoofd"
+
+#: apps/wounds/choices.py:24
+msgid "Neck"
+msgstr "Nek"
+
+#: apps/wounds/choices.py:25
+msgid "Thorax"
+msgstr "Borstkas"
+
+#: apps/wounds/choices.py:26
+msgid "Upper abdomen"
+msgstr "Bovenbuik"
+
+#: apps/wounds/choices.py:27
+msgid "Lower abdomen"
+msgstr "Onderbuik"
+
+#: apps/wounds/choices.py:28
+msgid "Upper back"
+msgstr "Bovenrug"
+
+#: apps/wounds/choices.py:29
+msgid "Lower back"
+msgstr "Onderrug"
+
+#: apps/wounds/choices.py:30
+msgid "Shoulder"
+msgstr "Schouder"
+
+#: apps/wounds/choices.py:31
+msgid "Arm"
+msgstr "Arm"
+
+#: apps/wounds/choices.py:32
+msgid "Forearm"
+msgstr "Onderarm"
+
+#: apps/wounds/choices.py:33
+msgid "Wrist"
+msgstr "Pols"
+
+#: apps/wounds/choices.py:34
+msgid "Hand"
+msgstr "Hand"
+
+#: apps/wounds/choices.py:35
+msgid "Genital area"
+msgstr "Genitale gebied"
+
+#: apps/wounds/choices.py:36
+msgid "Buttock crease"
+msgstr "Bilplooi"
+
+#: apps/wounds/choices.py:37
+msgid "Inguinal folds"
+msgstr "Inguinal foldt"
+
+#: apps/wounds/choices.py:38
+msgid "Thigh"
+msgstr "Dij"
+
+#: apps/wounds/choices.py:39
+msgid "Leg"
+msgstr "Been"
+
+#: apps/wounds/choices.py:40
+msgid "Foot"
+msgstr "Voet"
+
+#: apps/wounds/models.py:37 apps/wounds/models.py:38
+msgid "Wound photo"
+msgstr "Wondfoto"
+
+#: apps/wounds/models.py:44
+msgid "Evolutions"
+msgstr "Evolutions"
+
+#: apps/wounds/views.py:50
+msgid "Wounds/Evolution"
+msgstr "Wonden/Evolution"
+
+#: templates/admin/base_site.html:4
+msgid "Lifeline"
+msgstr "Lifeline"
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr "Django-sitebeheerder"
+
+#~ msgid "Released until is required"
+#~ msgstr "Vrijgegeven is vereist"
+
+#, fuzzy
+#~| msgid "Cured"
+#~ msgid "is cured"
+#~ msgstr "Genezen"
+
+#, fuzzy
+#~| msgid "Comment"
+#~ msgid "comment"
+#~ msgstr "Commentaar"
+
+#~ msgid "Should be chosen only 1 role for 1 user."
+#~ msgstr "Moet slechts 1 rol voor 1 gebruiker worden gekozen."
+
+#~ msgid "Income"
+#~ msgstr "Inkomen"
+
+#~ msgid "Outcome"
+#~ msgstr "Resultaat"
+
+#~ msgid "Canfor Answers"
+#~ msgstr "Canfor Antwoorden"
+
+#~ msgid "Frogs Answers"
+#~ msgstr "Frogs Antwoorden"
+
+#~ msgid "User points"
+#~ msgstr "Gebruikerspunten"
+
+#~ msgid "Can not be created more than two evaluations"
+#~ msgstr "Kan niet meer dan twee evaluaties worden gemaakt"
+
+#~ msgid "Canfor"
+#~ msgstr "Canfor"
+
+#~ msgid "Frogs"
+#~ msgstr "Frogs"
+
+#~ msgid "Katz"
+#~ msgstr "Katz"
+
+#~ msgid "Chinese"
+#~ msgstr "Chinese"
+
+#~ msgid "Japanese"
+#~ msgstr "Japanese"
+
+#~ msgid "CHRISTELIJKE MUT. ANTWERPEN"
+#~ msgstr "CHRISTELIJKE MUT. ANTWERPEN"
+
+#~ msgid "ZIEKENF. LAND.BED. ANTWERPEN"
+#~ msgstr "ZIEKENF. LAND.BED. ANTWERPEN"
+
+#~ msgid "CHRISTELIJKE MUT. MECHELEN"
+#~ msgstr "CHRISTELIJKE MUT. MECHELEN"
+
+#~ msgid "CHRISTELIJKE MUT. TURNHOUT"
+#~ msgstr "CHRISTELIJKE MUT. TURNHOUT"
+
+#~ msgid "ST MICHIELSBOND"
+#~ msgstr "ST MICHIELSBOND"
+
+#~ msgid "FEDERATION M.R.B."
+#~ msgstr "FEDERATION M.R.B."
+
+#~ msgid "ST PIETERSBOND LEUVEN"
+#~ msgstr "ST PIETERSBOND LEUVEN"
+
+#~ msgid "CARITAS - FMC BRABANT WALLON"
+#~ msgstr "CARITAS - BRABANT WALLON VAN FMC"
+
+#~ msgid "ZIEKENKASSEN ARR. BRUGGE"
+#~ msgstr "ZIEKENKASSEN ARR. BRUGGE"
+
+#~ msgid "CHR.MUT.ZUID-WEST VLAANDEREN"
+#~ msgstr "CHR.MUT.ZUID-WEST VLAANDEREN"
+
+#~ msgid "CHRISTEL. MUTUAL. OOSTENDE"
+#~ msgstr "CHRISTEL. WEDERZIJDS. OOSTENDE"
+
+#~ msgid "CHRIST. MUT. ARR. ROESELARE"
+#~ msgstr "CHRIST. MUT. ARR. ROESELARE"
+
+#~ msgid "VERB. CHRIST. MUT. TIELT"
+#~ msgstr "VERB. CHRIST. MUT. TIELT"
+
+#~ msgid "CHRIST. MUTUAL. IEPER"
+#~ msgstr "CHRIST. MUTUAL. IEPER"
+
+#~ msgid "MUT. CHRET. DE MOUSCRON"
+#~ msgstr "MUT. CHRET. DE MOUSCRON"
+
+#~ msgid "CHRISTEL. ZIEKENF. AALST"
+#~ msgstr "CHRISTEL. ZIEKENF. AALST"
+
+#~ msgid "VERB. CHRIST. MUT. OUDENAARDE"
+#~ msgstr "VERB. CHRIST. MUT. OUDENAARDE"
+
+#~ msgid "CHRIST. ZIEKENF. EEKLO"
+#~ msgstr "CHRIST. ZIEKENF. EEKLO"
+
+#~ msgid "CHRIST. MUT. GENT"
+#~ msgstr "CHRIST. MUT. GENT"
+
+#~ msgid "WASE KRISTELIJKE ZIEKENFONDSEN"
+#~ msgstr "WASE KRISTELIJKE ZIEKENFONDSEN"
+
+#~ msgid "KRIST. MUT. DENDERMONDE"
+#~ msgstr "KRIST. MUT. DENDERMONDE"
+
+#~ msgid "CHRIST.MUT. SINT-MICHIELSBOND"
+#~ msgstr "CHRIST.MUT. SINT-MICHIELSBOND"
+
+#~ msgid "MUT. CHRET. DE MONS"
+#~ msgstr "MUT. CHRET. DE MONS"
+
+#~ msgid "MUT.CHR.CENTRE-CHARL-THUDINIE"
+#~ msgstr "MUT.CHR.CENTRE-CHARL-THUDINIE"
+
+#~ msgid "MUT.CHR. HAINAUT-PICARDIE"
+#~ msgstr "MUT.CHR. HAINAUT-PICARDIE"
+
+#~ msgid "MUT.CHRET. DE LIEGE"
+#~ msgstr "MUT.CHRET. DE LIEGE"
+
+#~ msgid "CHRISTELIJKE MUT. LIMBURG"
+#~ msgstr "CHRISTELIJKE MUT. LIMBURG"
+
+#~ msgid "MUT. CHRET. LUXEMBOURG"
+#~ msgstr "MUT. CHRET. LUXEMBOURG"
+
+#~ msgid "MUT. CHRET. DE DINANT"
+#~ msgstr "MUT. CHRET. DE DINANT"
+
+#~ msgid "MUT.CHRET. PROVINCE DE NAMUR"
+#~ msgstr "MUT.CHRET. PROVINCE DE NAMUR"
+
+#~ msgid "MUTUALITE SAINT-MICHEL"
+#~ msgstr "MUTUALITE SAINT-MICHEL"
+
+#~ msgid "MUT. CHRET. DE WALCOURT"
+#~ msgstr "MUT. CHRET. DE WALCOUR"
+
+#~ msgid "MUT.CHRET. VERVIERS-EUPEN"
+#~ msgstr "MUT.CHRET. VERVIERS-EUPEN"
+
+#~ msgid "NEUTRAAL ZIEKENFONDS"
+#~ msgstr "NEUTRAAL ZIEKENFOND"
+
+#~ msgid "FED. LIBRE. MUT. NEUTRES"
+#~ msgstr "FED. LIBRE. MUT. NEUTRES"
+
+#~ msgid "VERB. ZIEKENK. LEUVEN"
+#~ msgstr "VERB. ZIEKENK. LEUVEN"
+
+#~ msgid "MUT. NEUTRE DU HAINAUT"
+#~ msgstr "MUT. NEUTRE DU HAINAUT"
+
+#~ msgid "MUT. NEUTRE DE LIEGE"
+#~ msgstr "MUT. NEUTRE DE LIEGE"
+
+#~ msgid "MUT. NEUTRE DE VERVIERS"
+#~ msgstr "MUT. NEUTRE DE VERVIERS"
+
+#~ msgid "MUTUALIA - MUT. NEUTRE"
+#~ msgstr "MUTUALIA - MUT. NEUTRE"
+
+#~ msgid "MUT. NEUTRE NAMUR-LUXEMBOURG"
+#~ msgstr "MUT. NEUTRE NAMUR-LUXEMBOURG"
+
+#~ msgid "VLAAMS NEUTRAAL ZIEKENFONDS"
+#~ msgstr "VLAAMS NEUTRAAL ZIEKENFONDS"
+
+#~ msgid "VLAAMS NEUTR.ZIEKF.-VLAANDEREN"
+#~ msgstr "VLAAMS NEUTR.ZIEKF.-VLAANDEREN"
+
+#~ msgid "SOCIALISTISCHE MUTUALITEITEN"
+#~ msgstr "SOCIALISTISCHE MUTUALITEITEN"
+
+#~ msgid "SOCIAL. MUT. PROV. ANTWERPEN"
+#~ msgstr "SOCIAL. MUT. PROV. ANTWERPEN"
+
+#~ msgid "MUT. SOC. BRABANT WALLON"
+#~ msgstr "MUT. SOC. BRABANT WALLON"
+
+#~ msgid "F.M.S.B"
+#~ msgstr "F.M.S.B"
+
+#~ msgid "ZIEKENFONDS VERVOER EN VERKEER"
+#~ msgstr "ZIEKENFONDS VERVOER EN VERKEER"
+
+#~ msgid "BOND MOYSON WEST-VLAANDEREN"
+#~ msgstr "BOND MOYSON WEST-VLAANDEREN"
+
+#~ msgid "FED. SOC. MUT. \"BOND MOYSON\""
+#~ msgstr "FED. SOC. MUT. \"BOND MOYSON"
+
+#~ msgid "BOND MOYSON OOST-VLAANDEREN"
+#~ msgstr "BOND MOYSON OOST-VLAANDEREN"
+
+#~ msgid "MUT. SOC. HAINAUT OCCIDENTAL"
+#~ msgstr "MUT. SOC. HAINAUT OCCIDENTAL"
+
+#~ msgid "FED. MUT. SOC. BORINAGE"
+#~ msgstr "FED. MUT. SOC. BORINAGE"
+
+#~ msgid "MUT. SOC. CENTRE ET SOIGNIES"
+#~ msgstr "MUT. SOC. CENTRE ET SOIGNIES"
+
+#~ msgid "MUT. SOC. CHARLEROI"
+#~ msgstr "MUT. SOC. CHARLEROI"
+
+#~ msgid "FED. MUT. SOC. LIEGE"
+#~ msgstr "FED. MUT. SOC. LIEGE"
+
+#~ msgid "MUT. SOC. DE VERVIERS"
+#~ msgstr "MUT. SOC. DE VERVIERS"
+
+#~ msgid "DE VOORZORG"
+#~ msgstr "DE VOORZORG"
+
+#~ msgid "MUT. SOC. LUXEMBOURG"
+#~ msgstr "MUT. SOC. LUXEMBOURG"
+
+#~ msgid "MUT.SOC. DINANT-PHILIPPEVILLE"
+#~ msgstr "MUT.SOC. DINANT-PHILIPPEVILLE"
+
+#~ msgid "MUT. SOC. ARR. DE NAMUR"
+#~ msgstr "MUT. SOC. ARR. DE NAMUR"
+
+#~ msgid "LA FRATERNELLE"
+#~ msgstr "LA FRATERNELLE"
+
+#~ msgid "BOND MOYSON BRUGGE OOSTENDE"
+#~ msgstr "BOND MOYSON BRUGGE OOSTENDE"
+
+#~ msgid "LIB. MUT. ANTWERPEN"
+#~ msgstr "LIB. MUT. ANTWERPEN"
+
+#~ msgid "MUT. LIBERALE DU BRABANT"
+#~ msgstr "MUT. LIBERALE DU BRABANT"
+
+#~ msgid "WESTVLAAMS LIBERAAL ZIEKENFOND"
+#~ msgstr "WESTVLAAMS LIBERAAL ZIEKENFOND"
+
+#~ msgid "LIB. MUT. OOST-VLAANDEREN"
+#~ msgstr "LIB. MUT. OOST-VLAANDEREN"
+
+#~ msgid "MUT.LIB.CENTRE-CHARLEROI-MONS"
+#~ msgstr "MUT.LIB.CENTRE-CHARLEROI-MONS"
+
+#~ msgid "MUT.LIB.TOURNAY ATH"
+#~ msgstr "MUT.LIB.TOURNAY ATH"
+
+#~ msgid "MUTUALITE LIBRA"
+#~ msgstr "MUTUALITE LIBRA"
+
+#~ msgid "LIBERALE MUTUALITEIT LIMBURG"
+#~ msgstr "LIBERALE MUTUALITEIT LIMBURG"
+
+#~ msgid "MUT.LIBERALE DE NAMUR"
+#~ msgstr "MUT.LIBERALE DE NAMUR"
+
+#~ msgid "LIB. MUT. VLAAMS GEWEST"
+#~ msgstr "LIB. MUT. VLAAMS GEWEST"
+
+#~ msgid "MUT.LIBERALE DU LUXEMBOURG"
+#~ msgstr "MUT.LIBERALE DU LUXEMBOURG"
+
+#~ msgid "ONAFHANKELIJKE ZIEKENFONDS 501"
+#~ msgstr "ONAFHANKELIJKE ZIEKENFONDS 501"
+
+#~ msgid "MUT.PROF.ET LIBRE REG.WALLONNE"
+#~ msgstr "MUT.PROF.ET LIBRE REG.WALLONNE"
+
+#~ msgid "VLAAMSE ONAFHANKELIJKE ZIEKENF"
+#~ msgstr "VLAAMSE ONAFHANKELIJKE ZIEKENF"
+
+#~ msgid "EUROMUT ONAFHANKELIJK ZIEKENF."
+#~ msgstr "EUROMUT ONAFHANKELIJK ZIEKENF."
+
+#~ msgid "FREIE KRANKENKASSE"
+#~ msgstr "FREIE KRANKENKASSE"
+
+#~ msgid "MUTUALITE SECUREX"
+#~ msgstr "MUTUALITE SECUREX"
+
+#~ msgid "MUT. NEUTR. MONS-ATH-TOURNAI"
+#~ msgstr "MUT. NEUTR. MONS-ATH-TOURNAI"
+
+#~ msgid "PARTENA - ON.ZIEK.VLAANDEREN"
+#~ msgstr "PARTENA - ON.ZIEK.VLAANDEREN"
+
+#~ msgid "PARTENA - MUTUALITE LIBRE"
+#~ msgstr "PARTENA - MUTUALITE LIBRE"
+
+#~ msgid "GEWEST. DIENST ANTWERPEN"
+#~ msgstr "GEWEST. DIENST ANTWERPEN"
+
+#~ msgid "OFFICE REGIONAL BXL CAPITAL"
+#~ msgstr "BURGERLIJK KAPITAAL VAN HET BUREAU"
+
+#~ msgid "H.Z.I.V. WEST-VLAANDEREN"
+#~ msgstr "H.Z.I.V. WEST-VLAANDEREN"
+
+#~ msgid "H.Z.I.V. OOST-VLAANDEREN"
+#~ msgstr "H.Z.I.V. OOST-VLAANDEREN"
+
+#~ msgid "C.A.A.M.I. MONS"
+#~ msgstr "C.A.A.M.I. MONS"
+
+#~ msgid "C.A.A.M.I. LIEGE"
+#~ msgstr "C.A.A.M.I. LIEGE"
+
+#~ msgid "H.Z.I.V LIMBURG"
+#~ msgstr "H.Z.I.V LIMBURG"
+
+#~ msgid "C.A.A.M.I. LUXEMBOURG"
+#~ msgstr "C.A.A.M.I. LUXEMBOURG"
+
+#~ msgid "C.A.A.M.I. NAMUR"
+#~ msgstr "C.A.A.M.I. NAMUR"
+
+#~ msgid "C.A.A.M.I. EUPEN"
+#~ msgstr "C.A.A.M.I. EUPEN"
+
+#~ msgid "OFFICE REG. BRABANT FLAMAND"
+#~ msgstr "OFFICE REG. BRABANT FLAMAND"
+
+#~ msgid "C.A.A.M.I. CHARLEROI"
+#~ msgstr "C.A.A.M.I. CHARLEROI"
+
+#~ msgid "C.A.A.M.I. MALMEDY"
+#~ msgstr "C.A.A.M.I. MALMEDY"
+
+#~ msgid "OFFICE REG. BRABANT WALLON"
+#~ msgstr "OFFICE REG. BRABANT WALLON"
+
+#~ msgid "OFFICE REGION.MALMEDY-ST-VITH"
+#~ msgstr "OFFICE REGION.MALMEDY-ST-VITH"
+
+#~ msgid "C.A.A.M.I."
+#~ msgstr "C.A.A.M.I."
+
+#~ msgid "MEDIPRIMA C.A.A.M.I."
+#~ msgstr "MEDIPRIMA C.A.A.M.I."
+
+#~ msgid "SNCB BRUXELLES"
+#~ msgstr "SNCB BRUXELLES"
+
+#~ msgid "NMBS HASSELT"
+#~ msgstr "NMBS HASSELT"
+
+#~ msgid "NMBS ANTWERPEN"
+#~ msgstr "NMBS ANTWERPEN"
+
+#~ msgid "NMBS MECHELEN"
+#~ msgstr "NMBS MECHELEN"
+
+#~ msgid "NMBS BRUGGE"
+#~ msgstr "NMBS BRUGGE"
+
+#~ msgid "NMBS GENT"
+#~ msgstr "NMBS GENT"
+
+#~ msgid "SNCB NAMUR"
+#~ msgstr "SNCB NAMUR"
+
+#~ msgid "SNCB LIEGE"
+#~ msgstr "SNCB LIEGE"
+
+#~ msgid "SNCB ARLON"
+#~ msgstr "SNCB ARLON"
+
+#~ msgid "SNCB MONS"
+#~ msgstr "SNCB MONS"
+
+#~ msgid "SNCB CHARLEROI"
+#~ msgstr "SNCB CHARLEROI"
+
+#~ msgid "OSSOM"
+#~ msgstr "OSSOM"
+
+#~ msgid "Report specifications"
+#~ msgstr "Rapport specificaties"
+
+#~ msgid "Valid"
+#~ msgstr "Geldig"

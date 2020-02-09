@@ -1,0 +1,44 @@
+{% extends "admin/change_list.html" %}
+{% load i18n admin_urls admin_static admin_modify material_form material_admin %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'brusafe/css/authentication.css' %}">
+{% endblock %}
+
+{% block search %}
+  {{ block.super }}
+  <span class="card-title">{% trans 'Connect to Brusafe+' %}</span>
+  {% if request.session.brusafe_token %}
+    <strong class="status-block">
+      <i class="material-icons green-text">check_circle</i>
+      <span>{% trans 'Authentication successful' %}</span>
+    </strong>
+    <br>
+    {% block button_set %}
+      <div class="center">
+        <a class="waves-effect waves-light btn btn-primary white-text" href="{% url 'admin:brusafe_connector_api' %}">{% trans 'Api' %}</a>
+        <a class="waves-effect waves-light btn btn-primary white-text" href="{% url 'admin:brusafe_connector_changelist' %}?brusafe=logout">{% trans 'Logout' %}</a>
+      </div>
+    {% endblock %}
+  {% else %}
+
+  <strong class="status-block red-text">
+    <i class="material-icons red-text">block</i>
+    <span>{% trans 'Disconnected' %}</span>
+  </strong>
+  <br>
+  <div class="center">
+    <a class="waves-effect waves-light btn btn-primary white-text" href="{{ auth }}">{% trans 'Connect' %}</a>
+  </div>
+  <br>
+  {% if request.session.brusafe_error  %}
+    <hr>
+    <span class="card-title">{% trans 'The latest error' %}</span>
+    <div class="red-text">
+      <strong>Error: {{ request.session.brusafe_error }}</strong><br>
+      <strong>Description: {{ request.session.brusafe_error_description }}</strong>
+    </div>
+  {% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "admin/base.html" %}
+{% load static i18n i18n_switcher %}
+
+{% block title %}{{ _('Lifeline') }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block favicon %}<link href="{% static 'images/favicon.png' %}" rel="shortcut icon">{% endblock %}
+
+{% block extrahead %}
+    <link href="{% static 'lifeline/css/global.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block sidenav_header %}
+<li>
+    <div class="userView">
+        <img class="background" src="{% static 'images/header.jpg' %}">
+        {% block userphoto %}
+        {% if user.photo.url %}
+        <a href="#"><img class="circle" src="{{ user.photo.url }}"></a>
+        {% else %}
+        <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 75 61" version="1.1" class="injected-svg">
+            <title></title>
+            <desc>Lifeline Admin</desc>
+            <defs></defs>
+            <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="iPad-0-login-Copy" transform="translate(-686.000000, -101.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="Lifeline-Logo" transform="translate(648.000000, 101.000000)">
+                        <g id="Group-4">
+                            <g id="Group-2" transform="translate(38.000000, 0.000000)">
+                                <path d="M23.2287234,0.52876377 C22.8256867,0.514232713 22.4366228,0.676671527 22.1648936,0.972925337 L0.888297872,22.1234761 C0.656878189,22.3828274 0.529964654,22.7180032 0.531914894,23.0646756 C0.510077049,23.4394723 0.651541314,23.8054857 0.920212766,24.0693268 L4.38829787,27.495716 L27.6595745,4.3623011 L24.2553191,0.967637699 C23.988194,0.687516819 23.6170037,0.528831433 23.2287234,0.52876377 Z" id="Shape"></path>
+                                <rect id="Rectangle-path" transform="translate(21.852280, 21.728773) rotate(-45.000000) translate(-21.852280, -21.728773) " x="5.38685435" y="18.1543297" width="32.9308511" height="7.14888617"></rect>
+                                <path d="M44.4042553,20.9919217 L59.3989362,6.08607099 L55.3617021,2.06746634 C55.101067,1.77763201 54.7260995,1.61540049 54.3351064,1.62330477 C53.9751443,1.61745935 53.6260104,1.74572271 53.356383,1.98286414 L39.3191489,15.9422277 L44.4042553,20.9919217 Z" id="Shape"></path>
+                                <rect id="Rectangle-path" transform="translate(57.536602, 19.510615) rotate(-45.000000) translate(-57.536602, -19.510615) " x="46.6692253" y="15.9361721" width="21.7347538" height="7.14888617"></rect>
+                                <path d="M60.4255319,36.9235741 L74.4680851,22.9536353 C74.6821991,22.6846522 74.8050983,22.3551602 74.8191489,22.0124357 C74.8048133,21.6469781 74.6638821,21.2976713 74.4202128,21.0236475 L71.037234,17.6607099 L56.037234,32.5718482 L60.4255319,36.9235741 Z" id="Shape"></path>
+                                <rect id="Rectangle-path" transform="translate(30.218508, 30.044678) rotate(-45.000000) translate(-30.218508, -30.044678) " x="13.7530822" y="26.4702351" width="32.9308511" height="7.14888617"></rect>
+                                <rect id="Rectangle-path" transform="translate(46.592782, 46.320027) rotate(-45.000000) translate(-46.592782, -46.320027) " x="30.1273564" y="43.2426219" width="32.9308511" height="6.15481028"></rect>
+                                <rect id="Rectangle-path" transform="translate(38.579416, 38.358393) rotate(-45.000000) translate(-38.579416, -38.358393) " x="22.1139908" y="34.7839502" width="32.9308511" height="7.14888617"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        </a>
+        {% endif %}
+        {% endblock %}
+        <a href="/admin/accounts/user/{{user.uuid}}/change">
+            {% if request.user.first_name or request.user.last_name %}
+                <span class="white-text name">{{ request.user.username|title}} ({{ request.user.get_username }})</span>
+            {% else %}
+                <span class="white-text name">{{ request.user.get_username }}</span>
+            {% endif %}
+        </a>
+    </div>
+</li>
+{% endblock %}
+
+{% block userlinks %}
+    <li>
+        <a href="{{ request|switch_i18n:'en' }}"  style="display:inline;">
+            <img style="{% if request.LANGUAGE_CODE in 'en-us' %}box-shadow: 0 0 30px rgb(255, 255, 255); {% endif %}"
+                class="i18n_flag" src="{% static 'images/flag-usa-16.png' %}"/>
+        </a> |
+        <a href="{{ request|switch_i18n:'fr' }}" style="display:inline">
+            <img style="{% if request.LANGUAGE_CODE == 'fr' %}box-shadow: 0 0 30px rgb(255, 255, 255); {% endif %}"
+                class="i18n_flag" src="{% static 'images/flag-france-16.png' %}"/>
+        </a> |
+        <a href="{{ request|switch_i18n:'nl' }}" style="display:inline">
+            <img style="{% if request.LANGUAGE_CODE == 'nl' %}box-shadow: 0 0 30px rgb(255, 255, 255); {% endif %}"
+                class="i18n_flag" src="{% static 'images/flag-netherlands-16.png' %}"/>
+        </a>
+    </li>
+    {{ block.super }}
+{% endblock %}
