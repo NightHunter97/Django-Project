@@ -34,7 +34,7 @@ django-redis==4.9.0
 django-rest-auth==0.9.3
 django-rest-swagger==2.1.2
 django-storages==1.7.1
-djangorestframework==3.8.2
+djangorestframework==3.9.1
 djangorestframework-jwt==1.11.0
 docutils==0.14
 et-xmlfile==1.0.1
