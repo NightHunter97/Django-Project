@@ -25,7 +25,7 @@ django-admin-view-permission==1.8
 django-autoslug==1.9.3
 django-cleanup==2.1.0
 django-cors-headers==2.4.0
-django-debug-toolbar==1.10.1
+django-debug-toolbar==1.11.1
 django-extensions==2.1.2
 django-filter==2.0.0
 django-material==1.0.0
