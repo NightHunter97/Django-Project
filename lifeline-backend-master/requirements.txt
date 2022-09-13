@@ -38,7 +38,7 @@ djangorestframework==3.8.2
 djangorestframework-jwt==1.11.0
 docutils==0.14
 et-xmlfile==1.0.1
-flower==0.9.2
+flower==1.2.0
 hiredis==1.0.0
 hyperlink==18.0.0
 idna==2.8
