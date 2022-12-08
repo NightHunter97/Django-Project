@@ -10,7 +10,7 @@ billiard==3.5.0.5
 boto3==1.9.9
 botocore==1.12.93
 celery==4.2.1
-certifi==2018.11.29
+certifi==2022.12.7
 channels==2.1.6
 channels-redis==2.3.2
 chardet==3.0.4
